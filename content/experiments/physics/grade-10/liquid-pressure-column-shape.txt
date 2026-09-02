@@ -1,0 +1,65 @@
+TITLE: Dependence of Liquid Pressure on Column Shape
+SUBJECT: physics
+GRADE: 10
+UNIT: Hydrostatic Pressure and Applications (Unit 15)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate whether hydrostatic liquid pressure depends on container shape or surface area using communicating vessels of differing geometries.
+
+MATERIALS:
+- Set of communicating vessels (5 tubes of varying shapes: straight, zigzag, bulbous, narrow, wide)
+- Connecting manifold PVC base tube
+- Colored water reservoir beaker
+- Metric ruler
+
+LEARNING_OUTCOMES:
+- Demonstrate that liquid in interconnected open vessels finds its own level
+- Understand the hydrostatic pressure formula P = hρg
+- Prove that liquid pressure is independent of cross-sectional area and container shape
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the 5 differently shaped glass tubes onto the manifold base pipe.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: shaped_tubes_set
+DROP_TARGET_ID: manifold_base
+RESULT_COLOR: #94a3b8
+RESULT_STATE: assembled_communicating_vessels
+WHY: Interconnecting the tubes allows liquid to move freely between all five columns under equal atmospheric pressure.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Pour colored water into the central tube until it flows across all interconnected vessels.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: colored_water_beaker
+DROP_TARGET_ID: shaped_tubes_set
+RESULT_COLOR: #38bdf8
+RESULT_STATE: filled_equal_water_columns
+WHY: Liquid distributes evenly until hydrostatic pressures at the bottom interconnected points reach equilibrium.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Use the vertical metric ruler to measure the height of the water column in each differently shaped tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metric_ruler
+DROP_TARGET_ID: shaped_tubes_set
+RESULT_COLOR: #0284c7
+RESULT_STATE: measured_uniform_heights
+WHY: Comparing column heights verifies whether geometry influences liquid surface level.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What is observed regarding the vertical height of water in the five differently shaped columns?
+ACTION_TYPE: select_observation
+OPTIONS: All columns have the exact same vertical liquid height|The widest tube has the highest liquid level|The zigzag tube has the lowest liquid level|The narrowest tube overflows
+CORRECT_OPTION: All columns have the exact same vertical liquid height
+RESULT_COLOR: #0369a1
+RESULT_STATE: uniform_liquid_levels_confirmed
+HINT: Hydrostatic pressure at any depth depends solely on vertical depth (h), density (ρ), and gravity (g).
+WHY: Because liquid pressure P = hρg depends only on vertical depth h and fluid density ρ, liquid levels equalize regardless of vessel shape.
+
+===OUTCOME===
+SUMMARY: In communicating vessels, liquid reaches identical vertical heights across all tubes regardless of volume or shape, confirming P = hρg.
+REFLECTION_QUESTIONS:
+- Why does the total volume or cross-sectional area of the tube not change the hydrostatic pressure at the bottom?
+- How is this principle applied in municipal water supply distribution towers and water spirit levels?

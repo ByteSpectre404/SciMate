@@ -1,0 +1,75 @@
+TITLE: Classification of Environmental Pollutants and Waste
+SUBJECT: biology
+GRADE: 11
+UNIT: Biosphere (Unit 15)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Conduct an environmental audit of pollutants and solid waste within school premises, classifying items into biodegradable (decomposing) versus non-biodegradable and by material categories.
+
+MATERIALS:
+- Collected environmental waste sample collection tray (leaves, food scraps, polythene bags, plastic bottles, tin cans, paper/cardboard, broken glass, electronic parts)
+- Color-coded segregation bins: Green (Biodegradable/Organic), Orange (Plastic/Polythene), Blue (Paper), Brown (Glass), Red (Metal/E-waste)
+- Protective lab gloves & forceps
+- Audit data classification sheet
+
+LEARNING_OUTCOMES:
+- Classify solid wastes into Biodegradable (organic, decomposing) and Non-Biodegradable (synthetic, non-decomposing)
+- Categorize wastes into specific material streams for resource recovery and recycling (3R principle: Reduce, Reuse, Recycle)
+- Design an effective multi-bin waste management strategy for school and urban environments
+
+===STEP===
+ID: step-1
+INSTRUCTION: Sort organic waste items (food remains, fruit peels, fallen leaves, garden clippings) into the Green Compost Bin.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: organic_food_waste
+DROP_TARGET_ID: green_compost_bin
+RESULT_COLOR: #22c55e
+RESULT_STATE: organic_biodegradable_sorted
+WHY: Organic wastes are biodegradable and can be broken down naturally by decomposer microorganisms into fertile compost.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Sort waste paper, newspapers, and cardboard packaging into the Blue Paper Recycling Bin.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: paper_cardboard_waste
+DROP_TARGET_ID: blue_paper_bin
+RESULT_COLOR: #3b82f6
+RESULT_STATE: paper_recyclable_sorted
+WHY: Paper is biodegradable and recyclable, saving trees and reducing landfill burdens when pulped and reused.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Sort polythene lunch wrappers, PET bottles, and single-use plastic bags into the Orange Plastic Bin.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: plastic_polythene_waste
+DROP_TARGET_ID: orange_plastic_bin
+RESULT_COLOR: #f97316
+RESULT_STATE: non_biodegradable_plastics_sorted
+WHY: Plastics are synthetic polymers resistant to microbial decomposition, persisting for hundreds of years unless mechanically recycled.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Sort metallic beverage cans, scrap iron nails, and broken electrical wires into the Red Metal/E-waste Bin.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metallic_ewaste_items
+DROP_TARGET_ID: red_metal_bin
+RESULT_COLOR: #ef4444
+RESULT_STATE: metals_ewaste_sorted
+WHY: Metals and electronic items are non-decomposing but possess high scrap recyclable value; e-waste also contains hazardous heavy metals.
+
+===STEP===
+ID: step-5
+INSTRUCTION: Why is sorting waste at the source of generation (source segregation) considered the most critical step in solid waste management?
+ACTION_TYPE: select_observation
+OPTIONS: It prevents contamination between recyclable streams and enables efficient composting and recycling|It eliminates the need for waste bins|It converts plastic directly into water|It makes garbage heavier for transport
+CORRECT_OPTION: It prevents contamination between recyclable streams and enables efficient composting and recycling
+RESULT_COLOR: #16a34a
+RESULT_STATE: waste_management_verified
+HINT: Clean, unsoiled materials like paper and dry plastics can be remanufactured, while uncontaminated organic matter produces rich soil compost.
+WHY: Segregation at source separates organic decomposing matter from clean recyclable plastics, glass, and metals, optimizing recycling efficiency and reducing landfill volume.
+
+===OUTCOME===
+SUMMARY: Solid wastes are categorized into biodegradable (decomposing organic matter and paper) and non-biodegradable (plastics, metals, glass, e-waste). Color-coded source segregation enables composting and sustainable recycling.
+REFLECTION_QUESTIONS:
+- What are the ecological hazards of open burning of polythene and plastics in school yards?
+- How does the 3R concept (Reduce, Reuse, Recycle) conserve natural resources?

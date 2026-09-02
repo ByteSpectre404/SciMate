@@ -1,0 +1,65 @@
+TITLE: Thermal Expansion of Gases
+SUBJECT: physics
+GRADE: 11
+UNIT: Heat (Unit 9)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate the thermal expansion and contraction of air using an empty bottle with a deflated balloon placed in warm water and ice water baths.
+
+MATERIALS:
+- Empty plastic / glass bottle
+- Small deflated rubber balloon
+- Vessel with hot water
+- Vessel with ice-cold water
+
+LEARNING_OUTCOMES:
+- Demonstrate that gases expand considerably when heated and contract upon cooling
+- Compare the relative expansion rates of gases, liquids, and solids (Gases > Liquids > Solids)
+- Explain gas volume changes according to Charles's Law (V ∝ T at constant pressure)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Fit the deflated balloon securely over the mouth of the empty (air-filled) bottle at room temperature.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: rubber_balloon
+DROP_TARGET_ID: empty_bottle
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: sealed_air_bottle
+WHY: The bottle traps a fixed mass of air at constant atmospheric pressure.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Place the bottle into a vessel containing hot water.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: empty_bottle
+DROP_TARGET_ID: hot_water_vessel
+RESULT_COLOR: #f97316
+RESULT_STATE: balloon_inflates_erect
+WHY: Thermal energy increases the kinetic energy and speed of air molecules inside, increasing pressure and expanding the volume into the flexible balloon.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Transfer the bottle from hot water into a vessel of ice-cold water.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: empty_bottle
+DROP_TARGET_ID: ice_water_vessel
+RESULT_COLOR: #38bdf8
+RESULT_STATE: balloon_deflates_contracts
+WHY: As the air cools, molecules lose kinetic energy and move closer together, reducing the volume and deflating the balloon.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why does the balloon inflate when the bottle is placed in hot water?
+ACTION_TYPE: select_observation
+OPTIONS: The air inside the bottle expands upon heating, filling more volume|Hot water enters the bottle through invisible pores|The rubber stretches due to sunlight|A chemical reaction creates new gas inside the bottle
+CORRECT_OPTION: The air inside the bottle expands upon heating, filling more volume
+RESULT_COLOR: #ea580c
+RESULT_STATE: gas_expansion_law_verified
+HINT: Gases expand upon heating because increased kinetic energy drives molecules further apart (Charles's Law: V ∝ T).
+WHY: Heating increases molecular motion and collisions, causing the confined air to expand in volume and inflate the balloon.
+
+===OUTCOME===
+SUMMARY: Gases expand substantially when heated and contract when cooled, expanding more than both liquids and solids for equivalent temperature increases.
+REFLECTION_QUESTIONS:
+- How does the expansion of gases explain why hot air balloons rise in the atmosphere?
+- Why should car tire pressure be checked when tires are cold rather than after long driving on hot asphalt?

@@ -1,0 +1,65 @@
+TITLE: Effect of Bases (Alkalinity) on Rate of Rusting
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare the rusting of iron nails in neutral water versus alkaline sodium hydroxide (NaOH) solution to demonstrate that basic solutions retard and inhibit iron corrosion.
+
+MATERIALS:
+- Two cleaned iron nails
+- Two boiling tubes (Tube A: ordinary water, Tube B: dilute sodium hydroxide NaOH solution)
+- Sodium hydroxide pellets & distilled water
+- Test tube rack
+
+LEARNING_OUTCOMES:
+- Observe that alkaline (basic) solutions significantly retard or prevent the corrosion of iron
+- Understand that high OH⁻ ion concentration promotes the formation of a stable, passive protective iron oxide/hydroxide barrier
+- Explain why rebar in concrete (calcium hydroxide alkaline environment) remains protected from corrosion for decades
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add ordinary water to Tube A and 1.0 M sodium hydroxide (NaOH) solution to Tube B.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: naoh_solution_bottle
+DROP_TARGET_ID: tube_b_base
+RESULT_COLOR: #f0fdf4
+RESULT_STATE: alkaline_vs_neutral_medium_ready
+WHY: NaOH solution provides a high concentration of basic hydroxide ions (OH⁻) with a high pH (~13).
+
+===STEP===
+ID: step-2
+INSTRUCTION: Place a cleaned iron nail into each tube and leave undisturbed for 48 hours.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_nails_pair
+DROP_TARGET_ID: boiling_tubes_pair
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: nails_immersed_in_base_and_water
+WHY: Contrasting neutral vs alkaline conditions reveals the influence of OH⁻ concentration on electrochemical passivation.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Examine both nails after 48 hours.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: observation_timer
+DROP_TARGET_ID: test_tube_rack
+RESULT_COLOR: #3b82f6
+RESULT_STATE: nail_in_base_completely_rust_free
+WHY: The nail in ordinary water has developed noticeable brown rust, while the nail in NaOH solution remains completely shiny and rust-free.
+
+===STEP===
+ID: step-4
+INSTRUCTION: How does an alkaline (basic) solution like sodium hydroxide affect the rate of rusting of iron?
+ACTION_TYPE: select_observation
+OPTIONS: Basic solutions inhibit and drastically decrease (slow down or prevent) the rate of rusting|Basic solutions cause iron to dissolve into gas instantly|Basic solutions double the rust formation|Bases have zero effect on iron
+CORRECT_OPTION: Basic solutions inhibit and drastically decrease (slow down or prevent) the rate of rusting
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: alkaline_passivation_proven
+HINT: In high pH environments, iron forms an insoluble, microscopic passive film that shields the underlying metal.
+WHY: Alkaline conditions stabilize an insoluble, tightly adhering passive oxide film on the iron surface, preventing Fe²⁺ dissolution and dramatically retarding corrosion.
+
+===OUTCOME===
+SUMMARY: Alkaline (basic) solutions like sodium hydroxide retard and inhibit the rusting of iron, explaining why steel reinforcement bars are naturally preserved inside alkaline concrete.
+REFLECTION_QUESTIONS:
+- Why does reinforced concrete protect embedded steel rebar from rusting unless carbonation (CO2 exposure) neutralizes the alkalinity?
+- Contrast the effects of acids (accelerate rusting) and bases (retard rusting) on iron.

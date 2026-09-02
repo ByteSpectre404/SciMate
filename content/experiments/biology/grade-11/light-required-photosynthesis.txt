@@ -1,0 +1,66 @@
+TITLE: Light Requirement for Photosynthesis
+SUBJECT: biology
+GRADE: 11
+UNIT: Photosynthesis
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Prove that light energy is essential for photosynthesis using light-shielded (black polythene) and transparent-shielded plant leaves.
+
+MATERIALS:
+- Destarched potted plant
+- Black polythene strip
+- Colourless transparent polythene strip
+- Paper clips
+- Iodine solution & starch test apparatus
+
+LEARNING_OUTCOMES:
+- Explain why plants must be destarched before photosynthesis experiments
+- Demonstrate that light is an indispensable energy source for starch synthesis
+
+===STEP===
+ID: step-1
+INSTRUCTION: Cover leaf A with black polythene and leaf B with transparent polythene on the destarched plant.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: black_polythene
+DROP_TARGET_ID: leaf_a
+RESULT_COLOR: #1e293b
+RESULT_STATE: light_shielded_leaf
+WHY: Black polythene blocks sunlight while transparent polythene permits sunlight penetration as a control.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Expose the potted plant to bright sunlight for 4 hours.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: sunlight_exposure
+DROP_TARGET_ID: plant
+RESULT_COLOR: #16a34a
+RESULT_STATE: photosynthesizing_plant
+WHY: Sunlight provides photons needed to excite electrons in chlorophyll and drive glucose synthesis.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Perform the iodine starch test on leaf A (covered with black polythene).
+ACTION_TYPE: select_observation
+OPTIONS: No color change (remains pale brown)|Turns dark blue-black|Turns bright blue|Turns green
+CORRECT_OPTION: No color change (remains pale brown)
+RESULT_COLOR: #fef08a
+RESULT_STATE: remains_pale_brown
+HINT: Without light, leaf A could not perform photosynthesis or store starch.
+WHY: Light was blocked by black polythene, so no photosynthesis occurred and no starch was present to react with iodine.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Perform the iodine starch test on leaf B (covered with transparent polythene).
+ACTION_TYPE: select_observation
+OPTIONS: Turns dark blue-black|No color change (remains pale brown)|Turns red|Turns white
+CORRECT_OPTION: Turns dark blue-black
+RESULT_COLOR: #1e1b4b
+RESULT_STATE: dark_blue_black_starch_complex
+HINT: Transparent polythene allowed light through for photosynthesis.
+WHY: Light passed through transparent polythene enabling photosynthesis and starch formation, turning iodine dark blue-black.
+
+===OUTCOME===
+SUMMARY: Leaf area shielded from light showed no starch while light-exposed leaf area produced starch, proving light is required for photosynthesis.
+REFLECTION_QUESTIONS:
+- Why was the plant kept in darkness for 48 hours before starting the experiment?
+- What role does light play in the light-dependent stage of photosynthesis?

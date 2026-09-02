@@ -1,0 +1,55 @@
+TITLE: Thermal Expansion of Liquids
+SUBJECT: physics
+GRADE: 11
+UNIT: Heat (Unit 9)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate the thermal expansion of liquids using a glass test tube filled with colored water fitted with a narrow capillary tube, observing the initial drop and subsequent rise.
+
+MATERIALS:
+- Test tube filled to the brim with colored water
+- Single-hole rubber stopper with a narrow glass capillary tube
+- Vessel of hot / warm water
+- Marker pen / rubber band marker
+
+LEARNING_OUTCOMES:
+- Observe that liquids expand significantly more than solid glass containers upon heating
+- Explain the temporary initial dip in liquid level due to initial glass container expansion
+- Understand how thermal expansion of liquids is utilized in liquid-in-glass laboratory thermometers
+
+===STEP===
+ID: step-1
+INSTRUCTION: Insert the rubber stopper with glass tube into the full test tube and mark the initial liquid meniscus.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: stopper_with_glass_tube
+DROP_TARGET_ID: colored_water_test_tube
+RESULT_COLOR: #38bdf8
+RESULT_STATE: marked_initial_level
+WHY: Sealing the tube forces colored liquid up into the narrow capillary bore, magnifying small volume changes.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Lower the assembled tube into a vessel containing warm/hot water.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: colored_water_test_tube
+DROP_TARGET_ID: warm_water_vessel
+RESULT_COLOR: #0284c7
+RESULT_STATE: slight_drop_then_rapid_rise
+WHY: The glass envelope heats and expands first (causing a brief level drop), followed by rapid bulk expansion of the enclosed water which rises high up the tube.
+
+===STEP===
+ID: step-3
+INSTRUCTION: What happens to the liquid level in the glass tube upon prolonged immersion in hot water?
+ACTION_TYPE: select_observation
+OPTIONS: The liquid level drops slightly at first, then rises steadily above the initial mark|The liquid level drops to the bottom and stays there|The liquid level stays completely unchanged|The liquid level overflows instantly without any delay
+CORRECT_OPTION: The liquid level drops slightly at first, then rises steadily above the initial mark
+RESULT_COLOR: #0369a1
+RESULT_STATE: apparent_expansion_verified
+HINT: The outer glass expands first, increasing internal capacity briefly; then the liquid expands much more than the glass.
+WHY: Liquids have a much higher coefficient of volume expansion than solids (glass). Once heat penetrates the liquid, its expansion far exceeds that of the container.
+
+===OUTCOME===
+SUMMARY: Liquids expand when heated. Because liquids expand significantly more than glass, the net liquid column rises in the capillary tube, which forms the operating principle of mercury and alcohol thermometers.
+REFLECTION_QUESTIONS:
+- Why does the liquid level momentarily drop before it begins to rise?
+- Why is mercury or colored alcohol preferred over water in domestic and clinical thermometers?

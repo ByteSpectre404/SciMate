@@ -1,0 +1,67 @@
+TITLE: Light-Sensitive Automatic Switch (LDR Dark Sensor)
+SUBJECT: physics
+GRADE: 11
+UNIT: Electronics (Unit 11)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Construct an automatic night light circuit using an NPN transistor, Light Dependent Resistor (LDR), and potential divider that automatically illuminates a lamp when darkness falls.
+
+MATERIALS:
+- NPN Transistor (D400 or D313)
+- Light Dependent Resistor (LDR)
+- 10 kΩ variable potentiometer (sensitivity control)
+- 2.5 V torch bulb / LED
+- 3.0 V DC battery & circuit board
+- Opaque cover / fingertip
+
+LEARNING_OUTCOMES:
+- Understand that LDR resistance decreases in bright light and increases drastically in darkness
+- Assemble a potential divider circuit to feed the base of an NPN transistor
+- Explain how automatic streetlights and darkness-activated security lighting operate
+
+===STEP===
+ID: step-1
+INSTRUCTION: Assemble the potential divider with the LDR and 10 kΩ potentiometer connected to the base of the NPN transistor.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: ldr_component
+DROP_TARGET_ID: breadboard_circuit
+RESULT_COLOR: #3b82f6
+RESULT_STATE: light_sensor_circuit_ready
+WHY: The potential divider splits the supply voltage so that base voltage Vbe is controlled by the ratio of LDR resistance to potentiometer resistance.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Expose the LDR to ambient room light and observe the indicator bulb.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: ambient_light_source
+DROP_TARGET_ID: ldr_component
+RESULT_COLOR: #94a3b8
+RESULT_STATE: bright_light_bulb_off
+WHY: In light, LDR resistance is low (a few hundred ohms), pulling base voltage below 0.7 V so the transistor remains OFF.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Cover the LDR with an opaque cap / fingertip to simulate total darkness.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: opaque_cap
+DROP_TARGET_ID: ldr_component
+RESULT_COLOR: #fef08a
+RESULT_STATE: darkness_bulb_turns_on_brightly
+WHY: In darkness, LDR resistance surges to hundreds of kilo-ohms, pushing Vbe above the 0.7 V threshold and switching the transistor ON to illuminate the lamp.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why does the lamp turn ON automatically when the LDR is placed in darkness?
+ACTION_TYPE: select_observation
+OPTIONS: In darkness, LDR resistance increases greatly, raising the transistor base voltage above 0.7 V to turn it ON|The darkness generates new electric charges inside the wires|LDR generates electricity when covered|The bulb senses heat from the finger
+CORRECT_OPTION: In darkness, LDR resistance increases greatly, raising the transistor base voltage above 0.7 V to turn it ON
+RESULT_COLOR: #ca8a04
+RESULT_STATE: automatic_switch_principle_verified
+HINT: LDR resistance is inversely related to light intensity. High resistance in darkness increases voltage across the bottom arm of the potential divider.
+WHY: An LDR has high resistance in the dark. In this potential divider network, this increases base voltage Vbe beyond 0.7 V, driving the transistor into saturation (ON).
+
+===OUTCOME===
+SUMMARY: Combining an LDR with a transistor potential divider creates an automatic darkness sensor that switches the lamp ON in the dark and OFF in the light, forming the basis of automated street lighting.
+REFLECTION_QUESTIONS:
+- How could you modify this circuit to create a light-activated alarm that sounds a buzzer when daylight appears?
+- What is the purpose of the variable potentiometer in calibrating the switching threshold for dusk?

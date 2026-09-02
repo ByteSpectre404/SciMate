@@ -1,0 +1,90 @@
+TITLE: Verifying Ohm's Law
+SUBJECT: physics
+GRADE: 10
+UNIT: Electricity
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Build a simple series circuit and confirm that voltage is directly proportional to current when resistance is constant.
+
+MATERIALS:
+- Battery (6V)
+- Resistor (100 ohm)
+- Ammeter
+- Voltmeter
+- Switch
+- Connecting wires
+
+LEARNING_OUTCOMES:
+- State Ohm's Law and its formula, V = IR
+- Correctly connect an ammeter in series and a voltmeter in parallel
+- Determine resistance from measured voltage and current
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the resistor to the positive terminal of the battery.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: resistor
+DROP_TARGET_ID: battery_positive_terminal
+RESULT_COLOR: #3b82f6
+RESULT_STATE: wire_connected
+HINT: Look for the "+" symbol on the battery.
+WHY: The resistor limits current flow, which is exactly what we're about to measure.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Connect the ammeter in series, between the resistor and the switch.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: ammeter
+DROP_TARGET_ID: circuit_series_point
+RESULT_COLOR: #3b82f6
+RESULT_STATE: ammeter_series_connected
+HINT: An ammeter must carry the same current as the rest of the circuit, so it goes in series, not in parallel.
+WHY: Ammeters are connected in series because they need to measure the exact current flowing through the whole circuit.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Connect the voltmeter in parallel across the resistor.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: voltmeter
+DROP_TARGET_ID: resistor_parallel_points
+RESULT_COLOR: #3b82f6
+RESULT_STATE: voltmeter_parallel_connected
+HINT: The voltmeter's two leads should touch either end of the resistor, not sit inline with the current path.
+WHY: Voltmeters are connected in parallel so they measure the potential difference across the component without disturbing the current.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Close the switch to complete the circuit.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: switch
+DROP_TARGET_ID: switch
+RESULT_COLOR: #22c55e
+RESULT_STATE: circuit_closed_active
+WHY: Closing the switch completes the circuit loop, allowing current to flow.
+
+===STEP===
+ID: step-5
+INSTRUCTION: Read the voltmeter and enter the voltage in volts.
+ACTION_TYPE: input_reading
+EXPECTED_VALUE: 4.5-5.5
+RESULT_COLOR: #22c55e
+RESULT_STATE: voltmeter_active_readout
+HINT: The voltmeter needle should be resting between 4 and 6 volts.
+WHY: This reading gives you V, the potential difference across the resistor.
+
+===STEP===
+ID: step-6
+INSTRUCTION: Read the ammeter and enter the current in amps.
+ACTION_TYPE: input_reading
+EXPECTED_VALUE: 0.04-0.06
+RESULT_COLOR: #22c55e
+RESULT_STATE: ammeter_active_readout
+HINT: With a 100 ohm resistor and ~5V, expect roughly 0.05A.
+WHY: This reading gives you I, the current flowing through the circuit, which you'll combine with V to find resistance.
+
+===OUTCOME===
+SUMMARY: You've now measured both voltage and current for the same resistor. Dividing V by I gives you the resistance, confirming Ohm's Law: V = IR.
+FORMULA: V = IR
+REFLECTION_QUESTIONS:
+- What would happen to the ammeter reading if the resistance were doubled?
+- Why would connecting the voltmeter in series (instead of parallel) give a wrong or misleading reading?

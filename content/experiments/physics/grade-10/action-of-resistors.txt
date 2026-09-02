@@ -1,0 +1,66 @@
+TITLE: Action of Resistors in a Circuit
+SUBJECT: physics
+GRADE: 10
+UNIT: Current Electricity (Unit 19)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate how inserting resistors of increasing values (5 Ω, 10 Ω, 20 Ω) affects circuit current and bulb brightness.
+
+MATERIALS:
+- 2.5 V torch bulb with holder
+- Standard resistors (5 Ω, 10 Ω, 20 Ω)
+- Two 1.5 V dry cells in battery holder
+- DC Ammeter (0 - 1 A)
+- Knife switch and connecting leads
+
+LEARNING_OUTCOMES:
+- Understand electrical resistance as the opposition to the flow of electric current
+- Relate current flow to resistance according to Ohm's Law (I = V / R)
+- Observe the inverse relationship between resistance and bulb brightness
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the 5 Ω resistor in series with the battery, ammeter, switch, and torch bulb.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: resistor_5_ohm
+DROP_TARGET_ID: circuit_test_gap
+RESULT_COLOR: #fef08a
+RESULT_STATE: current_high_bulb_bright
+WHY: Low resistance (5 Ω) permits a relatively large current to pass through the filament, producing bright illumination.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Replace the 5 Ω resistor with a 10 Ω resistor and close the switch.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: resistor_10_ohm
+DROP_TARGET_ID: circuit_test_gap
+RESULT_COLOR: #fde047
+RESULT_STATE: current_medium_bulb_moderate
+WHY: Doubling the resistance halves the current contributed through this element, decreasing filament heating and brightness.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Replace with a 20 Ω resistor and record the bulb brightness and ammeter reading.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: resistor_20_ohm
+DROP_TARGET_ID: circuit_test_gap
+RESULT_COLOR: #ca8a04
+RESULT_STATE: current_low_bulb_dim
+WHY: At 20 Ω, resistance to charge flow is highest; current drops significantly and the bulb glows very dimly.
+
+===STEP===
+ID: step-4
+INSTRUCTION: How does increasing the resistance in the circuit affect the brightness of the bulb and the ammeter reading?
+ACTION_TYPE: select_observation
+OPTIONS: Current decreases and bulb brightness decreases as resistance increases|Current increases and bulb brightness increases|Bulb brightness remains constant regardless of resistance|The bulb flashes on and off repeatedly
+CORRECT_OPTION: Current decreases and bulb brightness decreases as resistance increases
+RESULT_COLOR: #854d0e
+RESULT_STATE: ohms_law_inversely_proportional
+HINT: Resistance opposes charge flow. Higher ohms restrict current, so less electrical power reaches the bulb.
+WHY: According to Ohm's Law (I = V / R), current is inversely proportional to circuit resistance for a constant applied voltage.
+
+===OUTCOME===
+SUMMARY: Resistors oppose the flow of electric current. As resistance increases in a closed circuit with constant voltage, current decreases and the bulb dims.
+REFLECTION_QUESTIONS:
+- How does a variable resistor (rheostat or potentiometer) control current in everyday appliances like volume knobs?
+- If the resistor was completely removed (0 Ω short circuit across bulb), what would happen to the current?

@@ -1,0 +1,66 @@
+TITLE: Heat Capacity Comparison of Substances and Masses
+SUBJECT: physics
+GRADE: 11
+UNIT: Heat (Unit 9)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Compare temperature rises when equal heat is supplied to equal volumes of water vs coconut oil, and single vs double volume of water (Q = mcΔθ).
+
+MATERIALS:
+- Beaker A: 100 mL water
+- Beaker B: 100 mL coconut oil
+- Beaker C: 200 mL water
+- Three identical Bunsen burners / heating plates
+- Three thermometers & stopwatch
+
+LEARNING_OUTCOMES:
+- Define specific heat capacity (c) and heat capacity (C = mc)
+- Understand the relationship Q = mcΔθ
+- Explain why water has a high specific heat capacity (4200 J kg⁻¹ K⁻¹) compared to oils and metals
+
+===STEP===
+ID: step-1
+INSTRUCTION: Record the initial temperature of all three beakers (all at 25°C).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: thermometer_set
+DROP_TARGET_ID: beakers_trio
+RESULT_COLOR: #38bdf8
+RESULT_STATE: all_at_25c
+WHY: A uniform initial temperature ensures valid comparison of temperature rises (Δθ) across equal heating times.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Heat all three beakers simultaneously for 5 minutes using identical Bunsen flames.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: triple_bunsen_burners
+DROP_TARGET_ID: beakers_trio
+RESULT_COLOR: #f97316
+RESULT_STATE: heating_for_5_mins
+WHY: Identical flames for identical durations supply approximately equal quantities of heat energy (Q) to each beaker.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Measure the final temperature of each liquid: Beaker A (Water 100 mL: 45°C), Beaker B (Oil 100 mL: 65°C), Beaker C (Water 200 mL: 35°C).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: thermometer_set
+DROP_TARGET_ID: beakers_trio
+RESULT_COLOR: #ea580c
+RESULT_STATE: oil_hottest_double_water_coolest
+WHY: Oil has a lower specific heat capacity than water so its temperature rises much higher; double mass of water has double heat capacity so its temperature rise is halved.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why does 100 mL of coconut oil experience a much higher temperature rise than 100 mL of water when supplied with equal heat?
+ACTION_TYPE: select_observation
+OPTIONS: Coconut oil has a lower specific heat capacity than water (requires less heat per degree rise)|Coconut oil generates its own heat|Water destroys heat energy|Oil is more dense than water
+CORRECT_OPTION: Coconut oil has a lower specific heat capacity than water (requires less heat per degree rise)
+RESULT_COLOR: #c2410c
+RESULT_STATE: specific_heat_concept_verified
+HINT: Q = mcΔθ. A lower value of 'c' means a larger temperature increase (Δθ) for the same heat input (Q).
+WHY: Water has an unusually high specific heat capacity (~4200 J/kg°C) compared to coconut oil (~2000 J/kg°C), requiring over twice as much heat energy for each degree of temperature rise.
+
+===OUTCOME===
+SUMMARY: Different substances have different specific heat capacities (oil heats up faster than water), and larger masses require more heat for the same temperature rise (Q = mcΔθ).
+REFLECTION_QUESTIONS:
+- Why is water used as an engine coolant in automobile radiators?
+- Why do coastal regions experience moderate temperatures (sea breeze / land breeze) compared to inland desert regions?

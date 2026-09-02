@@ -1,0 +1,65 @@
+TITLE: Effect of Contact with Other Metals on Iron Corrosion (Sacrificial Protection)
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: hard
+DURATION_MINUTES: 25
+DESCRIPTION: Investigate sacrificial protection versus accelerated galvanic corrosion of iron in contact with Mg, Zn, Cu, and Pb using agar jelly containing ferroxyl indicator (phenolphthalein & potassium ferricyanide).
+
+MATERIALS:
+- Five cleaned iron nails
+- Strips/ribbons of Magnesium (Mg), Zinc (Zn), Copper (Cu), and Lead (Pb)
+- Five Petri dishes
+- Warm agar gel medium containing NaCl, Phenolphthalein (turns pink with OH⁻), and Potassium ferricyanide (turns Prussian blue with Fe²⁺)
+
+LEARNING_OUTCOMES:
+- Interpret ferroxyl indicator color changes (Prussian blue indicates Fe²⁺ / iron oxidation; Pink indicates OH⁻ / cathodic protection)
+- Demonstrate sacrificial (cathodic) protection: more reactive metals (Mg, Zn) oxidize to protect iron
+- Observe accelerated galvanic corrosion: less reactive metals (Cu, Pb) force iron to become the anode and corrode faster
+
+===STEP===
+ID: step-1
+INSTRUCTION: In 5 Petri dishes, arrange: Dish 1 (Plain nail), Dish 2 (Nail + Mg), Dish 3 (Nail + Zn), Dish 4 (Nail + Cu), Dish 5 (Nail + Pb).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metals_wrapped_nails_set
+DROP_TARGET_ID: petri_dishes_tray
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: assembled_bimetallic_couples
+WHY: Direct physical contact creates bimetallic galvanic couples where the more electropositive metal becomes the anode.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Pour warm molten agar gel containing ferroxyl indicator (NaCl, phenolphthalein, potassium ferricyanide) over all dishes and let set.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: warm_ferroxyl_agar_gel
+DROP_TARGET_ID: petri_dishes_tray
+RESULT_COLOR: #fef08a
+RESULT_STATE: gelled_indicator_medium
+WHY: Agar immobilizes ion diffusion, allowing local color reactions to appear exactly around the anodic (blue Fe²⁺) or cathodic (pink OH⁻) sites.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Examine the color rings around the nails after 1 hour: Pink around Mg and Zn (protected); Deep Blue around Cu and Pb (corroding).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: observation_timer
+DROP_TARGET_ID: petri_dishes_tray
+RESULT_COLOR: #ec4899
+RESULT_STATE: pink_for_mg_zn_blue_for_cu_pb
+WHY: Mg and Zn are more reactive than Fe, acting as sacrificial anodes (iron becomes the cathode and generates OH⁻ → pink). Cu and Pb are less reactive, forcing iron to be the anode (Fe → Fe²⁺ → Prussian blue).
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why do magnesium and zinc protect iron from rusting when in electrical contact?
+ACTION_TYPE: select_observation
+OPTIONS: They are more reactive than iron, so they oxidize preferentially (sacrificial protection), making iron the protected cathode|They absorb all light in the petri dish|They release copper into the agar|They freeze the water molecules
+CORRECT_OPTION: They are more reactive than iron, so they oxidize preferentially (sacrificial protection), making iron the protected cathode
+RESULT_COLOR: #be185d
+RESULT_STATE: sacrificial_protection_proven
+HINT: Metals above iron in the reactivity series lose electrons more easily, sacrificing themselves to keep iron in its reduced metallic state.
+WHY: More reactive metals (Mg, Zn) have higher oxidation tendencies than iron, acting as sacrificial anodes and supplying electrons to iron (cathodic protection).
+
+===OUTCOME===
+SUMMARY: Metals more reactive than iron (Mg, Zn) provide sacrificial protection, while less reactive metals (Cu, Pb) accelerate iron corrosion by driving iron to become the sacrificial anode.
+REFLECTION_QUESTIONS:
+- How are sacrificial zinc blocks attached to the steel hulls of ocean ships and underground pipelines?
+- What is the difference between galvanizing (zinc coating) and tinning (tin coating) on iron food cans if the coating is scratched?

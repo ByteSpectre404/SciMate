@@ -1,0 +1,65 @@
+TITLE: Reaction of Magnesium with Water
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare the behavior of cleaned magnesium metal in cold water versus boiling hot water and test the resulting basic solution and hydrogen gas.
+
+MATERIALS:
+- Cleaned magnesium ribbon (3 cm)
+- Heat-resistant beaker with water
+- Bunsen burner & tripod with wire gauze
+- Red litmus paper & test tube
+
+LEARNING_OUTCOMES:
+- Observe that magnesium does not react appreciably with cold water
+- Demonstrate that magnesium reacts with boiling hot water to produce magnesium hydroxide and hydrogen gas
+- Formulate the chemical equation: Mg(s) + 2H2O(l) → Mg(OH)2(aq) + H2(g)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place a piece of cleaned magnesium ribbon into a beaker of cold water and observe for 2 minutes.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: magnesium_ribbon
+DROP_TARGET_ID: cold_water_beaker
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: no_visible_cold_reaction
+WHY: Magnesium reacts negligibly with cold liquid water because an insoluble layer of Mg(OH)2 quickly covers the metal surface.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Place the beaker over a Bunsen burner flame and heat the water to boiling point.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bunsen_burner
+DROP_TARGET_ID: cold_water_beaker
+RESULT_COLOR: #bae6fd
+RESULT_STATE: active_gas_bubble_evolution
+WHY: Thermal energy provides the activation energy: Mg(s) + 2H2O(l) → Mg(OH)2(s/aq) + H2(g)↑. Vigorous effervescence of hydrogen bubbles appears on the ribbon.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Dip a strip of red litmus paper into the resulting hot solution.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: red_litmus_paper
+DROP_TARGET_ID: cold_water_beaker
+RESULT_COLOR: #3b82f6
+RESULT_STATE: red_litmus_turns_blue
+WHY: Magnesium hydroxide Mg(OH)2 is slightly soluble in water, releasing OH- ions that make the solution mildly basic.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What is the primary product of the reaction between magnesium ribbon and hot/boiling water?
+ACTION_TYPE: select_observation
+OPTIONS: Magnesium hydroxide solution and hydrogen gas bubbles|Magnesium oxide and oxygen gas|Magnesium chloride and steam|No reaction occurs even at boiling temperatures
+CORRECT_OPTION: Magnesium hydroxide solution and hydrogen gas bubbles
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: reaction_products_confirmed
+HINT: Hot water reacts with magnesium to liberate a flammable gas and form a basic hydroxide solution that turns red litmus blue.
+WHY: The reaction Mg(s) + 2H2O(l) → Mg(OH)2(aq) + H2(g) produces basic magnesium hydroxide and hydrogen gas.
+
+===OUTCOME===
+SUMMARY: Magnesium does not react noticeably with cold water, but reacts with hot/boiling water to produce magnesium hydroxide (a weak base that turns red litmus blue) and hydrogen gas.
+REFLECTION_QUESTIONS:
+- How does the reaction of sodium with water differ from magnesium with water?
+- What would happen if magnesium was reacted with steam instead of boiling water?

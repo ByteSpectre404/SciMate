@@ -1,0 +1,65 @@
+TITLE: Observation of the Properties of Sodium Metal
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Elements and Compounds
+DIFFICULTY: medium
+DURATION_MINUTES: 15
+DESCRIPTION: Examine the softness and high reactivity of alkali metal sodium with oxygen and moisture when exposed to air.
+
+MATERIALS:
+- Sodium metal sample (in kerosene)
+- Forceps
+- Lab knife
+- Dry glass surface
+- Kerosene oil container
+
+LEARNING_OUTCOMES:
+- Recognize physical properties of Group 1 alkali metals (softness, luster)
+- Understand why sodium is stored under paraffin oil / kerosene due to atmospheric oxidation
+
+===STEP===
+ID: step-1
+INSTRUCTION: Use forceps to take a small piece of sodium from the paraffin oil bottle and place on a dry tile.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: sodium_metal
+DROP_TARGET_ID: dry_tile
+RESULT_COLOR: #94a3b8
+RESULT_STATE: silvery_grey_metal
+WHY: Forceps prevent skin moisture from reacting violently with sodium.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Cut the piece of sodium metal using a knife.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: lab_knife
+DROP_TARGET_ID: sodium_metal
+RESULT_COLOR: #f8fafc
+RESULT_STATE: shiny_cut_surface
+WHY: Sodium is very soft for a metal and can be sliced easily like cold butter.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Leave the freshly cut shiny sodium surface exposed to air for 5 minutes.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: air_exposure_timer
+DROP_TARGET_ID: sodium_metal
+RESULT_COLOR: #94a3b8
+RESULT_STATE: tarnished_surface
+WHY: Exposing the shiny metallic surface allows reaction with oxygen and water vapor in the atmosphere.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens to the shiny cut surface of sodium after exposure to air?
+ACTION_TYPE: select_observation
+OPTIONS: Becomes dull and tarnished|Grows bright green crystals|Remains shiny forever|Turns into liquid water
+CORRECT_OPTION: Becomes dull and tarnished
+RESULT_COLOR: #94a3b8
+RESULT_STATE: tarnished_surface
+HINT: Sodium reacts rapidly with oxygen forming sodium oxide coating.
+WHY: Sodium rapidly reacts with O2 and H2O in air to form an oxide/hydroxide crust, dulling its metallic luster.
+
+===OUTCOME===
+SUMMARY: Sodium is a soft alkali metal that tarnishes rapidly in air due to oxidation, explaining why it must be stored under kerosene.
+REFLECTION_QUESTIONS:
+- Why cannot sodium metal be stored in water or open air?
+- What chemical compound forms on the tarnished surface of sodium metal?

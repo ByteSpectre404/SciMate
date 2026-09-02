@@ -1,0 +1,65 @@
+TITLE: Heat Transfer and Thermal Equilibrium
+SUBJECT: physics
+GRADE: 11
+UNIT: Heat (Unit 9)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate the direction of heat flow and achievement of thermal equilibrium when a heated iron block is immersed in room temperature water.
+
+MATERIALS:
+- Heated iron block (80°C) with tongs
+- Insulated calorimeter / vessel with room temperature water (25°C)
+- Laboratory thermometer (-10°C to 110°C)
+- Stirrer
+
+LEARNING_OUTCOMES:
+- Define heat as thermal energy transferring from a hotter body to a colder body
+- Understand thermal equilibrium as the state where temperature equalizes and net heat transfer ceases
+- Apply the principle of conservation of heat: Heat Lost = Heat Gained
+
+===STEP===
+ID: step-1
+INSTRUCTION: Record the initial temperature of cold water in the vessel (25°C) with the thermometer.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: lab_thermometer
+DROP_TARGET_ID: water_vessel
+RESULT_COLOR: #38bdf8
+RESULT_STATE: initial_temp_25c
+WHY: Establishing the initial temperature provides the baseline for measuring heat absorbed by the water.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Transfer the hot iron block (80°C) into the vessel of cold water using crucible tongs.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: hot_iron_block
+DROP_TARGET_ID: water_vessel
+RESULT_COLOR: #f97316
+RESULT_STATE: heat_transfer_in_progress
+WHY: Thermal energy spontaneously flows down the temperature gradient from the high-temperature iron block to the cooler water.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Stir the water gently and monitor the thermometer until the reading stabilizes at 38°C.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glass_stirrer
+DROP_TARGET_ID: water_vessel
+RESULT_COLOR: #ea580c
+RESULT_STATE: thermal_equilibrium_reached_38c
+WHY: Continuous stirring ensures uniform temperature distribution until both iron and water reach a common equilibrium temperature.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens when two objects at different temperatures are placed in thermal contact?
+ACTION_TYPE: select_observation
+OPTIONS: Heat flows from the hotter body to the colder body until both reach the same common temperature (thermal equilibrium)|Heat flows from cold to hot until one freezes|Both objects continuously heat up indefinitely|The temperature difference between them remains permanent
+CORRECT_OPTION: Heat flows from the hotter body to the colder body until both reach the same common temperature (thermal equilibrium)
+RESULT_COLOR: #c2410c
+RESULT_STATE: thermal_equilibrium_law_proven
+HINT: Energy flows spontaneously from higher temperature to lower temperature until no temperature gradient remains.
+WHY: Heat flows down a thermal gradient until thermal equilibrium is attained, at which point net heat exchange becomes zero.
+
+===OUTCOME===
+SUMMARY: Heat flows spontaneously from a body at higher temperature to one at lower temperature until both reach a common thermal equilibrium temperature.
+REFLECTION_QUESTIONS:
+- Why does a thermometer placed under your tongue eventually show your exact body temperature?
+- Neglecting heat loss to the surroundings, how does heat lost by the iron compare to heat gained by the water?

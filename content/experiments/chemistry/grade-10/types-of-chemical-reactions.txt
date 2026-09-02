@@ -1,0 +1,76 @@
+TITLE: Variety of Chemical Reaction Types
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Investigate the four main classes of chemical reactions: combination, thermal decomposition, single displacement, and double displacement (precipitation).
+
+MATERIALS:
+- Magnesium ribbon & crucible tongs
+- Potassium permanganate crystals (KMnO4) & boiling tube with glowing splint
+- Copper sulphate solution (CuSO4) & clean zinc granule
+- Barium chloride solution (BaCl2) & sodium sulphate solution (Na2SO4)
+- Bunsen burner & test tube rack
+
+LEARNING_OUTCOMES:
+- Classify reactions into Combination, Decomposition, Single Displacement, and Double Displacement
+- Write balanced chemical equations for each reaction type
+- Identify precipitates, color transitions, and gas evolution
+
+===STEP===
+ID: step-1
+INSTRUCTION: Burn magnesium ribbon in air using tongs over the Bunsen flame (Combination Reaction).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: magnesium_ribbon
+DROP_TARGET_ID: bunsen_burner
+RESULT_COLOR: #ffffff
+RESULT_STATE: combination_2mg_o2_mgo
+WHY: Two elements combine to form a single compound: 2Mg(s) + O2(g) → 2MgO(s) (Chemical combination).
+
+===STEP===
+ID: step-2
+INSTRUCTION: Heat purple KMnO4 crystals in a boiling tube and test the released gas with a glowing splint (Decomposition).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: kmno4_boiling_tube
+DROP_TARGET_ID: bunsen_burner
+RESULT_COLOR: #1e293b
+RESULT_STATE: decomposition_oxygen_relights_splint
+WHY: Heat breaks down one reactant into multiple products: 2KMnO4(s) → K2MnO4(s) + MnO2(s) + O2(g); oxygen relights the glowing splint.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Drop a zinc granule into blue copper sulphate solution in a test tube (Single Displacement).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: zinc_granule
+DROP_TARGET_ID: cuso4_test_tube
+RESULT_COLOR: #92400e
+RESULT_STATE: displacement_zn_cuso4_brown_cu
+WHY: More reactive zinc displaces less reactive copper: Zn(s) + CuSO4(aq) → ZnSO4(aq) + Cu(s) (Blue fades to colourless, brown copper deposits).
+
+===STEP===
+ID: step-4
+INSTRUCTION: Mix colourless barium chloride solution with colourless sodium sulphate solution (Double Displacement).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bacl2_solution
+DROP_TARGET_ID: na2so4_test_tube
+RESULT_COLOR: #f8fafc
+RESULT_STATE: precipitation_white_baso4
+WHY: Ions exchange partners to form an insoluble white precipitate: BaCl2(aq) + Na2SO4(aq) → BaSO4(s)↓ + 2NaCl(aq) (Double decomposition).
+
+===STEP===
+ID: step-5
+INSTRUCTION: What type of chemical reaction occurs when BaCl2 and Na2SO4 form a white precipitate of BaSO4?
+ACTION_TYPE: select_observation
+OPTIONS: Double displacement (Precipitation) reaction|Chemical combination reaction|Thermal decomposition reaction|Single displacement reaction
+CORRECT_OPTION: Double displacement (Precipitation) reaction
+RESULT_COLOR: #e2e8f0
+RESULT_STATE: reaction_classes_verified
+HINT: In this reaction, positive and negative ions exchange mutual partners between two aqueous compounds.
+WHY: Double displacement occurs when two compounds in aqueous solution exchange ions to produce an insoluble precipitate and a new salt solution.
+
+===OUTCOME===
+SUMMARY: Chemical reactions are categorized into Combination (A + B → AB), Decomposition (AB → A + B), Single Displacement (A + BC → AC + B), and Double Displacement (AB + CD → AD + CB).
+REFLECTION_QUESTIONS:
+- Why does the blue color of copper sulfate fade when zinc is introduced?
+- What test confirms that oxygen gas was liberated during the thermal decomposition of KMnO4?

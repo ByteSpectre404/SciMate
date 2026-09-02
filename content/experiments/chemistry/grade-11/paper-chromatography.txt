@@ -1,0 +1,65 @@
+TITLE: Paper Chromatography of Plant Pigments
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Separation Techniques
+DIFFICULTY: hard
+DURATION_MINUTES: 20
+DESCRIPTION: Separate the constituent pigments (chlorophyll a, chlorophyll b, xanthophyll, carotene) in spinach leaf extract using paper chromatography.
+
+MATERIALS:
+- Chromatography paper strip
+- Concentrated spinach leaf extract
+- Capillary tube
+- Solvent (Acetone / Petrol)
+- Boiling tube with stopper & hook
+
+LEARNING_OUTCOMES:
+- Understand principles of paper chromatography (stationary vs mobile phase)
+- Separate mixed plant pigments based on differential solubility and adsorption
+
+===STEP===
+ID: step-1
+INSTRUCTION: Use a capillary tube to spot crushed spinach extract near the bottom baseline of the paper strip.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: capillary_tube
+DROP_TARGET_ID: chromatography_paper_baseline
+RESULT_COLOR: #15803d
+RESULT_STATE: dark_green_baseline_spot
+WHY: Concentrating a small spot at the baseline provides a crisp starting point for component separation.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Suspend the chromatography paper in a boiling tube so the bottom edge dips into the solvent without submerging the spot.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: chromatography_paper
+DROP_TARGET_ID: boiling_tube_hook
+RESULT_COLOR: #fef08a
+RESULT_STATE: paper_dipped_in_solvent
+WHY: Solvent ascends up paper fibers via capillary action, carrying pigments at different speeds.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Allow solvent to travel up the paper strip for 15 minutes.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: chromatography_timer
+DROP_TARGET_ID: boiling_tube
+RESULT_COLOR: #eab308
+RESULT_STATE: chromatogram_separated_bands
+WHY: As solvent flows upward, pigments partition between stationary cellulose paper and mobile organic solvent.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Observe the separated bands on the developed chromatogram. What do you see?
+ACTION_TYPE: select_observation
+OPTIONS: Distinct colored bands (yellow, blue-green, yellow-green, orange)|Single uniform green smear|White blank paper|Black charcoal stain
+CORRECT_OPTION: Distinct colored bands (yellow, blue-green, yellow-green, orange)
+RESULT_COLOR: #eab308
+RESULT_STATE: chromatogram_separated_bands
+HINT: Different pigments migrate to different heights forming colored bands.
+WHY: Plant extract contains multiple pigments (carotene, xanthophyll, chlorophyll a & b) with different solubilities, separating into distinct bands.
+
+===OUTCOME===
+SUMMARY: Paper chromatography separates leaf extract into distinct pigment bands (chlorophylls, xanthophyll, carotene) based on solubility and paper affinity.
+REFLECTION_QUESTIONS:
+- What is the stationary phase and mobile phase in this chromatography set-up?
+- Why do different pigments travel different distances up the paper?

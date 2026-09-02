@@ -1,0 +1,77 @@
+TITLE: Identification of Starch in Leaves (Starch Test)
+SUBJECT: biology
+GRADE: 11
+UNIT: Photosynthesis
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Test a leaf that was exposed to sunlight to confirm the production of starch during photosynthesis using iodine solution.
+
+MATERIALS:
+- Beaker with water
+- Test tube with alcohol
+- Tripod and Bunsen burner
+- Plucked green leaf
+- Iodine solution
+- White tile
+- Forceps
+
+LEARNING_OUTCOMES:
+- Demonstrate how to decolorize a leaf safely using a boiling alcohol water bath
+- Test for starch using iodine solution as a proof of photosynthesis
+
+===STEP===
+ID: step-1
+INSTRUCTION: Boil the plucked green leaf in a beaker of water for 2 minutes.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: green_leaf
+DROP_TARGET_ID: boiling_water_beaker
+RESULT_COLOR: #16a34a
+RESULT_STATE: softened_soft_tissue
+WHY: Boiling breaks down cell membranes and stops enzymatic reactions within leaf cells.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Place the boiled leaf into a test tube containing alcohol and heat in a water bath.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: green_leaf
+DROP_TARGET_ID: alcohol_test_tube
+RESULT_COLOR: #fef3c7
+RESULT_STATE: decolorized_pale_leaf
+WHY: Alcohol dissolves and removes green chlorophyll pigment from the leaf cells so color changes can be observed.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Wash the decolorized pale leaf in warm water and place on a white tile.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: decolorized_leaf
+DROP_TARGET_ID: white_tile
+RESULT_COLOR: #fef08a
+RESULT_STATE: softened_flat_leaf
+WHY: Washing softens the leaf hardened by alcohol and flattens it for indicator testing.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Add a few drops of iodine solution to the leaf on the white tile.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iodine_solution
+DROP_TARGET_ID: white_tile
+RESULT_COLOR: #1e1b4b
+RESULT_STATE: dark_blue_black_starch_complex
+WHY: Iodine reacts specifically with starch produced by glucose condensation during photosynthesis.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What color does the leaf turn when iodine solution is added?
+ACTION_TYPE: select_observation
+OPTIONS: Dark Blue / Purple|Bright Pink|Remains Pale Yellow|Turns Milky White
+CORRECT_OPTION: Dark Blue / Purple
+RESULT_COLOR: #1e1b4b
+RESULT_STATE: dark_blue_black_starch_complex
+HINT: Iodine turns blue-black in the presence of starch.
+WHY: Starch formed in the leaf during photosynthesis reacts with iodine to produce a characteristic dark blue-black/purple color.
+
+===OUTCOME===
+SUMMARY: The leaf turns blue-black with iodine after chlorophyll removal, proving that glucose produced during photosynthesis was stored as starch.
+REFLECTION_QUESTIONS:
+- Why must alcohol be heated in a water bath rather than over a direct flame?
+- What would happen to the iodine test if the plant was kept in the dark for 48 hours prior to the experiment?

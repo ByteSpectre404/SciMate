@@ -1,0 +1,55 @@
+TITLE: Investigating How Metals React with Air
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare the reactivity of alkali metal sodium (Na) and alkaline earth metal magnesium (Mg) when freshly cut and exposed to atmospheric air.
+
+MATERIALS:
+- Freshly cut sodium metal piece (handled with dry forceps)
+- Cleaned magnesium ribbon strip (2 cm)
+- Ceramic tile & filter paper
+- Retort stand & magnifying lens
+
+LEARNING_OUTCOMES:
+- Compare the oxidation rates of Group 1 (alkali) and Group 2 metals in atmospheric air
+- Understand tarnish formation due to metal oxides, hydroxides, and carbonates
+- Explain why sodium is stored under kerosene / paraffin oil
+
+===STEP===
+ID: step-1
+INSTRUCTION: Cut a small piece of sodium on filter paper and observe its shiny cut surface exposed to air.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: sodium_knife
+DROP_TARGET_ID: sodium_metal
+RESULT_COLOR: #94a3b8
+RESULT_STATE: rapid_tarnish_white_crust
+WHY: Highly reactive sodium reacts rapidly with oxygen and atmospheric moisture, losing its silvery luster within seconds to form Na2O, NaOH, and Na2CO3.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Clean a 2 cm magnesium ribbon with sandpaper to expose shiny metal and leave exposed to air.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: sandpaper
+DROP_TARGET_ID: magnesium_ribbon
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: slow_thin_protective_oxide_layer
+WHY: Magnesium reacts very slowly at room temperature, forming a tough, thin, protective coating of magnesium oxide (MgO) that passivates the surface.
+
+===STEP===
+ID: step-3
+INSTRUCTION: How does the speed of reaction with atmospheric air compare between sodium and magnesium?
+ACTION_TYPE: select_observation
+OPTIONS: Sodium tarnishes immediately while magnesium tarnishes very slowly at room temperature|Magnesium reacts faster than sodium|Both metals catch fire instantly in room air|Neither metal reacts with oxygen or air
+CORRECT_OPTION: Sodium tarnishes immediately while magnesium tarnishes very slowly at room temperature
+RESULT_COLOR: #64748b
+RESULT_STATE: reactivity_comparison_verified
+HINT: Sodium belongs to Group 1 with a single loosely held valence electron, making it far more reactive than Group 2 magnesium.
+WHY: Sodium has a much lower ionization energy and higher chemical reactivity than magnesium, reacting vigorously with atmospheric air at room temperature.
+
+===OUTCOME===
+SUMMARY: Sodium reacts rapidly with atmospheric oxygen and water vapor to form a dull white oxide-hydroxide crust, while magnesium reacts very slowly at room temperature.
+REFLECTION_QUESTIONS:
+- Why must sodium metal be preserved under liquid paraffin or kerosene in the school laboratory?
+- What happens when magnesium is heated in air compared to leaving it at room temperature?

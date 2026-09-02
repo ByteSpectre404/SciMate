@@ -1,0 +1,64 @@
+TITLE: Transverse and Longitudinal Wave Motion
+SUBJECT: physics
+GRADE: 11
+UNIT: Waves and Applications
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate transverse and longitudinal mechanical wave propagation using a slinky spring and ribbon markers.
+
+MATERIALS:
+- Slinky spring
+- Colored ribbon markers
+- Table surface
+
+LEARNING_OUTCOMES:
+- Differentiate transverse wave motion (perpendicular vibration) from longitudinal wave motion (parallel vibration)
+- Identify compressions and rarefactions in longitudinal sound wave models
+
+===STEP===
+ID: step-1
+INSTRUCTION: Tie ribbons along slinky and shake one end left-and-right across the table.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: ribbon_marker
+DROP_TARGET_ID: slinky_coils
+RESULT_COLOR: #ef4444
+RESULT_STATE: transverse_wave_sine
+WHY: Ribbon markers make individual particle oscillations clearly visible as waves travel down the slinky.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Observe the ribbon motion during left-and-right slinky shaking.
+ACTION_TYPE: select_observation
+OPTIONS: Ribbon vibrates perpendicular (90 deg) to wave direction|Ribbon vibrates parallel to wave direction|Ribbon stays completely still|Ribbon rotates in circles
+CORRECT_OPTION: Ribbon vibrates perpendicular (90 deg) to wave direction
+RESULT_COLOR: #ef4444
+RESULT_STATE: transverse_wave_sine
+HINT: In transverse waves, particles vibrate perpendicular to wave motion.
+WHY: Left-and-right shaking creates transverse waves where particle vibration is perpendicular to wave propagation.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Push and pull slinky end forward and backward along its length.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: slinky_push_pull
+DROP_TARGET_ID: slinky
+RESULT_COLOR: #3b82f6
+RESULT_STATE: longitudinal_compression_rarefaction
+WHY: Forward-and-backward motion generates compressions (coils bunched) and rarefactions (coils spread).
+
+===STEP===
+ID: step-4
+INSTRUCTION: How do ribbon particles move during forward-and-backward pushing?
+ACTION_TYPE: select_observation
+OPTIONS: Ribbon oscillates parallel to wave direction|Ribbon oscillates perpendicular to wave direction|Ribbon moves only upwards|Ribbon does not move
+CORRECT_OPTION: Ribbon oscillates parallel to wave direction
+RESULT_COLOR: #3b82f6
+RESULT_STATE: longitudinal_compression_rarefaction
+HINT: Longitudinal waves feature parallel particle oscillation (like sound waves).
+WHY: Push-pull motion forms longitudinal waves where medium particles oscillate parallel to wave propagation direction.
+
+===OUTCOME===
+SUMMARY: Transverse waves move particles perpendicular to wave travel while longitudinal waves move particles parallel to wave travel via compressions and rarefactions.
+REFLECTION_QUESTIONS:
+- What type of wave is a sound wave traveling through air?
+- Which wave property determines the pitch of a sound?

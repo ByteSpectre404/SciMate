@@ -1,0 +1,66 @@
+TITLE: Identification of Nitrogen (N) in Biomolecules
+SUBJECT: biology
+GRADE: 10
+UNIT: Biomolecules
+DIFFICULTY: medium
+DURATION_MINUTES: 15
+DESCRIPTION: Perform the Biuret test on protein-rich egg white and fish extract to confirm the presence of nitrogen in biomolecules.
+
+MATERIALS:
+- Egg white
+- Fish extract solution
+- Sodium hydroxide (NaOH) solution
+- Copper sulphate (CuSO4) solution
+- Test tubes
+- Dropper
+
+LEARNING_OUTCOMES:
+- Understand that nitrogen is a key component of amino acids and proteins
+- Perform the Biuret test (NaOH + CuSO4) to detect peptide bonds
+
+===STEP===
+ID: step-1
+INSTRUCTION: Pour 2 mL of egg white solution into a test tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: egg_white
+DROP_TARGET_ID: test_tube
+RESULT_COLOR: #fef3c7
+RESULT_STATE: egg_white_solution
+WHY: Egg white is composed primarily of ovalbumin, a nitrogen-rich protein.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add 2 mL of sodium hydroxide (NaOH) solution to the test tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: naoh_solution
+DROP_TARGET_ID: test_tube
+RESULT_COLOR: #f8fafc
+RESULT_STATE: alkaline_egg_white_mixture
+WHY: Sodium hydroxide creates an alkaline environment necessary for the Biuret complex to form.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Add 5 drops of copper sulphate (CuSO4) solution and mix gently.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cuso4_solution
+DROP_TARGET_ID: test_tube
+RESULT_COLOR: #7e22ce
+RESULT_STATE: violet_biuret_complex
+WHY: Cu2+ ions coordinate with peptide bond nitrogen atoms in alkaline conditions.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What color does the mixture turn upon adding copper sulphate?
+ACTION_TYPE: select_observation
+OPTIONS: Purple / Violet|Bright Green|Milky White|Deep Red
+CORRECT_OPTION: Purple / Violet
+RESULT_COLOR: #7e22ce
+RESULT_STATE: violet_biuret_complex
+HINT: A violet or purple solution confirms protein and peptide nitrogen.
+WHY: Cu2+ forms a purple coordination complex with nitrogen in peptide linkages (-CO-NH-), confirming nitrogen in proteins.
+
+===OUTCOME===
+SUMMARY: The formation of a purple (violet) color in the Biuret test confirms the presence of protein and peptide-bound nitrogen in egg white and fish.
+REFLECTION_QUESTIONS:
+- Why does carbohydrates (like starch) fail to produce a purple color with Biuret reagent?
+- Which fundamental building block of proteins contains nitrogen?

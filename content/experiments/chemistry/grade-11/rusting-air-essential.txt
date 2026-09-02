@@ -1,0 +1,65 @@
+TITLE: Air (Oxygen) is Essential for Rusting of Iron
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate that air is essential for the corrosion of iron by comparing cleaned iron nails in ordinary air-containing water versus boiled deoxygenated water sealed with a layer of oil.
+
+MATERIALS:
+- Two boiling tubes (Tube A: ordinary water, Tube B: boiled water with oil seal)
+- Cleaned iron nails (pickled in dilute HCl and rinsed)
+- Coconut oil / liquid paraffin (air barrier)
+- Bunsen burner & test tube rack
+
+LEARNING_OUTCOMES:
+- Identify air (oxygen) and water as the two indispensable conditions for iron rusting
+- Explain how boiling water expels dissolved gases and how an oil layer prevents re-dissolution of atmospheric air
+- Describe the formation of hydrated iron(III) oxide (rust: Fe2O3·xH2O)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add ordinary unboiled cold tap water into Tube A and place a cleaned iron nail inside.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_nail_1
+DROP_TARGET_ID: tube_a_ordinary_water
+RESULT_COLOR: #bae6fd
+RESULT_STATE: tube_a_with_air_and_water
+WHY: Ordinary tap water contains dissolved atmospheric oxygen necessary for the cathodic reduction half-reaction during corrosion.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Boil water in Tube B for 5 minutes to expel all dissolved air, add a cleaned nail, and pour a layer of coconut oil on top.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: coconut_oil_dropper
+DROP_TARGET_ID: tube_b_boiled_water
+RESULT_COLOR: #fef08a
+RESULT_STATE: tube_b_deoxygenated_oil_sealed
+WHY: Boiling drives out dissolved O2 gas; the floating oil layer acts as an impermeable barrier preventing atmospheric air from re-dissolving.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Leave both tubes undisturbed for 2 days and observe the surfaces of the iron nails.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: observation_timer
+DROP_TARGET_ID: test_tube_rack
+RESULT_COLOR: #991b1b
+RESULT_STATE: tube_a_rusted_tube_b_shiny
+WHY: In Tube A, the nail develops a thick reddish-brown flaky crust of rust (Fe2O3·xH2O); in Tube B (no oxygen), the nail remains completely bright and rust-free.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why does the nail in Tube B (boiled water with an oil layer) not rust at all?
+ACTION_TYPE: select_observation
+OPTIONS: Boiling removed dissolved oxygen and the oil layer prevented atmospheric air from entering|The oil reacts chemically to coat the nail with zinc|Boiled water freezes iron atoms|The test tube absorbed the rust
+CORRECT_OPTION: Boiling removed dissolved oxygen and the oil layer prevented atmospheric air from entering
+RESULT_COLOR: #7f1d1d
+RESULT_STATE: oxygen_requirement_proven
+HINT: Rusting is an electrochemical oxidation requiring both water and oxygen (4Fe + 3O2 + 2xH2O → 2Fe2O3·xH2O).
+WHY: Corrosion requires both water and dissolved oxygen. Without oxygen, the cathodic reaction cannot take place and rusting is completely arrested.
+
+===OUTCOME===
+SUMMARY: Iron rusts only when exposed to both moisture and air (oxygen). Excluding oxygen (by boiling water and sealing with oil) prevents iron from rusting completely.
+REFLECTION_QUESTIONS:
+- Why does iron rust faster in aerated splashing waves than in deep stagnant water?
+- What chemical equation describes the overall formation of rust?

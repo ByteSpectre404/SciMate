@@ -1,0 +1,69 @@
+TITLE: Refraction of Light through a Glass Block
+SUBJECT: physics
+GRADE: 11
+UNIT: Geometrical Optics
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Trace light rays passing from air into a glass block and back into air to observe refraction toward and away from the normal.
+
+MATERIALS:
+- Rectangular glass block
+- Drawing board & paper
+- Optical pins (A, B, C, D)
+- Ruler & protractor
+- Pencil
+
+LEARNING_OUTCOMES:
+- Trace path of a refracted ray at optical boundaries
+- Verify refraction rules (rare to dense bends toward normal; dense to rare bends away)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place glass block on paper, trace its outline, and insert pins A and B along an incident ray path.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: optical_pins_ab
+DROP_TARGET_ID: incident_line
+RESULT_COLOR: #3b82f6
+RESULT_STATE: incident_ray_marked
+EXPECTED_VALUE: 30.0
+WHY: Pins A and B define the direction of the incident light ray approaching the glass boundary.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Look through opposite glass side and align pins C and D so all 4 pins appear collinear.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: optical_pins_cd
+DROP_TARGET_ID: emergent_side
+RESULT_COLOR: #3b82f6
+RESULT_STATE: emergent_ray_aligned
+EXPECTED_VALUE: 30.0
+WHY: Sighting through glass places C and D along the line of the emergent refracted ray.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Draw normals at entry point B and exit point C and join path B-C inside the glass.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: pencil_ruler
+DROP_TARGET_ID: ray_path_bc
+RESULT_COLOR: #3b82f6
+RESULT_STATE: refracted_ray_drawn
+EXPECTED_VALUE: 19.5
+WHY: Connecting entry and exit points reveals the actual bent ray path inside the glass medium.
+
+===STEP===
+ID: step-4
+INSTRUCTION: How does the light ray bend when entering glass from air at entry point B?
+ACTION_TYPE: select_observation
+OPTIONS: Bends towards the normal|Bends away from the normal|Passes straight without bending|Reflects backwards completely
+CORRECT_OPTION: Bends towards the normal
+RESULT_COLOR: #3b82f6
+RESULT_STATE: refracted_ray_drawn
+EXPECTED_VALUE: 19.5
+HINT: Glass is optically denser than air, slowing down light.
+WHY: Light slows down in denser glass medium causing the ray to refract towards the normal line.
+
+===OUTCOME===
+SUMMARY: Light bends towards the normal when entering glass (denser medium) and away from the normal when exiting into air (rarer medium).
+REFLECTION_QUESTIONS:
+- Why does light bend when moving between air and glass?
+- Why is the emergent ray parallel to the incident ray for a rectangular glass block?

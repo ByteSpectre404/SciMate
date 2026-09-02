@@ -1,0 +1,67 @@
+TITLE: Microscopic Observation of Plant Tissues
+SUBJECT: biology
+GRADE: 11
+UNIT: Living Tissues
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Prepare temporary slides of betel leaf epidermis, potato tuber, and balsam stem cross-section to observe meristematic and permanent plant tissues.
+
+MATERIALS:
+- Betel leaf lower epidermis peel
+- Thin potato tuber section
+- Balsam stem cross-section
+- Light microscope
+- Glass slides & coverslips
+- Water dropper
+
+LEARNING_OUTCOMES:
+- Prepare temporary wet mount slides for microscopic inspection
+- Identify simple permanent tissues (parenchyma, collenchyma, sclerenchyma) and complex tissues (xylem, phloem)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place a thin peel of betel leaf epidermis onto a glass slide with a drop of water and coverslip.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: betel_epidermis_peel
+DROP_TARGET_ID: glass_slide
+RESULT_COLOR: #bbf7d0
+RESULT_STATE: wet_mount_slide
+WHY: Mounting in water prevents tissue drying and eliminates trapped air bubbles under the coverslip.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Mount the glass slide onto the microscope stage and focus under low power objective lens.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: prepared_slide
+DROP_TARGET_ID: microscope_stage
+RESULT_COLOR: #0284c7
+RESULT_STATE: focused_microscope_view
+WHY: Focusing under low power locates specimen field before switching to higher magnification.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Observe the thin potato tuber section under microscope. What stored substance is seen in parenchyma cells?
+ACTION_TYPE: select_observation
+OPTIONS: Starch grains inside parenchyma cells|Chloroplasts moving|Xylem vessels with lignin rings|Air cavities
+CORRECT_OPTION: Starch grains inside parenchyma cells
+RESULT_COLOR: #fef08a
+RESULT_STATE: parenchyma_starch_amyloplasts
+HINT: Potato tubers store carbohydrates in specialized storage parenchyma.
+WHY: Potato tuber cells consist of unspecialized parenchyma filled with oval starch amyloplast grains.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Observe balsam stem cross section. Where are xylem vascular vessels located?
+ACTION_TYPE: select_observation
+OPTIONS: In vascular bundles providing water transport and support|Only in outer cuticle layer|Spread randomly in air spaces|Inside stomata guard cells
+CORRECT_OPTION: In vascular bundles providing water transport and support
+RESULT_COLOR: #38bdf8
+RESULT_STATE: vascular_bundle_xylem
+HINT: Xylem and phloem form vascular bundles arranged in rings in dicot stems.
+WHY: Xylem complex permanent tissue forms thick-walled conductive tubes within vascular bundles transporting water from roots.
+
+===OUTCOME===
+SUMMARY: Microscope examination reveals diverse plant tissues organized into simple permanent (parenchyma, collenchyma, sclerenchyma) and complex conducting tissues (xylem, phloem).
+REFLECTION_QUESTIONS:
+- How do meristematic tissues differ fundamentally from permanent tissues in plants?
+- What structural feature gives sclerenchyma cells high mechanical strength?

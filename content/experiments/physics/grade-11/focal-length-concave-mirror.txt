@@ -1,0 +1,68 @@
+TITLE: Focal Length and Image Formation of Concave Mirrors
+SUBJECT: physics
+GRADE: 11
+UNIT: Geometrical Optics
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Determine the focal length of a concave mirror by focusing distant light rays and investigate real image formation at varying object distances.
+
+MATERIALS:
+- Concave mirror on stand
+- White screen on stand
+- Lighted candle
+- Meter ruler
+
+LEARNING_OUTCOMES:
+- Measure focal length (f) using distant object light convergence
+- Differentiate real inverted images from virtual upright images formed by curved mirrors
+
+===STEP===
+ID: step-1
+INSTRUCTION: Point concave mirror towards a distant window and adjust screen until a sharp image of outside scene forms.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: white_screen
+DROP_TARGET_ID: concave_mirror_axis
+RESULT_COLOR: #f8fafc
+RESULT_STATE: inverted_window_image
+EXPECTED_VALUE: 15.0
+WHY: Light rays from a distant object arrive parallel and converge at the principal focus (F).
+
+===STEP===
+ID: step-2
+INSTRUCTION: Measure the distance between concave mirror and screen when image is sharp.
+ACTION_TYPE: drag_measure
+DRAG_ITEM_ID: meter_ruler
+DROP_TARGET_ID: mirror_screen_gap
+RESULT_COLOR: #f8fafc
+RESULT_STATE: focused_focal_length_point
+EXPECTED_VALUE: 15.0
+WHY: The distance from mirror pole to focus screen equals focal length f.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Place a lighted candle at a distance greater than 2f in front of the mirror.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: lighted_candle
+DROP_TARGET_ID: axis_beyond_2f
+RESULT_COLOR: #f59e0b
+RESULT_STATE: candle_beyond_2f
+EXPECTED_VALUE: 15.0
+WHY: Placing object beyond 2f tests image formation characteristics.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Move the screen until a clear image of the candle flame appears. What is the nature of the image?
+ACTION_TYPE: select_observation
+OPTIONS: Real, inverted, and diminished|Virtual, upright, and magnified|Real, upright, and magnified|No image forms
+CORRECT_OPTION: Real, inverted, and diminished
+RESULT_COLOR: #f59e0b
+RESULT_STATE: real_inverted_diminished_image
+EXPECTED_VALUE: 15.0
+HINT: Concave mirrors project inverted real images on screens when u > 2f.
+WHY: When object distance u > 2f, concave mirrors form a real, inverted, smaller image between f and 2f on a screen.
+
+===OUTCOME===
+SUMMARY: Concave mirrors converge parallel rays to a focal point at distance f. Real inverted images form on screens when objects sit beyond f.
+REFLECTION_QUESTIONS:
+- Why cannot virtual images be projected on a screen?
+- What type of image is formed when a candle is placed closer than focal length f to a concave mirror?

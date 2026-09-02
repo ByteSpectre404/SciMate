@@ -1,0 +1,76 @@
+TITLE: Preparation, Collection and Testing of Oxygen Gas
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Prepare oxygen gas by the thermal decomposition of potassium permanganate (KMnO4), collect over water, and confirm using a glowing wooden splint.
+
+MATERIALS:
+- Hard glass boiling tube with delivery tube & retort stand
+- Potassium permanganate crystals (KMnO4)
+- Water trough & test tubes filled with water
+- Bunsen burner
+- Glowing wooden splint (ekel)
+
+LEARNING_OUTCOMES:
+- Assemble laboratory thermal decomposition apparatus for gas generation
+- Write the equation: 2KMnO4(s) → K2MnO4(s) + MnO2(s) + O2(g)
+- Perform the glowing splint relighting test for oxygen gas
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add dark purple KMnO4 crystals into the boiling tube, clamp horizontally, and fit the delivery tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: kmno4_crystals
+DROP_TARGET_ID: boiling_tube
+RESULT_COLOR: #581c87
+RESULT_STATE: loaded_kmno4_apparatus
+WHY: Clamping with a slight downward incline prevents condensed moisture from cracking the hot tube during heating.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Invert water-filled collection tubes in the water trough over the delivery tube outlet.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: test_tube_water
+DROP_TARGET_ID: water_trough
+RESULT_COLOR: #bae6fd
+RESULT_STATE: ready_for_gas_collection
+WHY: Oxygen is sparingly soluble in water and can be collected cleanly over water by downward displacement.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Heat the KMnO4 crystals strongly using the Bunsen burner flame.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bunsen_burner
+DROP_TARGET_ID: boiling_tube
+RESULT_COLOR: #1e1b4b
+RESULT_STATE: oxygen_gas_bubbling_active
+WHY: Thermal decomposition occurs (2KMnO4 → K2MnO4 + MnO2 + O2↑), releasing pure oxygen gas into the inverted tube.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Remove the gas-filled tube from water and quickly insert a glowing wooden splint.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glowing_splint
+DROP_TARGET_ID: ready_for_gas_collection
+RESULT_COLOR: #f59e0b
+RESULT_STATE: glowing_splint_relights_brightly
+WHY: Oxygen strongly supports combustion, rekindling the glowing charcoal ember on the splint into an active bright flame.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What is the conclusive observation that confirms a gas sample is oxygen?
+ACTION_TYPE: select_observation
+OPTIONS: It rekindles (relights) a glowing wooden splint with a bright flame|It burns with a squeaky pop|It turns lime water cloudy white|It has a pungent choking smell
+CORRECT_OPTION: It rekindles (relights) a glowing wooden splint with a bright flame
+RESULT_COLOR: #d97706
+RESULT_STATE: oxygen_test_conclusive
+HINT: Oxygen gas is not combustible itself, but it is a strong supporter of combustion.
+WHY: Relighting a glowing splint is the standard diagnostic laboratory test for oxygen gas.
+
+===OUTCOME===
+SUMMARY: Oxygen gas liberated from the thermal decomposition of potassium permanganate is collected by downward displacement of water and confirmed by relighting a glowing splint.
+REFLECTION_QUESTIONS:
+- Why does oxygen relight a glowing splint?
+- Why must the delivery tube be removed from the water trough before turning off the Bunsen burner flame (preventing suck-back)?

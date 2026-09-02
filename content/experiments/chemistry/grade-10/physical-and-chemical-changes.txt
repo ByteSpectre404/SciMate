@@ -1,0 +1,66 @@
+TITLE: Distinguishing Physical and Chemical Changes
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare physical changes (sublimation and deposition of naphthalene) with chemical changes (burning magnesium, acid-base neutralization, and metal-acid reactions).
+
+MATERIALS:
+- Naphthalene moth ball & metal spoons
+- Cleaned magnesium ribbon & pair of tongs
+- Bunsen burner
+- Dilute sulfuric acid & sodium hydroxide pellets
+- Thermometer & small beakers
+
+LEARNING_OUTCOMES:
+- Distinguish between reversible physical state changes and irreversible chemical reactions
+- Recognize indicators of chemical changes (gas evolution, temperature change, permanent color change)
+- Formulate word and chemical equations for combustion and neutralization
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place a moth ball on a heated metal spoon and quickly cover it with another cold spoon.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: naphthalene_ball
+DROP_TARGET_ID: heated_metal_spoon
+RESULT_COLOR: #f8fafc
+RESULT_STATE: sublimated_deposited_naphthalene
+WHY: Solid naphthalene sublimes into vapor and deposits as crystalline solid on the cold spoon without forming any new chemical substance (physical change).
+
+===STEP===
+ID: step-2
+INSTRUCTION: Hold a strip of cleaned magnesium ribbon with crucible tongs in the Bunsen flame.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: magnesium_ribbon
+DROP_TARGET_ID: bunsen_burner
+RESULT_COLOR: #ffffff
+RESULT_STATE: brilliant_white_flash_white_ash
+WHY: Magnesium reacts vigorously with atmospheric oxygen in an exothermic combustion: 2Mg(s) + O2(g) → 2MgO(s), forming a new white magnesium oxide powder.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Add sodium hydroxide pellets to dilute sulfuric acid in a beaker and measure the temperature with a thermometer.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: naoh_pellets
+DROP_TARGET_ID: acid_beaker
+RESULT_COLOR: #fee2e2
+RESULT_STATE: exothermic_neutralization_temperature_rise
+WHY: Acid-base neutralization 2NaOH + H2SO4 → Na2SO4 + 2H2O releases heat energy, raising the thermometer reading.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Which of the following observations represents a physical change rather than a chemical change?
+ACTION_TYPE: select_observation
+OPTIONS: Naphthalene melting and solidifying again on the cold spoon|Magnesium burning with a bright flame to form white ash|Dilute acid reacting with NaOH to generate heat|Magnesium dissolving in acid to produce hydrogen gas bubbles
+CORRECT_OPTION: Naphthalene melting and solidifying again on the cold spoon
+RESULT_COLOR: #0284c7
+RESULT_STATE: physical_vs_chemical_proven
+HINT: In a physical change, only the arrangement or state of particles changes, with no new chemical substances created.
+WHY: Sublimation and condensation of naphthalene only alter its physical state (solid ⇄ gas); the chemical composition remains unaltered.
+
+===OUTCOME===
+SUMMARY: Physical changes alter only physical states or particle arrangements without generating new substances, while chemical changes produce new substances accompanied by energy changes and gas or precipitate formation.
+REFLECTION_QUESTIONS:
+- Why is the combustion of magnesium ribbon considered a chemical change?
+- What are four common signs that a chemical reaction has taken place?

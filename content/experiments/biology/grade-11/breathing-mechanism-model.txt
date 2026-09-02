@@ -1,0 +1,66 @@
+TITLE: Bell Jar Model of Human Breathing Mechanism
+SUBJECT: biology
+GRADE: 11
+UNIT: Biological Processes
+DIFFICULTY: medium
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate inspiration and expiration mechanisms using a bell jar, Y-tube, balloons (lungs), and rubber membrane (diaphragm).
+
+MATERIALS:
+- Glass bell jar
+- Y-shaped glass tube
+- Two rubber balloons
+- Rubber sheet membrane
+- Rubber bands
+
+LEARNING_OUTCOMES:
+- Model thoracic cavity volume changes during ventilation
+- Relate diaphragm movement to lung expansion (inspiration) and deflation (expiration)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Pull the bottom rubber membrane (diaphragm) downwards away from the bell jar.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: rubber_diaphragm_pull
+DROP_TARGET_ID: bell_jar_model
+RESULT_COLOR: #ef4444
+RESULT_STATE: balloons_inflated
+WHY: Pulling membrane down simulates diaphragm contraction flattening downward during inhalation.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Observe the balloons inside the bell jar when the membrane is pulled down. What happens?
+ACTION_TYPE: select_observation
+OPTIONS: Balloons inflate (fill with air)|Balloons deflate and collapse|Balloons burst|No change occurs
+CORRECT_OPTION: Balloons inflate (fill with air)
+RESULT_COLOR: #ef4444
+RESULT_STATE: balloons_inflated
+HINT: Expanding jar volume decreases internal pressure below atmospheric pressure.
+WHY: Increasing bell jar volume lowers internal pressure, sucking atmospheric air through Y-tube into balloons (inspiration).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Push the bottom rubber membrane upwards back into the bell jar base.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: rubber_diaphragm_push
+DROP_TARGET_ID: bell_jar_model
+RESULT_COLOR: #fca5a5
+RESULT_STATE: balloons_deflated
+WHY: Pushing membrane up simulates diaphragm relaxing upward into dome shape during exhalation.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Observe balloons when membrane is pushed upwards. What happens?
+ACTION_TYPE: select_observation
+OPTIONS: Balloons deflate (expel air)|Balloons inflate larger|Balloons fill with liquid|No change
+CORRECT_OPTION: Balloons deflate (expel air)
+RESULT_COLOR: #fca5a5
+RESULT_STATE: balloons_deflated
+HINT: Decreasing jar volume increases internal pressure above atmospheric pressure.
+WHY: Decreasing bell jar volume increases internal pressure, forcing air out of balloons through Y-tube (expiration).
+
+===OUTCOME===
+SUMMARY: Pulling the diaphragm down increases thoracic volume and inflates lungs (inhalation); releasing it decreases volume and deflates lungs (exhalation).
+REFLECTION_QUESTIONS:
+- What component of the human respiratory system does the glass bell jar represent?
+- What are two limitations of this bell jar model compared to real human breathing?

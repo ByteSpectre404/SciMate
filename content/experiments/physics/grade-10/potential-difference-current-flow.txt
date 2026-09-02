@@ -1,0 +1,66 @@
+TITLE: Potential Difference Requirement for Current Flow
+SUBJECT: physics
+GRADE: 10
+UNIT: Current Electricity (Unit 19)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate why a potential difference across circuit terminals is required for electric current to flow by comparing three different battery cell configurations.
+
+MATERIALS:
+- Two 1.5 V dry cells
+- 2.5 V torch bulb
+- DC Voltmeter (0 - 5 V)
+- DC Ammeter (0 - 1 A)
+- Knife switch and connecting leads
+
+LEARNING_OUTCOMES:
+- Define potential difference (voltage) as the electrical pressure that drives charge flow
+- Compare opposing (+ to + or - to -) versus series aiding (+ to -) cell configurations
+- Understand that current flows only when a non-zero potential difference exists across a load
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect both positive terminals of two identical dry cells together across the bulb (opposing config 1).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cell_a_positive
+DROP_TARGET_ID: bulb_terminal_left
+RESULT_COLOR: #94a3b8
+RESULT_STATE: zero_potential_no_glow
+WHY: With both positive poles connected, the potential difference across the bulb is 1.5 V - 1.5 V = 0 V; no current flows (ammeter = 0 A, bulb dark).
+
+===STEP===
+ID: step-2
+INSTRUCTION: Connect both negative terminals of the two cells across the bulb (opposing config 2).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cell_a_negative
+DROP_TARGET_ID: bulb_terminal_left
+RESULT_COLOR: #94a3b8
+RESULT_STATE: zero_potential_negative_no_glow
+WHY: Because both terminals are at identical negative electric potential, the potential difference remains 0 V and the bulb remains unlit.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Connect the positive terminal of Cell 1 to the negative terminal of Cell 2 in series across the bulb.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cell_b_negative
+DROP_TARGET_ID: cell_a_positive
+RESULT_COLOR: #f59e0b
+RESULT_STATE: series_3V_bright_glow
+WHY: Connecting cells in series (+ to -) creates an additive potential difference of 1.5 V + 1.5 V = 3.0 V, driving current through the filament.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Under which cell connection does the torch bulb light up and show a non-zero current on the ammeter?
+ACTION_TYPE: select_observation
+OPTIONS: Only when positive of one cell connects to negative of the other (series potential difference)|When positive connects to positive|When negative connects to negative|In all three connection modes equally
+CORRECT_OPTION: Only when positive of one cell connects to negative of the other (series potential difference)
+RESULT_COLOR: #d97706
+RESULT_STATE: potential_difference_rule_proven
+HINT: Electric charges only flow from a region of higher electrical potential to lower electrical potential.
+WHY: Current flow requires a net potential difference (voltage) across the circuit. Equal opposing potentials cancel out, resulting in zero net voltage.
+
+===OUTCOME===
+SUMMARY: An electric current flows through a conductor only when there is a potential difference (voltage) between its terminals.
+REFLECTION_QUESTIONS:
+- What would happen to the total voltage if three 1.5 V cells were connected in series (+ to -)?
+- Why does a bird sitting on a single high-voltage wire not get electrocuted?

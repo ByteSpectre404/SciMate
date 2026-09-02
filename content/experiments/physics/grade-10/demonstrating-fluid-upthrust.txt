@@ -1,0 +1,75 @@
+TITLE: Demonstrating Upthrust Exerted by a Fluid
+SUBJECT: physics
+GRADE: 10
+UNIT: Hydrostatic Pressure and Applications (Unit 15)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate that liquids exert an upward buoyant force (upthrust) on immersed objects, reducing their apparent weight on a spring balance.
+
+MATERIALS:
+- Solid metal cylinder / block
+- Calibrated spring balance (0 - 5 N)
+- Beaker with water
+- Retort stand and clamp
+
+LEARNING_OUTCOMES:
+- Observe the apparent loss of weight of an object when submerged in a liquid
+- Define upthrust (buoyancy) as the resultant upward force exerted by a fluid
+- Distinguish between true weight in air and apparent weight in a fluid
+
+===STEP===
+ID: step-1
+INSTRUCTION: Suspend the metal object from the spring balance in air and record its true weight (e.g. 4.0 N).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metal_block
+DROP_TARGET_ID: spring_balance
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: weight_in_air_4N
+WHY: The spring balance measures the gravitational pull W = mg acting downwards on the suspended metal object in air.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Apply a gentle downward hand push on the hanging object and observe the balance reading.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: downward_push_force
+DROP_TARGET_ID: metal_block
+RESULT_COLOR: #f59e0b
+RESULT_STATE: reading_increased
+WHY: Adding an external downward force increases the net tension required by the spring, increasing the reading.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Apply an upward push on the bottom of the object and observe the balance reading.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: upward_push_force
+DROP_TARGET_ID: metal_block
+RESULT_COLOR: #38bdf8
+RESULT_STATE: reading_decreased
+WHY: An upward force counteracts gravity, reducing the net downward tension on the spring balance.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Lower the metal block until it is completely submerged in the beaker of water.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: spring_balance
+DROP_TARGET_ID: water_beaker
+RESULT_COLOR: #0284c7
+RESULT_STATE: submerged_apparent_weight_reduced
+WHY: Water exerts greater pressure on the bottom of the submerged object than on the top, producing a net upward force (upthrust).
+
+===STEP===
+ID: step-5
+INSTRUCTION: Why does the spring balance reading decrease when the metal block is submerged in water?
+ACTION_TYPE: select_observation
+OPTIONS: Water exerts an upward buoyant force (upthrust) on the submerged object|The mass of the metal block decreases in water|Water cools down the spring balance mechanism|Gravity stops acting on submerged objects
+CORRECT_OPTION: Water exerts an upward buoyant force (upthrust) on the submerged object
+RESULT_COLOR: #0369a1
+RESULT_STATE: upthrust_mechanism_verified
+HINT: The fluid exerts pressure in all directions; the higher pressure at greater depths creates a net upward force.
+WHY: Apparent Weight = True Weight - Upthrust (W_apparent = W_air - U). The upward force of the water reduces the net tension on the spring.
+
+===OUTCOME===
+SUMMARY: An object immersed in a liquid experiences an upward force known as upthrust (buoyancy), causing its apparent weight to be less than its weight in air.
+REFLECTION_QUESTIONS:
+- How does the density of the surrounding liquid affect the upthrust experienced by the object?
+- What would happen to the reading if the object were immersed in denser salt water vs. pure water?

@@ -1,0 +1,76 @@
+TITLE: Mutual Induction and the Principle of a Transformer
+SUBJECT: physics
+GRADE: 11
+UNIT: Electromagnetism & Electromagnetic Induction (Unit 13)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Demonstrate mutual induction between two adjacent coils wound on a common soft iron core: switching the primary current induces a momentary EMF in the isolated secondary coil.
+
+MATERIALS:
+- Bundle of soft iron wires (ferromagnetic core)
+- Primary coil (100 turns enamelled wire) with switch and 3.0 V battery
+- Secondary coil (100 turns enamelled wire) 1 cm apart on core
+- Centre-zero galvanometer (-30 to +30 μA)
+- Connecting leads
+
+LEARNING_OUTCOMES:
+- Define mutual induction as the induction of EMF in a secondary circuit due to changing current in a primary circuit
+- Explain the role of the soft iron core in concentrating and transferring magnetic flux
+- Understand why transformers operate exclusively on alternating current (AC) and cannot function on steady direct current (DC)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the primary coil (with switch and battery) and secondary coil (with galvanometer) onto the iron core.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_core_transformer_setup
+DROP_TARGET_ID: circuit_bench
+RESULT_COLOR: #3b82f6
+RESULT_STATE: mutual_induction_apparatus_ready
+WHY: The two electrical circuits are completely insulated and electrically isolated; energy transfers purely through the shared magnetic field.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Close the primary circuit switch and observe the galvanometer needle at that exact instant.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: primary_switch
+DROP_TARGET_ID: primary_coil_circuit
+RESULT_COLOR: #22c55e
+RESULT_STATE: momentary_deflection_to_right
+WHY: As primary current rises from 0 to max, growing magnetic flux cuts through the secondary coil, inducing a momentary pulse of EMF and current.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Leave the primary switch closed so steady DC current flows continuously.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: steady_dc_run
+DROP_TARGET_ID: primary_coil_circuit
+RESULT_COLOR: #94a3b8
+RESULT_STATE: needle_rests_at_zero
+WHY: When DC current is steady, magnetic flux is constant (dΦ/dt = 0), so no EMF is induced in the secondary coil.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Open the primary switch to cut off current and observe the galvanometer needle.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: primary_switch
+DROP_TARGET_ID: primary_coil_circuit
+RESULT_COLOR: #ef4444
+RESULT_STATE: momentary_deflection_to_left
+WHY: As the magnetic field collapses rapidly, secondary flux decreases, inducing a momentary EMF pulse in the opposite direction.
+
+===STEP===
+ID: step-5
+INSTRUCTION: Why does an electrical transformer require alternating current (AC) rather than steady direct current (DC) to function?
+ACTION_TYPE: select_observation
+OPTIONS: An induced EMF requires a continuously changing magnetic field (dΦ/dt ≠ 0), which only alternating current provides|Direct current burns out all transformer coils immediately|AC electricity has more electrons than DC|DC current cannot travel through copper wire
+CORRECT_OPTION: An induced EMF requires a continuously changing magnetic field (dΦ/dt ≠ 0), which only alternating current provides
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: transformer_principle_verified
+HINT: Steady DC creates a static magnetic field, which cannot induce any secondary voltage without continuous change.
+WHY: Mutual induction and transformers operate solely when magnetic flux is continuously expanding and collapsing, which requires alternating current (AC).
+
+===OUTCOME===
+SUMMARY: A changing current in the primary coil generates a dynamic magnetic flux in the iron core that induces an alternating EMF in the secondary coil, demonstrating mutual induction and the operating principle of electrical transformers.
+REFLECTION_QUESTIONS:
+- How does the ratio of secondary turns to primary turns (Ns / Np) determine whether a transformer is step-up or step-down?
+- Why is laminated soft iron used for transformer cores instead of solid iron (minimizing eddy current losses)?

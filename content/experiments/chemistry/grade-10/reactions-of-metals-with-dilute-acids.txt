@@ -1,0 +1,75 @@
+TITLE: Reactions of Metals with Dilute Hydrochloric Acid
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Compare the reactivity of five common metals (Mg, Al, Zn, Fe, Cu) with dilute hydrochloric acid to deduce the metal activity series.
+
+MATERIALS:
+- Test tubes in test tube rack (5 tubes)
+- Dilute hydrochloric acid (HCl, 1.0 M)
+- Metal strips / granules: Magnesium (Mg), Aluminium (Al), Zinc (Zn), Iron (Fe), Copper (Cu)
+- Wooden splint & matches
+
+LEARNING_OUTCOMES:
+- Arrange metals in order of decreasing chemical reactivity: Mg > Al > Zn > Fe > Cu
+- Write balanced single displacement equations: Metal + Acid → Salt + Hydrogen
+- Explain why copper does not displace hydrogen from non-oxidizing dilute acids
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add cleaned magnesium ribbon to Test Tube 1 containing dilute HCl.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: magnesium_strip
+DROP_TARGET_ID: hcl_tube_1
+RESULT_COLOR: #f8fafc
+RESULT_STATE: very_vigorous_effervescence_hot
+WHY: Magnesium is highly reactive: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g)↑. Rapid effervescence occurs with strong heat liberation.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add cleaned zinc granule to Test Tube 2 containing dilute HCl.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: zinc_granule
+DROP_TARGET_ID: hcl_tube_2
+RESULT_COLOR: #f1f5f9
+RESULT_STATE: moderate_effervescence
+WHY: Zinc reacts moderately: Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g)↑, producing steady streams of hydrogen bubbles.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Add an iron nail to Test Tube 3 containing dilute HCl.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_nail
+DROP_TARGET_ID: hcl_tube_3
+RESULT_COLOR: #e2e8f0
+RESULT_STATE: slow_bubble_evolution
+WHY: Iron reacts slowly: Fe(s) + 2HCl(aq) → FeCl2(aq) + H2(g)↑, releasing small bubbles at a slow rate.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Add a cleaned copper strip to Test Tube 4 containing dilute HCl.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: copper_strip
+DROP_TARGET_ID: hcl_tube_4
+RESULT_COLOR: #fef3c7
+RESULT_STATE: no_reaction_copper_shiny
+WHY: Copper is located below hydrogen in the reactivity series and cannot reduce H+ ions to hydrogen gas.
+
+===STEP===
+ID: step-5
+INSTRUCTION: Which sequence represents the correct order of reactivity with dilute hydrochloric acid from most reactive to least reactive?
+ACTION_TYPE: select_observation
+OPTIONS: Mg > Al > Zn > Fe > Cu|Cu > Fe > Zn > Al > Mg|Fe > Mg > Cu > Zn > Al|Zn > Cu > Fe > Mg > Al
+CORRECT_OPTION: Mg > Al > Zn > Fe > Cu
+RESULT_COLOR: #0284c7
+RESULT_STATE: reactivity_series_confirmed
+HINT: Metals positioned higher in the reactivity series displace hydrogen from dilute acids faster.
+WHY: Magnesium is the most electropositive and reacts most vigorously, while copper is below hydrogen in the electrochemical series and shows zero reaction.
+
+===OUTCOME===
+SUMMARY: The rate of hydrogen gas evolution when metals react with dilute hydrochloric acid follows the reactivity order Mg > Al > Zn > Fe > Cu (no reaction with copper).
+REFLECTION_QUESTIONS:
+- Why does aluminium often show a brief delay before reacting vigorously with dilute acid?
+- What gas is produced during metal-acid reactions and how can it be tested?

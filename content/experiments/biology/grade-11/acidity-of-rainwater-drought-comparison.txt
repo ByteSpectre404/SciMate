@@ -1,0 +1,67 @@
+TITLE: Acidity Comparison of Normal vs Post-Drought Rainwater (Acid Rain)
+SUBJECT: biology
+GRADE: 11
+UNIT: Biosphere (Unit 15)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare the pH and acidity of normal unpolluted rainwater versus the first rain shower collected following a prolonged dry drought period in an industrialized area.
+
+MATERIALS:
+- Sample A: Normal clean rainwater (collected after days of steady rain)
+- Sample B: First rainwater collected immediately following a prolonged drought
+- Wide-range Universal pH indicator solution & color pH chart
+- Precision digital pH meter / indicator paper
+- Spotting tile & dropper
+
+LEARNING_OUTCOMES:
+- Measure and compare the pH of natural rainwater (pH ~5.6 due to dissolved CO2) vs acid rain (pH < 5.0)
+- Understand the atmospheric accumulation of acidic oxides (SO2, SO3, NO, NO2) during dry spells
+- Formulate acid rain reactions: SO2 + H2O → H2SO3; 2NO2 + H2O → HNO2 + HNO3
+- Explain ecological damage caused by acid rain to forests, aquatic ecosystems, and architectural heritage
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add 5 drops of Sample A (Normal steady rainwater) and Sample B (Post-drought first rain) into separate cavities of a white porcelain tile.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: rainwater_samples_set
+DROP_TARGET_ID: porcelain_spotting_tile
+RESULT_COLOR: #bae6fd
+RESULT_STATE: clean_rain_samples_in_cavities
+WHY: White porcelain provides neutral optical contrast to observe subtle indicator hue changes accurately.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add 2 drops of Universal pH indicator into cavity A (Normal rainwater) and match with the pH color chart.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: universal_indicator_dropper
+DROP_TARGET_ID: cavity_a_normal_rain
+RESULT_COLOR: #84cc16
+RESULT_STATE: yellow_green_ph_5_6
+WHY: Unpolluted rainwater naturally dissolves atmospheric CO2 to form weak carbonic acid (H2CO3), giving a mildly acidic natural pH of ~5.6 (yellow-green).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Add 2 drops of Universal pH indicator into cavity B (Post-drought first rainwater).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: universal_indicator_dropper
+DROP_TARGET_ID: cavity_b_drought_rain
+RESULT_COLOR: #ef4444
+RESULT_STATE: orange_red_ph_4_2_acid_rain
+WHY: Atmospheric oxides of sulfur and nitrogen accumulated in stagnant dry air dissolve in the first rain shower, forming strong sulfuric (H2SO4) and nitric (HNO3) acids (pH ~4.2, orange-red).
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why is the first rain shower collected after a prolonged dry period significantly more acidic than normal steady rainfall?
+ACTION_TYPE: select_observation
+OPTIONS: Gaseous pollutant oxides (SO2 and NOx) accumulated in the atmosphere dissolve concentrated into the initial raindrops|Drought causes clouds to turn into vinegar|Raindrops absorb salt from the ocean|Sunlight destroys water molecules during drought
+CORRECT_OPTION: Gaseous pollutant oxides (SO2 and NOx) accumulated in the atmosphere dissolve concentrated into the initial raindrops
+RESULT_COLOR: #b91c1c
+RESULT_STATE: acid_rain_cause_verified
+HINT: During dry spells, factory and vehicle emissions (SO2, NO2) accumulate without washout, creating a concentrated acid pulse in the first rain shower.
+WHY: Sulfur dioxide and nitrogen oxides from fossil fuel combustion accumulate in dry air. When rain starts, these wash out as concentrated sulfuric and nitric acids, lowering the pH significantly below 5.0.
+
+===OUTCOME===
+SUMMARY: Post-drought rainwater exhibits significantly higher acidity (pH ~4.0 - 4.5, turning universal indicator orange-red) than normal rainfall (pH ~5.6) due to the washout of accumulated airborne SO2 and NOx pollutants (acid rain).
+REFLECTION_QUESTIONS:
+- How does acid rain impact freshwater fish and aquatic amphibian populations in lakes?
+- What chemical reaction causes acid rain to corrode limestone and marble monuments (CaCO3 + H2SO4 → CaSO4 + H2O + CO2)?

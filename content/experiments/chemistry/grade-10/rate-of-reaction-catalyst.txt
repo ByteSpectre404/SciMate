@@ -1,0 +1,76 @@
+TITLE: Effect of a Catalyst on Rate of Chemical Reaction
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Rate of Reactions (Unit 17)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate how manganese dioxide (MnO2) acts as a catalyst to accelerate the decomposition of hydrogen peroxide (H2O2) without being chemically consumed.
+
+MATERIALS:
+- Fresh hydrogen peroxide solution (H2O2, 6% / 20 vol)
+- Manganese dioxide black powder (MnO2, 0.2 g)
+- Two test tubes & test tube rack
+- Filter paper, funnel, evaporating dish & balance
+- Glowing wooden splint
+
+LEARNING_OUTCOMES:
+- Define a catalyst as a substance that increases the rate of reaction without being consumed
+- Explain how catalysts provide an alternative reaction pathway with lower activation energy
+- Demonstrate that catalyst mass is conserved after filtration and drying (2H2O2 → 2H2O + O2)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add 10 mL of fresh hydrogen peroxide solution into two test tubes (Tube A and Tube B).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: h2o2_solution
+DROP_TARGET_ID: test_tubes_pair
+RESULT_COLOR: #f8fafc
+RESULT_STATE: slow_natural_decomposition
+WHY: Pure H2O2 decomposes very slowly at room temperature, releasing almost undetectable bubbles of oxygen.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add 0.2 g of black manganese dioxide (MnO2) powder into Tube B and observe immediately.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: mno2_powder
+DROP_TARGET_ID: test_tube_b
+RESULT_COLOR: #1e293b
+RESULT_STATE: vigorous_effervescence_oxygen_froth
+WHY: MnO2 acts as a catalyst, providing a low activation energy pathway that causes rapid decomposition: 2H2O2(aq) → 2H2O(l) + O2(g)↑.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Test the effervescing gas evolved from Tube B with a glowing wooden splint.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glowing_splint
+DROP_TARGET_ID: test_tube_b
+RESULT_COLOR: #f59e0b
+RESULT_STATE: splint_relights_brightly
+WHY: The rapid stream of evolved oxygen gas rekindles the glowing splint with a bright flame.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Filter the black MnO2 residue from Tube B, wash with water, dry thoroughly, and weigh on the balance.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: filter_funnel_setup
+DROP_TARGET_ID: digital_balance
+RESULT_COLOR: #334155
+RESULT_STATE: mass_unchanged_0_2g
+WHY: Because a catalyst participates without being consumed in the net reaction, exactly 0.2 g of MnO2 is recovered.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What defines the function and characteristics of a chemical catalyst?
+ACTION_TYPE: select_observation
+OPTIONS: Increases the rate of reaction by lowering activation energy and remains unchanged in mass at the end|Increases the final yield of products by reacting chemically|Gets completely consumed during the reaction|Changes an endothermic reaction into an exothermic one
+CORRECT_OPTION: Increases the rate of reaction by lowering activation energy and remains unchanged in mass at the end
+RESULT_COLOR: #0f172a
+RESULT_STATE: catalyst_definition_verified
+HINT: Catalysts accelerate reaction velocity, but their chemical identity and mass are conserved after the reaction.
+WHY: Catalysts offer an alternative pathway with lower activation energy (Ea), drastically increasing reaction speed while remaining chemically and quantitatively unchanged.
+
+===OUTCOME===
+SUMMARY: Manganese dioxide acts as a catalyst for the decomposition of hydrogen peroxide (2H2O2 → 2H2O + O2), dramatically accelerating oxygen gas evolution while retaining its original mass of 0.2 g.
+REFLECTION_QUESTIONS:
+- How do biological catalysts (enzymes like catalase and amylase) compare to inorganic catalysts like MnO2?
+- Can a catalyst initiate a reaction that is thermodynamically impossible on its own?

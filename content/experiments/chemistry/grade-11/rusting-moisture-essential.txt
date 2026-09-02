@@ -1,0 +1,65 @@
+TITLE: Moisture (Water) is Essential for Rusting of Iron
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate that moisture (water) is an indispensable requirement for the rusting of iron by comparing iron nails inside dry air containing anhydrous calcium chloride versus normal humid air.
+
+MATERIALS:
+- Four cleaned iron nails (two pushed through rubber stopper A, two through rubber stopper B)
+- Tube A: Empty boiling tube (containing normal atmospheric moisture)
+- Tube B: Boiling tube containing anhydrous calcium chloride (CaCl2 drying agent)
+- Test tube rack
+
+LEARNING_OUTCOMES:
+- Prove that dry air alone cannot rust iron without water
+- Understand the role of water as an electrolyte medium for ion transport during corrosion
+- Explain how desiccants and drying agents protect sensitive metallic instruments from corrosion
+
+===STEP===
+ID: step-1
+INSTRUCTION: Fit Stopper A (with 2 clean iron nails piercing through) onto the empty boiling tube containing normal air.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: stopper_a_nails
+DROP_TARGET_ID: tube_a_humid_air
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: humid_air_setup
+WHY: Normal laboratory air contains sufficient ambient water vapor (relative humidity) to support electrochemical corrosion cells.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add anhydrous calcium chloride drying pellets into Tube B and seal it with Stopper B (with 2 clean nails).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: stopper_b_nails
+DROP_TARGET_ID: tube_b_desiccant
+RESULT_COLOR: #f8fafc
+RESULT_STATE: dry_air_desiccant_setup
+WHY: Anhydrous CaCl2 is strongly hygroscopic and absorbs all water vapor inside Tube B, creating completely dry air around the inside nail portions.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Leave both tubes undisturbed for 3 days and compare the nails inside versus outside each tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: observation_timer
+DROP_TARGET_ID: test_tube_rack
+RESULT_COLOR: #991b1b
+RESULT_STATE: tube_a_nails_rusted_tube_b_inside_shiny
+WHY: In Tube A, the nails rust both inside and outside. In Tube B, the nail sections outside rust, but the sections inside the dry tube remain completely clean and shiny.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why do the nail segments inside Tube B (with anhydrous calcium chloride) show zero rusting?
+ACTION_TYPE: select_observation
+OPTIONS: Anhydrous CaCl2 absorbed all moisture; rusting cannot occur in dry air without water|Calcium chloride gas coated the nails with plastic|The nails inside Tube B lost their iron properties|Air pressure inside Tube B dropped to zero
+CORRECT_OPTION: Anhydrous CaCl2 absorbed all moisture; rusting cannot occur in dry air without water
+RESULT_COLOR: #7f1d1d
+RESULT_STATE: moisture_requirement_verified
+HINT: Water is needed as the liquid electrolyte to facilitate the transfer of Fe²⁺ and OH⁻ ions.
+WHY: Rusting is an electrochemical process that requires moisture (water) as an electrolyte medium. Without moisture, iron cannot corrode even in the presence of oxygen.
+
+===OUTCOME===
+SUMMARY: Moisture (water) is strictly essential for the corrosion of iron. In perfectly dry air (achieved using anhydrous CaCl2), iron remains pristine and does not rust.
+REFLECTION_QUESTIONS:
+- Why do silica gel packets accompany newly purchased electronics, shoes, and leather goods?
+- Why do iron artifacts survive for thousands of years in arid desert climates like ancient Egypt?

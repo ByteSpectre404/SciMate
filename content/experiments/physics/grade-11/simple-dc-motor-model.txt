@@ -1,0 +1,76 @@
+TITLE: Construction and Working of a Simple DC Motor Model
+SUBJECT: physics
+GRADE: 11
+UNIT: Electromagnetism & Electromagnetic Induction (Unit 13)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Construct a working tabletop DC electric motor model using an insulated copper coil, two sewing needle supports, a 1.5 V cell, and a ceramic ring magnet.
+
+MATERIALS:
+- Enamelled gauge-28 copper wire (wound into 30-turn armature coil)
+- Two large sewing needles (acting as axle supports & commutating brushes)
+- 1.5 V D-cell battery & modeling clay base
+- Strong ceramic ring / disc permanent magnet
+- Sandpaper & craft knife
+
+LEARNING_OUTCOMES:
+- Assemble a functioning DC electric motor demonstrating conversion of electrical energy to mechanical rotational energy
+- Understand the role of magnetic torque (turning couple) on opposite sides of a current loop
+- Explain the necessity of stripping enamel insulation from only one half of the axle wire to act as a simple half-cycle commutator
+
+===STEP===
+ID: step-1
+INSTRUCTION: Wind 30 turns of enamelled wire into a 3 cm loop; scrape off the enamel insulation on all sides of one axle lead, but ONLY on the top half of the other lead.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: craft_knife
+DROP_TARGET_ID: enamelled_coil_lead
+RESULT_COLOR: #d97706
+RESULT_STATE: half_stripped_commutator_axle
+WHY: Stripping one lead only on top cuts off current during the second half-rotation, allowing momentum to carry the coil past the dead point without reversing torque.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Tape the eye ends of two sewing needles to the positive and negative battery terminals and mount the battery on clay.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: sewing_needles_pair
+DROP_TARGET_ID: battery_terminals
+RESULT_COLOR: #3b82f6
+RESULT_STATE: needle_bearing_stand
+WHY: The needle eyes provide low-friction conductive cradle bearings for the coil's axles.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Position the permanent ring magnet directly on top of the battery beneath the coil cradle.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: permanent_ring_magnet
+DROP_TARGET_ID: battery_top
+RESULT_COLOR: #1e293b
+RESULT_STATE: vertical_magnetic_field_ready
+WHY: The magnet establishes a strong upward vertical magnetic field across the horizontal armature coil.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Place the coil into the needle cradles and give it a gentle starting spin.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: rotor_coil
+DROP_TARGET_ID: needle_bearing_stand
+RESULT_COLOR: #22c55e
+RESULT_STATE: continuous_rapid_rotation
+WHY: Opposite electromagnetic forces act on the two sides of the coil (Fleming's Left-Hand Rule), producing a continuous turning couple (torque) that spins the motor.
+
+===STEP===
+ID: step-5
+INSTRUCTION: Why must the insulation on one axle end of the wire coil be stripped on only one half of its circumference?
+ACTION_TYPE: select_observation
+OPTIONS: It acts as a half-wave commutator, turning current OFF during the return half-cycle so momentum completes rotation without opposing torque|To prevent the wire from getting hot|To allow the coil to attract dust|To change DC into high voltage AC
+CORRECT_OPTION: It acts as a half-wave commutator, turning current OFF during the return half-cycle so momentum completes rotation without opposing torque
+RESULT_COLOR: #16a34a
+RESULT_STATE: dc_commutation_concept_verified
+HINT: If current flowed continuously in the same direction around the loop during full 360° rotation, the magnetic force would reverse every half-turn and stall the motor.
+WHY: Removing half the insulation breaks the circuit during the reverse swing, allowing rotational inertia to complete the cycle and maintaining unidirectional rotation.
+
+===OUTCOME===
+SUMMARY: A DC motor converts electrical energy into mechanical rotational kinetic energy via magnetic forces acting on opposite sides of a current loop.
+REFLECTION_QUESTIONS:
+- How does a split-ring commutator in an industrial DC motor provide continuous bidirectional commutation?
+- What three changes would increase the rotational speed and power of this DC motor?

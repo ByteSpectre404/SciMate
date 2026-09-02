@@ -1,0 +1,66 @@
+TITLE: Transistor Switching Action and Threshold Voltage
+SUBJECT: physics
+GRADE: 11
+UNIT: Electronics (Unit 11)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Investigate the electronic switching behavior of an NPN silicon transistor and measure the base-emitter cut-in voltage (~0.7 V) required to switch it from OFF to ON state.
+
+MATERIALS:
+- 2SD313 (or similar power NPN) transistor
+- Digital multimeter (set to DC Volts 0 - 20 V)
+- 2.5 V indicator bulb with holder
+- 10 kΩ potentiometer & 10 kΩ fixed resistor
+- 3.0 V DC battery pack & breadboard
+
+LEARNING_OUTCOMES:
+- Understand transistor cutoff (OFF state) and saturation (ON state)
+- Measure the base-emitter forward voltage (Vbe) using a digital multimeter
+- Identify the critical conduction threshold voltage (~0.7 V for silicon) that switches the load ON
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the multimeter probes across the transistor base (B) and emitter (E) terminals to monitor Vbe.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: multimeter_probes
+DROP_TARGET_ID: base_emitter_junction
+RESULT_COLOR: #38bdf8
+RESULT_STATE: vbe_monitor_connected
+WHY: Measuring Vbe directly tracks the forward voltage across the internal PN junction controlling conduction.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Set the potentiometer to minimum (Vbe = 0.2 V) and close the main circuit power switch.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: knife_switch
+DROP_TARGET_ID: breadboard_circuit
+RESULT_COLOR: #94a3b8
+RESULT_STATE: vbe_0_2v_transistor_off
+WHY: When Vbe < 0.6 V, the barrier potential is not overcome; the transistor remains in the cutoff region (OFF switch) and the bulb stays dark.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Gradually turn the potentiometer knob until Vbe reaches 0.7 V to 0.8 V.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: potentiometer_knob
+DROP_TARGET_ID: breadboard_circuit
+RESULT_COLOR: #fef08a
+RESULT_STATE: vbe_0_7v_bulb_illuminates
+WHY: Once Vbe exceeds the ~0.7 V silicon threshold, base current surges, saturating the collector-emitter path (ON switch) and fully lighting the bulb.
+
+===STEP===
+ID: step-4
+INSTRUCTION: At approximately what base-emitter voltage (Vbe) does a silicon transistor turn ON to conduct current through its collector load?
+ACTION_TYPE: select_observation
+OPTIONS: About 0.7 V (barrier potential of silicon)|About 0.0 V (conducts immediately)|About 100 V|Requires reverse negative voltage
+CORRECT_OPTION: About 0.7 V (barrier potential of silicon)
+RESULT_COLOR: #ca8a04
+RESULT_STATE: vbe_threshold_proven
+HINT: Silicon semiconductor p-n junctions require approximately 0.6 V to 0.7 V forward bias to overcome the depletion zone barrier.
+WHY: Below ~0.7 V, the transistor behaves as an open switch (cutoff); above ~0.7 V, the base-emitter diode conducts, switching the transistor into the closed (conducting) state.
+
+===OUTCOME===
+SUMMARY: A silicon transistor acts as an electronic switch: it is OFF (open circuit) when base-emitter voltage is below 0.7 V, and switches ON (closed circuit) when Vbe exceeds ~0.7 V.
+REFLECTION_QUESTIONS:
+- Why are transistors preferred over mechanical relays in modern computerized switching systems?
+- What are the advantages of electronic solid-state switches (no moving parts, high speed, long lifespan)?

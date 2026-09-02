@@ -1,0 +1,65 @@
+TITLE: Force on a Current-Carrying Conductor in a Magnetic Field
+SUBJECT: physics
+GRADE: 11
+UNIT: Electromagnetism & Electromagnetic Induction (Unit 13)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Demonstrate the catapult motor effect (Fleming's Left-Hand Rule) by observing the mechanical force exerted on a free-rolling copper conductor placed between the poles of a U-shaped magnet.
+
+MATERIALS:
+- Powerful U-shaped horseshoe magnet (North and South poles)
+- Two smooth parallel brass guide rails on a wooden base
+- Lightweight rolling copper conductor rod (BC)
+- DC power supply (3.0 V - 6.0 V) with reversing knife switch
+
+LEARNING_OUTCOMES:
+- Observe the catapult force acting on a current-carrying wire inside an external magnetic field
+- Apply Fleming's Left-Hand Rule: First Finger = Field (B), seCond finger = Current (I), thuMb = Motion/Force (F)
+- Predict the direction of motion when either current direction or magnetic field polarity is reversed
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place the rolling copper conductor rod across the parallel brass rails between the poles of the U-magnet.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: copper_roller_rod
+DROP_TARGET_ID: brass_guide_rails
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: roller_at_rest_in_magnetic_gap
+WHY: The brass rails provide low-friction electrical contact allowing the rod to roll freely when an electromagnetic force acts on it.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Close the switch to pass current from B to C through the rod inside the downward magnetic field.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: knife_switch
+DROP_TARGET_ID: dc_power_supply
+RESULT_COLOR: #3b82f6
+RESULT_STATE: rod_rolls_vigorously_forward
+WHY: The circular magnetic field around the current-carrying rod interacts with the external field, concentrating field lines behind the rod and creating a catapult force forward (F = BIL).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Reverse the direction of current flow through the rod using the polarity switch.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: reversing_switch
+DROP_TARGET_ID: dc_power_supply
+RESULT_COLOR: #ef4444
+RESULT_STATE: rod_rolls_vigorously_backward
+WHY: Reversing current direction (I) reverses the direction of the Lorentz force vector (F = I × B), driving the rod in the opposite direction.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Which scientific rule is used to predict the direction of force acting on a current-carrying conductor in a magnetic field?
+ACTION_TYPE: select_observation
+OPTIONS: Fleming's Left-Hand Rule (thuMb = Motion, First finger = Field, seCond finger = Current)|Fleming's Right-Hand Dynamo Rule|Ohm's Law of Resistance|Archimedes' Buoyancy Rule
+CORRECT_OPTION: Fleming's Left-Hand Rule (thuMb = Motion, First finger = Field, seCond finger = Current)
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: flemings_left_hand_rule_verified
+HINT: Stretch the thumb, forefinger, and second finger of the left hand mutually perpendicular to one another.
+WHY: Fleming's Left-Hand Rule relates the orthogonal directions of magnetic field (B), current (I), and resulting mechanical force (F).
+
+===OUTCOME===
+SUMMARY: A current-carrying conductor placed perpendicular to an external magnetic field experiences a mechanical force (catapult effect) described by F = BIL and Fleming's Left-Hand Rule.
+REFLECTION_QUESTIONS:
+- How does increasing the current through the rod or using a stronger magnet affect the rolling acceleration of the rod?
+- How is this fundamental force utilized in electric motors, galvanometers, and loudspeakers?

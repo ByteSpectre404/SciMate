@@ -1,0 +1,64 @@
+TITLE: Molecular Models and Structures of Alkanes (C1 to C5)
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Hydrocarbons and Their Derivatives (Unit 14)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Build and examine 3D ball-and-stick molecular models of the first five alkanes (Methane CH4, Ethane C2H6, Propane C3H8, Butane C4H10, Pentane C5H12) to understand homologous series.
+
+MATERIALS:
+- Molecular model kit (Black spheres = Carbon atoms with 4 tetrahedral holes, White spheres = Hydrogen atoms, connecting sticks = single covalent bonds)
+- Modeling guide sheet
+- Display stand
+
+LEARNING_OUTCOMES:
+- Construct 3-dimensional tetrahedral models of saturated hydrocarbons (alkanes)
+- Verify the general homologous formula CnH2n+2
+- Observe that each successive member of the homologous series differs by a constant -CH2- methylene unit
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect 1 black carbon sphere to 4 white hydrogen spheres using single bond sticks to construct Methane (CH4).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: methane_components
+DROP_TARGET_ID: model_assembly_mat
+RESULT_COLOR: #1e293b
+RESULT_STATE: tetrahedral_ch4_model
+WHY: Carbon has a valency of 4 and forms 4 single covalent bonds in a tetrahedral geometry (bond angle ~109.5°).
+
+===STEP===
+ID: step-2
+INSTRUCTION: Connect 2 carbon spheres with a C-C single bond and attach 6 hydrogen spheres to construct Ethane (C2H6).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: ethane_components
+DROP_TARGET_ID: model_assembly_mat
+RESULT_COLOR: #334155
+RESULT_STATE: linear_c2h6_model
+WHY: Ethane formula C2H6 adheres to CnH2n+2 with n = 2 (2 × 2 + 2 = 6 hydrogens).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Construct Propane (C3H8), Butane (C4H10), and Pentane (C5H12) by successively adding -CH2- carbon backbone units.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: alkane_chain_components
+DROP_TARGET_ID: model_assembly_mat
+RESULT_COLOR: #475569
+RESULT_STATE: alkane_series_c1_to_c5_models
+WHY: In an alkane homologous series, each successive hydrocarbon adds one carbon atom and two hydrogen atoms (a -CH2- group).
+
+===STEP===
+ID: step-4
+INSTRUCTION: What is the general mathematical formula for the open-chain homologous series of saturated alkanes?
+ACTION_TYPE: select_observation
+OPTIONS: CnH2n+2 (where n is the number of carbon atoms)|CnH2n (alkenes)|CnH2n-2 (alkynes)|CnHn
+CORRECT_OPTION: CnH2n+2 (where n is the number of carbon atoms)
+RESULT_COLOR: #0284c7
+RESULT_STATE: alkane_formula_verified
+HINT: For Methane n=1 → CH4; for Ethane n=2 → C2H6; for Propane n=3 → C3H8.
+WHY: Saturated open-chain hydrocarbons contain only single carbon-carbon bonds and follow the general formula CnH2n+2.
+
+===OUTCOME===
+SUMMARY: Physical ball-and-stick models demonstrate that alkanes (methane to pentane) are tetrahedral saturated hydrocarbons with single C-C and C-H bonds adhering to the homologous series formula CnH2n+2.
+REFLECTION_QUESTIONS:
+- What is structural isomerism, and what are the two structural isomers of butane (C4H10)?
+- How do physical properties like boiling point and melting point change as carbon chain length increases from C1 to C5?

@@ -1,0 +1,71 @@
+TITLE: Exothermic and Endothermic Chemical Reactions
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Heat Changes in Reactions
+DIFFICULTY: medium
+DURATION_MINUTES: 15
+DESCRIPTION: Compare temperature changes in reactions between magnesium and HCl (exothermic) vs citric acid and sodium bicarbonate (endothermic).
+
+MATERIALS:
+- Magnesium ribbon
+- Dilute hydrochloric acid (HCl)
+- Citric acid solution
+- Sodium bicarbonate solution
+- Beakers
+- Thermometer
+
+LEARNING_OUTCOMES:
+- Distinguish exothermic reactions (heat evolved, temp rises) from endothermic reactions (heat absorbed, temp drops)
+- Record enthalpy temperature changes systematically
+
+===STEP===
+ID: step-1
+INSTRUCTION: Measure initial temperature of dilute HCl in beaker, then add magnesium ribbon.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: magnesium_ribbon
+DROP_TARGET_ID: hcl_beaker
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: effervescent
+EXPECTED_VALUE: 45.0
+WHY: Reacting metal with acid breaks and forms bonds releasing stored chemical energy.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Monitor thermometer during reaction between Mg and HCl. What happens to temperature?
+ACTION_TYPE: select_observation
+OPTIONS: Temperature rises significantly|Temperature drops below zero|Temperature remains constant|Solution freezes
+CORRECT_OPTION: Temperature rises significantly
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: effervescent
+EXPECTED_VALUE: 45.0
+HINT: Heat is evolved during exothermic metal-acid displacement.
+WHY: Mg + 2HCl -> MgCl2 + H2 + Heat. Bond formation releases energy to surroundings, raising temperature (exothermic).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Mix citric acid solution and sodium bicarbonate solution in a fresh beaker.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: sodium_bicarbonate_solution
+DROP_TARGET_ID: citric_acid_beaker
+RESULT_COLOR: #f8fafc
+RESULT_STATE: effervescent_endothermic
+EXPECTED_VALUE: 15.0
+WHY: Citric acid reacts with bicarbonate absorbing thermal energy from solution.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Monitor thermometer during citric acid & bicarbonate reaction. What happens to temperature?
+ACTION_TYPE: select_observation
+OPTIONS: Temperature drops significantly|Temperature rises significantly|Beaker bursts into flame|No change
+CORRECT_OPTION: Temperature drops significantly
+RESULT_COLOR: #f8fafc
+RESULT_STATE: effervescent_endothermic
+EXPECTED_VALUE: 15.0
+HINT: Heat energy is absorbed from surroundings in endothermic reactions.
+WHY: Breaking reactant bonds requires more energy than product bond formation, absorbing heat from surroundings and dropping temperature (endothermic).
+
+===OUTCOME===
+SUMMARY: Magnesium with HCl releases heat (exothermic, temp rises), whereas citric acid with sodium bicarbonate absorbs heat (endothermic, temp drops).
+REFLECTION_QUESTIONS:
+- Is neutralisation between NaOH and HCl exothermic or endothermic?
+- Write a general chemical equation representing an endothermic reaction.

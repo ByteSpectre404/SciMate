@@ -1,0 +1,76 @@
+TITLE: Measuring Upthrust and Weight of Displaced Liquid
+SUBJECT: physics
+GRADE: 10
+UNIT: Hydrostatic Pressure and Applications (Unit 15)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Measure upthrust quantitatively using an overflow can (Eureka can) and verify that upthrust equals the weight of the displaced liquid (Archimedes' Principle).
+
+MATERIALS:
+- Eureka can (overflow vessel) with spout
+- Solid metal cylinder / cube marked at half volume
+- Sensitive spring balance (0 - 5 N)
+- Clean dry collecting beaker
+- Precision digital balance
+
+LEARNING_OUTCOMES:
+- Quantify upthrust as U = Weight_air - Apparent_Weight_liquid
+- Collect and weigh the volume of liquid displaced by submerged bodies
+- Verify Archimedes' Principle: Upthrust = Weight of Displaced Fluid
+
+===STEP===
+ID: step-1
+INSTRUCTION: Fill the Eureka can until water overflows from the spout, then place the dry empty beaker under the spout.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: water_jug
+DROP_TARGET_ID: eureka_can
+RESULT_COLOR: #38bdf8
+RESULT_STATE: primed_overflow_can
+WHY: Priming ensures any subsequently immersed volume immediately overflows precisely into the collection beaker.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Suspend the metal cube in air from the spring balance and record its initial weight (e.g. 4.0 N).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metal_cube
+DROP_TARGET_ID: spring_balance
+RESULT_COLOR: #94a3b8
+RESULT_STATE: weight_in_air_recorded
+WHY: The air reading represents the true weight W_air of the solid metal body.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Lower the metal cube until it is submerged up to the half-way line and collect displaced water.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: spring_balance
+DROP_TARGET_ID: eureka_can
+RESULT_COLOR: #0ea5e9
+RESULT_STATE: half_submerged_3_7N_overflow_0_3N
+WHY: Immersing half the volume displaces a corresponding volume of water into the collecting beaker (reading drops to 3.7 N, upthrust = 0.3 N, displaced water = 0.3 N).
+
+===STEP===
+ID: step-4
+INSTRUCTION: Lower the cube until it is completely submerged below the water surface.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: spring_balance
+DROP_TARGET_ID: eureka_can
+RESULT_COLOR: #0284c7
+RESULT_STATE: fully_submerged_3_4N_overflow_0_6N
+WHY: Fully immersing the volume displaces maximum water (reading drops to 3.4 N, upthrust = 0.6 N, displaced water weight = 0.6 N).
+
+===STEP===
+ID: step-5
+INSTRUCTION: How does the measured upthrust (W_air - W_submerged) compare with the weight of the displaced water?
+ACTION_TYPE: select_observation
+OPTIONS: Upthrust is exactly equal to the weight of displaced water|Upthrust is greater than the weight of displaced water|Upthrust is less than the weight of displaced water|There is no mathematical relationship
+CORRECT_OPTION: Upthrust is exactly equal to the weight of displaced water
+RESULT_COLOR: #0369a1
+RESULT_STATE: archimedes_principle_verified
+HINT: Calculate U = 4.0 N - 3.4 N = 0.6 N, and compare with the measured beaker weight of displaced liquid (0.6 N).
+WHY: Archimedes' Principle states that when a body is wholly or partially immersed in a fluid, it experiences an upthrust equal to the weight of the fluid displaced.
+
+===OUTCOME===
+SUMMARY: The upthrust experienced by a submerged solid is quantitatively equal to the weight of the liquid displaced by the submerged volume, proving Archimedes' Principle.
+REFLECTION_QUESTIONS:
+- Does upthrust change if the fully submerged cube is lowered deeper into the water?
+- Why do large steel ships float in ocean water while a solid steel sphere sinks?

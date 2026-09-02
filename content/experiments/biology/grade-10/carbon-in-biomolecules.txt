@@ -1,0 +1,66 @@
+TITLE: Identification of Carbon (C) in Biomolecules
+SUBJECT: biology
+GRADE: 10
+UNIT: Biomolecules
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Identify the universal presence of elemental carbon in biological tissues including spinach stems, fish, and chickpeas.
+
+MATERIALS:
+- Spinach stems
+- Piece of fish
+- Chickpea
+- Crucible
+- White paper
+- Heat source
+
+LEARNING_OUTCOMES:
+- Prove that carbon is the primary structural backbone of all organic biomolecules
+- Observe the formation of charred elemental carbon residue upon heating
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place crushed spinach stem pulp into a crucible.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: spinach_pulp
+DROP_TARGET_ID: crucible
+RESULT_COLOR: #16a34a
+RESULT_STATE: moist_spinach_pulp
+WHY: Spinach stems contain carbohydrates, proteins, and lipids rich in carbon chains.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Heat the sample strongly with a burner until only dry residue remains.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: heat_source
+DROP_TARGET_ID: crucible
+RESULT_COLOR: #09090b
+RESULT_STATE: charred_black_carbon
+WHY: Strong heat burns off volatile elements (H, O, N) leaving elemental carbon char behind.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Rub the final dark residue against a piece of white paper.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: carbon_residue
+DROP_TARGET_ID: white_paper
+RESULT_COLOR: #09090b
+RESULT_STATE: charcoal_streak
+WHY: Rubbing tests the texture and color marking of the charred material.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What mark is left on the white paper by the charred residue?
+ACTION_TYPE: select_observation
+OPTIONS: A black mark (charcoal)|A bright yellow streak|A clear liquid stain|No mark at all
+CORRECT_OPTION: A black mark (charcoal)
+RESULT_COLOR: #09090b
+RESULT_STATE: charcoal_streak
+HINT: Carbon produces a charcoal black mark on paper.
+WHY: The black mark is elemental carbon, proving biomolecules contain carbon backbones.
+
+===OUTCOME===
+SUMMARY: Heating biological samples leaves a black residue that marks paper like charcoal, confirming carbon is present in living tissues.
+REFLECTION_QUESTIONS:
+- Why do all organic biomolecules leave black carbon residue when charred?
+- What gases are released during the initial heating phase?

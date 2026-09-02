@@ -1,0 +1,66 @@
+TITLE: Electrolysis of Aqueous Copper(II) Sulphate Solution
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Investigate the electrolysis of aqueous copper(II) sulphate using inert carbon electrodes, observing copper metal deposition at the cathode and oxygen gas liberation at the anode.
+
+MATERIALS:
+- Aqueous copper(II) sulphate solution (CuSO4, 0.5 M)
+- Two inert graphite carbon rods
+- 9.0 V DC battery with connecting leads
+- Glass beaker (150 mL)
+- Glowing wooden splint
+
+LEARNING_OUTCOMES:
+- Formulate the half-reactions: Cathode reduction (Cu²⁺ + 2e⁻ → Cu) and Anode oxidation (4OH⁻ → 2H2O + O2 + 4e⁻)
+- Explain why the blue color of the electrolyte fades over time as Cu²⁺ ions deposit as copper metal
+- Contrast inert graphite electrodes with active copper electrodes
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the carbon electrodes to the 9 V battery and dip both into the blue copper sulphate solution.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: carbon_electrodes_rig
+DROP_TARGET_ID: cuso4_solution_beaker
+RESULT_COLOR: #0284c7
+RESULT_STATE: electrolysis_underway
+WHY: The external DC electric field drives Cu²⁺ and H⁺ cations toward the cathode, and SO4²⁻ and OH⁻ anions toward the anode.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Examine the negative cathode after 5 minutes of continuous current.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cathode_rod
+DROP_TARGET_ID: cuso4_solution_beaker
+RESULT_COLOR: #b45309
+RESULT_STATE: reddish_brown_copper_coating
+WHY: Cu²⁺ ions are selectively discharged in preference to H⁺: Cu²⁺(aq) + 2e⁻ → Cu(s). A shining reddish-brown layer of copper metal coats the cathode.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Examine the positive anode and test the liberated gas bubbles with a glowing splint.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glowing_splint
+DROP_TARGET_ID: anode_rod
+RESULT_COLOR: #f59e0b
+RESULT_STATE: oxygen_bubbles_relight_splint
+WHY: OH⁻ ions are discharged in preference to SO4²⁻: 4OH⁻(aq) → 2H2O(l) + O2(g)↑ + 4e⁻. Oxygen gas relights the glowing splint.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why does the deep blue color of the copper sulphate solution gradually fade over time during electrolysis with carbon electrodes?
+ACTION_TYPE: select_observation
+OPTIONS: Cu²⁺ ions (which cause the blue color) are removed from solution and deposited as copper metal on the cathode|The light in the room fades the dye|Sulfur crystals absorb the blue color|Water molecules decompose into ice
+CORRECT_OPTION: Cu²⁺ ions (which cause the blue color) are removed from solution and deposited as copper metal on the cathode
+RESULT_COLOR: #93c5fd
+RESULT_STATE: color_fading_explained
+HINT: The blue color is due to hydrated Cu²⁺ cations. When they gain electrons and plate out as solid Cu, their concentration decreases.
+WHY: As Cu²⁺ ions are discharged onto the cathode faster than they are replenished, their concentration in solution decreases, causing the blue color to fade.
+
+===OUTCOME===
+SUMMARY: Electrolysis of aqueous copper sulphate with carbon electrodes produces a reddish-brown copper deposit on the cathode and oxygen gas at the anode, while the blue solution fades to dilute sulfuric acid.
+REFLECTION_QUESTIONS:
+- What would happen to the blue color if copper electrodes were used instead of inert carbon electrodes?
+- What acid is left in the solution after all Cu²⁺ ions are deposited?

@@ -1,0 +1,66 @@
+TITLE: Demonstrating Pressure Exerted by Compressed Gas
+SUBJECT: physics
+GRADE: 10
+UNIT: Hydrostatic Pressure and Applications (Unit 15)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate that confined, compressed air exerts pressure on a liquid surface using an open-arm U-tube liquid manometer and an inflated balloon.
+
+MATERIALS:
+- U-tube manometer
+- Colored water
+- Inflated air balloon with tied thread
+- Stand and clamp
+- Metric scale
+
+LEARNING_OUTCOMES:
+- Explain how a U-tube manometer measures gauge pressure differences
+- Understand that compressed gases exert outward force per unit surface area
+- Relate liquid column displacement Δh to excess gas pressure ΔP = hρg
+
+===STEP===
+ID: step-1
+INSTRUCTION: Pour colored water into the U-tube and verify that initial liquid levels in arms X and Y are level.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: colored_water_beaker
+DROP_TARGET_ID: u_tube_manometer
+RESULT_COLOR: #38bdf8
+RESULT_STATE: balanced_u_tube_manometer
+WHY: In an open U-tube, equal atmospheric pressure acts on both arms, causing equal resting heights.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Attach the neck of the inflated air balloon tightly over arm X of the U-tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: inflated_balloon
+DROP_TARGET_ID: u_tube_manometer
+RESULT_COLOR: #f97316
+RESULT_STATE: connected_sealed_balloon
+WHY: Securing the balloon creates an airtight junction between the compressed gas reservoir and arm X.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Untie the restraining thread to release compressed air from the balloon into arm X.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: lab_scissors
+DROP_TARGET_ID: inflated_balloon
+RESULT_COLOR: #0284c7
+RESULT_STATE: displaced_liquid_manometer
+WHY: High pressure in the balloon exerts a downward thrust on the liquid in arm X, driving liquid upward in open arm Y.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens to the liquid levels in arm X and arm Y upon releasing the knot?
+ACTION_TYPE: select_observation
+OPTIONS: Level in arm X goes down while level in arm Y rises|Levels in both arms rise equally|Levels in both arms remain unchanged|Level in arm X rises while arm Y drops
+CORRECT_OPTION: Level in arm X goes down while level in arm Y rises
+RESULT_COLOR: #0ea5e9
+RESULT_STATE: pressure_differential_verified
+HINT: The compressed gas pushes down on the liquid surface in arm X, forcing liquid up into arm Y.
+WHY: The compressed air exerts a pressure exceeding atmospheric pressure, displacing water by a height difference Δh corresponding to ΔP = hρg.
+
+===OUTCOME===
+SUMMARY: Compressed air exerts pressure proportional to its confinement. The excess pressure displaces the liquid in the U-tube manometer until hydrostatic pressure balances gas pressure.
+REFLECTION_QUESTIONS:
+- How does increasing the volume of air compressed in the balloon affect the height difference between arms X and Y?
+- If mercury were used instead of water in the manometer, how would the column displacement change?

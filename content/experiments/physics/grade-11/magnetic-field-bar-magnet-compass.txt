@@ -1,0 +1,75 @@
+TITLE: Magnetic Field of a Bar Magnet with a Plotting Compass
+SUBJECT: physics
+GRADE: 11
+UNIT: Electromagnetism & Electromagnetic Induction (Unit 13)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate the invisible magnetic field surrounding a permanent bar magnet by testing deflections of a magnetic plotting compass near magnetic and non-magnetic materials.
+
+MATERIALS:
+- Permanent bar magnet (North and South poles marked)
+- Magnetic plotting compass needle
+- Test objects: unmagnetized iron bar, brass rod, plastic ruler, glass sheet
+- Plain drawing sheet
+
+LEARNING_OUTCOMES:
+- Define a magnetic field as the region around a magnet where magnetic forces are exerted
+- Use a plotting compass to map magnetic field lines exiting North and entering South
+- Distinguish between magnetic materials (ferromagnetic: iron/steel) and non-magnetic materials (brass, glass, plastic)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place the plotting compass on the table and note its natural North-South resting orientation.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: plotting_compass
+DROP_TARGET_ID: drawing_sheet
+RESULT_COLOR: #38bdf8
+RESULT_STATE: compass_pointing_geographic_north
+WHY: The lightweight magnetized needle aligns naturally with Earth's horizontal geomagnetic field lines.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Bring non-magnetic objects (glass, plastic, brass) near the compass one by one.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: brass_rod
+DROP_TARGET_ID: plotting_compass
+RESULT_COLOR: #94a3b8
+RESULT_STATE: zero_deflection_non_magnetic
+WHY: Non-magnetic materials lack unpaired electron spin alignment and do not exert any magnetic force on the compass needle.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Bring the North pole of the bar magnet close to the compass needle.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bar_magnet_north
+DROP_TARGET_ID: plotting_compass
+RESULT_COLOR: #ef4444
+RESULT_STATE: strong_compass_deflection
+WHY: Like magnetic poles repel and opposite poles attract; the North pole of the bar magnet strongly repels the North tip and attracts the South tip.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Move the compass along curved paths from the North pole to the South pole of the magnet.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: plotting_compass
+DROP_TARGET_ID: bar_magnet_assembly
+RESULT_COLOR: #3b82f6
+RESULT_STATE: magnetic_field_lines_mapped
+WHY: The compass needle aligns tangentially to the magnetic flux lines at every point, tracing continuous closed loops from North to South externally.
+
+===STEP===
+ID: step-5
+INSTRUCTION: In which direction do external magnetic field lines travel outside a permanent bar magnet?
+ACTION_TYPE: select_observation
+OPTIONS: From North pole to South pole in continuous closed curves|From South pole to North pole|Radially outward in all directions indefinitely|In random chaotic zigzags
+CORRECT_OPTION: From North pole to South pole in continuous closed curves
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: field_direction_verified
+HINT: By scientific convention, magnetic field lines emerge from the North pole and enter into the South pole.
+WHY: External magnetic field lines represent the direction of force that would act on an isolated magnetic North pole, pointing from North to South.
+
+===OUTCOME===
+SUMMARY: A permanent magnet creates a vector magnetic field around itself. Field lines exit the North pole, curve through space, and enter the South pole, exerting forces on magnetic materials and compasses.
+REFLECTION_QUESTIONS:
+- Why do two magnetic field lines never cross or intersect each other?
+- How does Earth behave like a giant bar magnet with its magnetic South pole near the geographic North Pole?

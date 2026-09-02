@@ -1,0 +1,65 @@
+TITLE: Electrolysis of Aqueous Sodium Chloride Solution
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Investigate the electrolysis of concentrated aqueous sodium chloride (brine) using inert carbon electrodes, identifying hydrogen gas at the cathode and chlorine gas at the anode.
+
+MATERIALS:
+- Concentrated sodium chloride solution (Brine, NaCl(aq))
+- Two inert graphite carbon rods
+- 9.0 V DC battery / power source with connecting wires
+- Glass beaker & red litmus paper
+
+LEARNING_OUTCOMES:
+- Define electrolysis as the decomposition of an electrolyte by passing a direct electric current
+- Predict electrode reactions: Cathode reduction (2H⁺ + 2e⁻ → H2) and Anode oxidation (2Cl⁻ → Cl2 + 2e⁻)
+- Understand the industrial Chlor-Alkali process for manufacturing NaOH, Cl2, and H2
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect two carbon rod electrodes to the 9 V DC battery terminals and immerse into the NaCl solution.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: carbon_electrodes_rig
+DROP_TARGET_ID: nacl_brine_beaker
+RESULT_COLOR: #3b82f6
+RESULT_STATE: active_gas_evolution_both_electrodes
+WHY: DC voltage drives selective discharge of ions: H⁺ is reduced faster than Na⁺, and Cl⁻ is oxidized.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Observe gas bubbling at the negative cathode (connected to the negative battery terminal).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cathode_probe
+DROP_TARGET_ID: nacl_brine_beaker
+RESULT_COLOR: #f8fafc
+RESULT_STATE: cathode_hydrogen_gas_bubbles
+WHY: Cathode reaction: 2H⁺(aq) + 2e⁻ → H2(g)↑. Colorless odorless hydrogen gas bubbles off rapidly.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Observe gas bubbling at the positive anode (connected to positive battery terminal) and test with moist red litmus.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: moist_red_litmus
+DROP_TARGET_ID: anode_probe
+RESULT_COLOR: #fef08a
+RESULT_STATE: anode_chlorine_bleaches_litmus_white
+WHY: Anode reaction: 2Cl⁻(aq) → Cl2(g)↑ + 2e⁻. Pale yellow-green chlorine gas evolves with a bleaching and choking odor.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens to the remaining solution in the beaker as H⁺ and Cl⁻ are discharged as gases?
+ACTION_TYPE: select_observation
+OPTIONS: It becomes a basic solution of sodium hydroxide (NaOH) with accumulated Na⁺ and OH⁻ ions|It becomes pure concentrated sulfuric acid|It turns into solid sodium metal|It evaporates completely into vacuum
+CORRECT_OPTION: It becomes a basic solution of sodium hydroxide (NaOH) with accumulated Na⁺ and OH⁻ ions
+RESULT_COLOR: #16a34a
+RESULT_STATE: chlor_alkali_process_proven
+HINT: Water dissociates into H⁺ and OH⁻. As H⁺ and Cl⁻ evolve as gases, Na⁺ and OH⁻ remain in the liquid.
+WHY: Removal of H⁺ and Cl⁻ leaves Na⁺ and OH⁻ ions in solution, producing aqueous sodium hydroxide (the Chlor-Alkali industrial process).
+
+===OUTCOME===
+SUMMARY: Electrolysis of aqueous sodium chloride produces hydrogen gas at the cathode, chlorine gas at the anode, and leaves a solution of sodium hydroxide (NaOH).
+REFLECTION_QUESTIONS:
+- Why are H⁺ ions reduced at the cathode in preference to Na⁺ ions?
+- What are three important industrial uses of the products (NaOH, Cl2, H2) obtained from brine electrolysis?

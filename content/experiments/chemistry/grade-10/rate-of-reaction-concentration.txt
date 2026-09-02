@@ -1,0 +1,65 @@
+TITLE: Effect of Concentration on Rate of Reaction
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Rate of Reactions (Unit 17)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate how the concentration of dilute hydrochloric acid affects the speed of reaction and rate of hydrogen gas bubbling with magnesium ribbon.
+
+MATERIALS:
+- Cleaned magnesium ribbon strips of equal length (2 cm each)
+- Three test tubes labeled 1 (Low conc), 2 (Medium conc), 3 (High conc)
+- Dilute hydrochloric acid (HCl) & distilled water
+- Test tube rack & stopwatch
+
+LEARNING_OUTCOMES:
+- Understand that concentration represents the number of reacting particles per unit volume
+- Explain why higher concentration leads to higher collision frequency and faster reaction rate
+- Compare fizzing intensity: 2.5 mL HCl (low) vs 5.0 mL HCl (med) vs 7.5 mL HCl (high) in constant total volumes
+
+===STEP===
+ID: step-1
+INSTRUCTION: Prepare three tubes with different concentrations of HCl (diluted to equal 15 mL total volume with water).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: hcl_acid_bottle
+DROP_TARGET_ID: concentration_tubes_set
+RESULT_COLOR: #f0fdf4
+RESULT_STATE: prepared_concentration_gradients
+WHY: Constant total volume ensures that varying the amount of acid directly varies the concentration of H+ reactant ions.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add a 2 cm cleaned magnesium ribbon to Tube 1 (lowest concentration: 2.5 mL acid + 12.5 mL water).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: magnesium_strip_1
+DROP_TARGET_ID: tube_1_low
+RESULT_COLOR: #dcfce7
+RESULT_STATE: slow_effervescence_low_conc
+WHY: Lower density of H+ ions per unit volume results in fewer collisions per second with the metal surface.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Add identical magnesium ribbons to Tube 2 (5.0 mL acid) and Tube 3 (7.5 mL acid - highest concentration).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: magnesium_strip_3
+DROP_TARGET_ID: tube_3_high
+RESULT_COLOR: #86efac
+RESULT_STATE: rapid_violent_fizzing_high_conc
+WHY: At higher concentration, more H+ ions crowd the unit volume, producing a much higher collision rate and rapid gas liberation.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What is the relationship between the concentration of reactants and the rate of a chemical reaction?
+ACTION_TYPE: select_observation
+OPTIONS: Rate of reaction increases as the concentration of reactants increases|Concentration does not affect the rate of reaction|Lower concentration produces a faster reaction|Gas bubbles stop completely at higher concentrations
+CORRECT_OPTION: Rate of reaction increases as the concentration of reactants increases
+RESULT_COLOR: #16a34a
+RESULT_STATE: concentration_rate_law_verified
+HINT: More reacting particles in the same volume collide more frequently with the solid magnesium surface.
+WHY: Higher concentration increases the particle density per unit volume, which increases collision frequency per unit time, speeding up the reaction rate.
+
+===OUTCOME===
+SUMMARY: Increasing the concentration of hydrochloric acid increases the rate of reaction with magnesium ribbon due to a higher frequency of reactant collisions per unit time.
+REFLECTION_QUESTIONS:
+- Why does pure oxygen cause substances to burn much faster than in atmospheric air (which is ~21% oxygen)?
+- What happens to the rate of reaction as reactants are consumed over time?

@@ -1,0 +1,67 @@
+TITLE: Identification of Water as a Constituent in Food
+SUBJECT: biology
+GRADE: 10
+UNIT: Biomolecules
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Identify the presence of water in organic food materials such as dried meat, egg shell, and plant leaves through gentle heating.
+
+MATERIALS:
+- Dried meat sample
+- Dried egg shell sample
+- Dried plant leaves sample
+- Crucible
+- Glass sheet
+- Anhydrous cobalt chloride paper
+- Heat source (Bunsen burner)
+
+LEARNING_OUTCOMES:
+- Confirm that food materials contain water as an essential constituent
+- Use anhydrous cobalt chloride paper (blue to pink) to test for moisture
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place ground dried plant leaves into the crucible and set it on the heat source.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: plant_leaves_sample
+DROP_TARGET_ID: crucible
+RESULT_COLOR: #16a34a
+RESULT_STATE: heating_food_sample
+WHY: Heating breaks down hydrogen bonds and evaporates trapped water vapor from food cells.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Hold a glass sheet above the heating crucible to collect condensation.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glass_sheet
+DROP_TARGET_ID: crucible
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: condensed_water_droplets
+WHY: The cool glass sheet condenses hot water vapor rising from the heated sample into droplets.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Test the collected droplets on the glass sheet using blue anhydrous cobalt chloride paper.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cobalt_chloride_paper
+DROP_TARGET_ID: glass_sheet
+RESULT_COLOR: #ec4899
+RESULT_STATE: cobalt_chloride_pink
+WHY: Anhydrous cobalt chloride is a chemical indicator specific for water.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What color change occurs on the anhydrous cobalt chloride paper when it touches the droplets?
+ACTION_TYPE: select_observation
+OPTIONS: Changes from blue to pink|Changes from white to blue|Turns dark black|No color change
+CORRECT_OPTION: Changes from blue to pink
+RESULT_COLOR: #ec4899
+RESULT_STATE: cobalt_chloride_pink
+HINT: Blue cobalt chloride turns pink when hydrated by water.
+WHY: Water reacts with anhydrous cobalt chloride (blue) converting it to hydrated cobalt chloride (pink), confirming water is present.
+
+===OUTCOME===
+SUMMARY: Droplets condensed on the glass sheet turned blue cobalt chloride paper to pink, confirming that water is a constituent of biomolecules in food.
+REFLECTION_QUESTIONS:
+- Why does anhydrous copper sulphate turn from white to blue in the presence of water?
+- Why is water essential in living cells even in dry food parts?

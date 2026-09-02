@@ -1,0 +1,66 @@
+TITLE: Electroplating an Iron Spoon with Copper
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Electroplate a cleaned iron spoon with an adherent protective and decorative layer of copper metal using aqueous copper(II) sulphate and a pure copper anode.
+
+MATERIALS:
+- Cleaned iron spoon (Cathode / object to be plated)
+- Pure copper plate / strip (Anode)
+- Aqueous copper(II) sulphate solution (CuSO4, 0.5 M with dil. H2SO4)
+- 9.0 V DC power supply with rheostat & ammeter
+- Glass beaker (250 mL) & connecting wires
+
+LEARNING_OUTCOMES:
+- Assemble an electroplating apparatus with the object at the cathode and source metal at the anode
+- Understand the half-reactions: Anode dissolution (Cu → Cu²⁺ + 2e⁻) and Cathode deposition (Cu²⁺ + 2e⁻ → Cu)
+- Explain why the concentration of the electrolyte remains constant during electroplating with an active anode
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the cleaned iron spoon to the negative terminal (Cathode) and the copper plate to the positive terminal (Anode).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_spoon_lead
+DROP_TARGET_ID: dc_negative_terminal
+RESULT_COLOR: #3b82f6
+RESULT_STATE: electroplating_circuit_wired
+WHY: In electroplating, the object to be coated must always be made the cathode (negative electrode) where metal cations gain electrons.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Immerse both the copper anode and iron spoon cathode into the copper sulphate electrolyte.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: electrodes_fixture
+DROP_TARGET_ID: cuso4_bath_beaker
+RESULT_COLOR: #0284c7
+RESULT_STATE: immersed_plating_bath
+WHY: The electrolyte contains free Cu²⁺ ions that migrate across the solution toward the cathode under the electric potential.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Pass a small, steady direct current (0.2 A) through the cell for 10 minutes.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: dc_current_regulator
+DROP_TARGET_ID: cuso4_bath_beaker
+RESULT_COLOR: #b45309
+RESULT_STATE: uniform_copper_coating_formed
+WHY: Cu²⁺ ions deposit smoothly onto the spoon (Cu²⁺ + 2e⁻ → Cu), while the copper anode dissolves (Cu → Cu²⁺ + 2e⁻) to replenish the solution.
+
+===STEP===
+ID: step-4
+INSTRUCTION: In electroplating an object with metal, which electrode must the object to be coated always be connected to?
+ACTION_TYPE: select_observation
+OPTIONS: Cathode (negative terminal) where metal cations undergo reduction and plate out|Anode (positive terminal)|Either terminal alternately using AC current|Directly to ground without battery
+CORRECT_OPTION: Cathode (negative terminal) where metal cations undergo reduction and plate out
+RESULT_COLOR: #16a34a
+RESULT_STATE: electroplating_rules_verified
+HINT: Positively charged metal ions (cations like Cu²⁺) are attracted only to the negative electrode (cathode).
+WHY: Metal cations are positively charged and migrate exclusively to the cathode (negative electrode) to gain electrons and deposit as a solid metallic layer.
+
+===OUTCOME===
+SUMMARY: An iron spoon is electroplated with copper by connecting it as the cathode in a copper sulphate electrolyte with a pure copper anode, depositing a uniform, corrosion-resistant metallic copper coating.
+REFLECTION_QUESTIONS:
+- Why does the concentration of the copper sulphate bath remain constant throughout the plating process?
+- What are two practical reasons for electroplating everyday metal articles (e.g. chrome plating on automobile parts, silver plating on cutlery)?

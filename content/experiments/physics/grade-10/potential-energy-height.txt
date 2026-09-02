@@ -1,0 +1,65 @@
+TITLE: Gravitational Potential Energy and Height
+SUBJECT: physics
+GRADE: 10
+UNIT: Work, Energy and Power (Unit 18)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate that gravitational potential energy stored in an object increases in direct proportion to its release height above the ground using clay depression measurements.
+
+MATERIALS:
+- Smooth moist modeling clay bed (3 cm thick)
+- Heavy spherical metal weight (e.g. 500 g)
+- Meter ruler
+- Vernier depth gauge / measuring pin
+
+LEARNING_OUTCOMES:
+- Understand gravitational potential energy Ep = mgh
+- Relate work done in deforming clay to the kinetic and potential energy of falling masses
+- Prove that Ep is directly proportional to vertical height (h)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Smooth the clay bed into a uniform flat 3 cm thick layer on the floor.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: clay_smoother
+DROP_TARGET_ID: clay_bed
+RESULT_COLOR: #d97706
+RESULT_STATE: flat_clay_layer
+WHY: A uniform flat surface provides a consistent baseline for measuring crater depression depth.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Position the metal weight at a height of 0.5 m above the clay and release it vertically from rest.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metal_weight
+DROP_TARGET_ID: clay_bed
+RESULT_COLOR: #ca8a04
+RESULT_STATE: depression_depth_shallow
+WHY: As the weight falls, potential energy converts into kinetic energy, doing work on the clay to form a shallow depression.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Smooth the clay and release the same metal weight from a higher height of 1.5 m.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metal_weight
+DROP_TARGET_ID: clay_bed
+RESULT_COLOR: #a16207
+RESULT_STATE: depression_depth_deep
+WHY: Greater height provides more initial potential energy (Ep = mgh), resulting in greater impact kinetic energy and a deeper depression.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens to the depth of the depression in the clay as the initial release height increases?
+ACTION_TYPE: select_observation
+OPTIONS: Depth of depression increases with greater release height|Depth of depression decreases with greater release height|Depth of depression remains unchanged|The clay bounces the weight without making an indent
+CORRECT_OPTION: Depth of depression increases with greater release height
+RESULT_COLOR: #78350f
+RESULT_STATE: ep_proportional_to_height_verified
+HINT: Potential energy Ep = mgh. Higher release points impart more energy to deform the clay upon impact.
+WHY: Gravitational potential energy is directly proportional to height (Ep ∝ h). The greater the height, the more energy is transferred to deform the clay.
+
+===OUTCOME===
+SUMMARY: The depth of depression in the clay increases with vertical release height, proving that gravitational potential energy increases directly with height (Ep = mgh).
+REFLECTION_QUESTIONS:
+- What energy transformations occur from the moment of release until the weight comes to rest in the clay?
+- If the drop height is doubled, how does the potential energy change?

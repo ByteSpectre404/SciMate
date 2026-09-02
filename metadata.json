@@ -1,0 +1,6 @@
+{
+  "name": "SciMate",
+  "description": "Virtual science lab experiments & AI tutor for Sri Lankan Grade 10 & 11 students preparing for O/L science.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

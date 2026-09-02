@@ -1,0 +1,55 @@
+TITLE: Effect of Surface Area of Reactants on Rate of Reaction
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Rate of Reactions (Unit 17)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare the rate of reaction between dilute hydrochloric acid and equal masses of solid calcium carbonate chips versus finely ground calcium carbonate powder.
+
+MATERIALS:
+- Large calcium carbonate chips (CaCO3, 2.0 g)
+- Fine calcium carbonate powder (CaCO3, 2.0 g)
+- Dilute hydrochloric acid (HCl, 1.0 M, 50 mL in two beakers)
+- Stopwatch & digital balance
+
+LEARNING_OUTCOMES:
+- Explain collision theory in terms of surface area and frequency of effective collisions
+- Observe faster effervescence and shorter dissolution time for powdered reactants
+- Formulate the reaction: CaCO3(s) + 2HCl(aq) → CaCl2(aq) + H2O(l) + CO2(g)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add 2.0 g of large CaCO3 chips into Beaker 1 containing 50 mL dilute HCl and start the stopwatch.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: caco3_chips
+DROP_TARGET_ID: acid_beaker_1
+RESULT_COLOR: #f1f5f9
+RESULT_STATE: slow_steady_effervescence
+WHY: In large solid chips, only the outer surface particles are accessible for collision with H+ ions, leading to a slow reaction rate.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add 2.0 g of fine CaCO3 powder into Beaker 2 containing 50 mL dilute HCl and start timing.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: caco3_powder
+DROP_TARGET_ID: acid_beaker_2
+RESULT_COLOR: #e2e8f0
+RESULT_STATE: vigorous_effervescence_fast_dissolution
+WHY: Grinding into fine powder drastically increases total exposed surface area, increasing the frequency of collisions per second between reactants.
+
+===STEP===
+ID: step-3
+INSTRUCTION: How does decreasing particle size (increasing surface area) affect the rate of reaction?
+ACTION_TYPE: select_observation
+OPTIONS: Increasing surface area increases the rate of reaction (powder reacts much faster than chips)|Surface area has no effect on reaction rate|Larger chips react faster because they are heavier|Powder slows down the reaction rate
+CORRECT_OPTION: Increasing surface area increases the rate of reaction (powder reacts much faster than chips)
+RESULT_COLOR: #0284c7
+RESULT_STATE: surface_area_effect_verified
+HINT: More exposed surface allows more reactant collisions to happen simultaneously in every second.
+WHY: According to collision theory, increasing surface area exposes more reactant particles to collisions, increasing collision frequency and the reaction rate.
+
+===OUTCOME===
+SUMMARY: Finely powdered calcium carbonate reacts much faster with dilute hydrochloric acid than large chips because the greater surface area allows a higher frequency of successful collisions.
+REFLECTION_QUESTIONS:
+- Why are medicinal powders and tablets designed to dissolve rapidly in the stomach?
+- How does surface area play a hazardous role in grain elevator dust explosions?

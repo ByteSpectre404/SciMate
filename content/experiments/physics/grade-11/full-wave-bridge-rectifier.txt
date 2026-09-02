@@ -1,0 +1,65 @@
+TITLE: Full-Wave Rectification Using a Diode Bridge
+SUBJECT: physics
+GRADE: 11
+UNIT: Electronics (Unit 11)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Demonstrate full-wave rectification of alternating current (AC) into pulsating direct current (DC) using a four-diode Graetz bridge and a centre-zero galvanometer.
+
+MATERIALS:
+- AC source (hand-crank dynamo / bicycle generator / low-voltage AC transformer)
+- Four 1N4001 diodes soldered in diamond bridge configuration
+- Centre-zero galvanometer (-30 to +30 μA)
+- 100 Ω protective rheostat & connecting wires
+
+LEARNING_OUTCOMES:
+- Assemble a 4-diode bridge rectifier circuit
+- Observe how AC current alternating in two directions is converted into unidirectional pulsating DC
+- Trace conduction paths through diode pairs (D1-D2 on positive half-cycle, D3-D4 on negative half-cycle)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the AC generator directly to the centre-zero galvanometer and rotate slowly.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: ac_generator
+DROP_TARGET_ID: galvanometer
+RESULT_COLOR: #94a3b8
+RESULT_STATE: needle_oscillates_both_directions
+WHY: Direct AC current periodically reverses direction, causing the galvanometer needle to swing back and forth on both sides of zero.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Connect the four-diode bridge rectifier between the AC generator and the galvanometer circuit.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: diode_bridge_assembly
+DROP_TARGET_ID: circuit_board
+RESULT_COLOR: #3b82f6
+RESULT_STATE: bridge_circuit_connected
+WHY: The diamond bridge directs both halves of the AC waveform through the load in the same single direction.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Rotate the AC generator again and observe the galvanometer deflection.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: ac_generator
+DROP_TARGET_ID: diode_bridge_assembly
+RESULT_COLOR: #22c55e
+RESULT_STATE: unidirectional_pulsing_deflection
+WHY: The galvanometer needle now deflects exclusively to one side of zero, confirming that the current flowing through the meter is unidirectional DC.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What is the principal function of a full-wave diode bridge rectifier?
+ACTION_TYPE: select_observation
+OPTIONS: Converts alternating current (AC) into unidirectional direct current (DC)|Amplifies the AC voltage by 400%|Converts electrical energy into magnetic waves|Reverses direct current into alternating current
+CORRECT_OPTION: Converts alternating current (AC) into unidirectional direct current (DC)
+RESULT_COLOR: #16a34a
+RESULT_STATE: rectification_function_confirmed
+HINT: In a bridge rectifier, complementary diode pairs steer both positive and negative AC half-cycles in the same direction through the output load.
+WHY: Bridge rectification channels both half-cycles of alternating current through the load in a single direction, converting bidirectional AC to pulsating DC.
+
+===OUTCOME===
+SUMMARY: A four-diode bridge rectifier converts alternating current into pulsating direct current by steering both half-cycles through the load in the same direction.
+REFLECTION_QUESTIONS:
+- How can a capacitor (smoothing filter) be added across the output to produce smooth steady DC?
+- How many diodes conduct simultaneously during each half-cycle in a bridge rectifier?

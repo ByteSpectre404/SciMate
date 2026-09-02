@@ -1,0 +1,76 @@
+TITLE: Observing Mucor on Bread
+SUBJECT: biology
+GRADE: 10
+UNIT: The World of Life (Unit 13)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Cultivate and observe the microscopic structures of the fungus Mucor (bread mold), including mycelium, hyphae, and sporangia under a compound light microscope.
+
+MATERIALS:
+- Slice of bread
+- Water dropper
+- Glass slide with coverslip
+- Inoculation needle / glass rod
+- Compound light microscope
+
+LEARNING_OUTCOMES:
+- Identify fungal hyphae, mycelium, and sporangia of Mucor under magnification
+- Understand fungal spore germination on moist carbohydrate-rich substrates
+- Differentiate between unicellular and multicellular eukaryotic micro-organisms
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add a few drops of water onto a slice of bread and leave in a dark warm place for 2 days.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: water_dropper
+DROP_TARGET_ID: bread_slice
+RESULT_COLOR: #fef3c7
+RESULT_STATE: moist_bread_mold_mycelium
+WHY: Fungal spores present in the air require moisture and carbohydrate nutrients to germinate into white cottony mycelium.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Use a needle/glass rod to collect a small tuft of Mucor mycelium and transfer onto a glass slide.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glass_rod
+DROP_TARGET_ID: glass_slide
+RESULT_COLOR: #f8fafc
+RESULT_STATE: fungal_specimen_slide
+WHY: Mounting a thin specimen prevents overlapping and enables light to pass through the specimen.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Place a cover slip gently over the specimen drop to prepare the wet mount.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cover_slip
+DROP_TARGET_ID: glass_slide
+RESULT_COLOR: #f1f5f9
+RESULT_STATE: prepared_mucor_slide
+WHY: Lowering the coverslip at an angle avoids trapping air bubbles that obstruct microscopic viewing.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Place the prepared slide on the microscope stage and observe under low and medium power.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: prepared_mucor_slide
+DROP_TARGET_ID: microscope_stage
+RESULT_COLOR: #ecfdf5
+RESULT_STATE: mucor_hyphae_and_sporangia
+WHY: Light passes through the fungal hyphae, magnifying the tubular non-septate hyphae and globose black sporangia.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What is the spherical dark structure at the tip of an aerial hypha in Mucor called?
+ACTION_TYPE: select_observation
+OPTIONS: Sporangium (containing spores)|Chloroplast|Root hair|Pollen sac
+CORRECT_OPTION: Sporangium (containing spores)
+RESULT_COLOR: #15803d
+RESULT_STATE: identified_sporangium
+HINT: It is a spore-producing capsule that bursts when mature to disperse airborne spores.
+WHY: Mucor reproduces asexually by producing numerous haploid spores inside terminal spherical sporangia.
+
+===OUTCOME===
+SUMMARY: Mucor grows as a network of branching hyphae called a mycelium. It reproduces asexually by forming sporangia that release microscopic spores.
+REFLECTION_QUESTIONS:
+- Why does Mucor grow rapidly on moist bread kept in dark, warm conditions?
+- Are the hyphae of Mucor septate or non-septate (coenocytic)?

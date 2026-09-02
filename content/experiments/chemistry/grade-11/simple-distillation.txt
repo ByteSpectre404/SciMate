@@ -1,0 +1,70 @@
+TITLE: Simple Distillation using a Liebig Condenser
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Separation Techniques
+DIFFICULTY: hard
+DURATION_MINUTES: 20
+DESCRIPTION: Separate pure water from a salt solution by boiling and condensing water vapor using a Liebig condenser.
+
+MATERIALS:
+- Distillation flask with salt water
+- Liebig condenser
+- Heat source
+- Thermometer
+- Receiving flask
+- Cold water supply hoses
+
+LEARNING_OUTCOMES:
+- Understand distillation principles (vaporization followed by condensation)
+- Collect pure distilled solvent separated from non-volatile solutes
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect cold water inlet hose to the bottom port of the Liebig condenser jacket.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: water_inlet_hose
+DROP_TARGET_ID: condenser_bottom_port
+RESULT_COLOR: #38bdf8
+RESULT_STATE: cooling_water_circulating
+WHY: Water entering from bottom ensures condenser jacket stays completely filled for efficient cooling.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Heat salt water solution in the distillation flask until it boils.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: heat_source
+DROP_TARGET_ID: distillation_flask
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: boiling_steam_generation
+EXPECTED_VALUE: 100.0
+WHY: Water boils at 100°C producing steam vapor while non-volatile salt remains in flask.
+
+===STEP===
+ID: step-3
+INSTRUCTION: What happens as hot steam enters the cold Liebig condenser tube?
+ACTION_TYPE: select_observation
+OPTIONS: Steam condenses into liquid water droplets|Steam turns into solid ice|Steam reacts forming gas|No change occurs
+CORRECT_OPTION: Steam condenses into liquid water droplets
+RESULT_COLOR: #38bdf8
+RESULT_STATE: condensing_liquid_droplets
+EXPECTED_VALUE: 100.0
+HINT: Cooling converts gas vapor into liquid condensate.
+WHY: Cold water circulating around inner tube cools steam below 100°C, condensing it into pure liquid water.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Collect distillate liquid in receiving flask. Is the collected water salty or pure?
+ACTION_TYPE: select_observation
+OPTIONS: Pure distilled water (salt-free)|Salty water|Muddy water|Acidic liquid
+CORRECT_OPTION: Pure distilled water (salt-free)
+RESULT_COLOR: #38bdf8
+RESULT_STATE: pure_distilled_water
+EXPECTED_VALUE: 100.0
+HINT: Salt does not evaporate at water's boiling point.
+WHY: Salt remains behind in distillation flask because it has a high boiling point (1413°C), leaving distillate pure.
+
+===OUTCOME===
+SUMMARY: Distillation boils water into steam and condenses it in a Liebig condenser, yielding pure distilled water free of non-volatile salts.
+REFLECTION_QUESTIONS:
+- Why must cooling water enter the bottom of the Liebig condenser rather than top?
+- How does distillation differ from simple evaporation?

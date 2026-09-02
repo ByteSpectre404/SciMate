@@ -1,0 +1,64 @@
+TITLE: Electrolytes and Non-Electrolytes
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Classify liquids and solutions into electrolytes and non-electrolytes by testing electrical conductivity using inert carbon electrodes, a DC supply, and an ammeter.
+
+MATERIALS:
+- Inert graphite carbon rods (electrodes in rubber holder)
+- DC Power Supply (3.0 V - 6.0 V) & DC Ammeter / bulb
+- Beakers containing: Distilled water, Acidified water (dil. H2SO4), Aqueous sodium chloride (salt solution), Coconut oil, Kerosene, Pure ethanol
+
+LEARNING_OUTCOMES:
+- Define an electrolyte as a liquid/solution containing mobile ions capable of conducting electricity
+- Distinguish strong electrolytes (acids, salts) from non-electrolytes (covalent molecular liquids like oil, kerosene, pure water, ethanol)
+- Explain the role of free mobile ions vs neutral molecules in electrical conduction
+
+===STEP===
+ID: step-1
+INSTRUCTION: Dip the carbon electrodes into distilled water and close the circuit.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: carbon_electrodes
+DROP_TARGET_ID: distilled_water_beaker
+RESULT_COLOR: #94a3b8
+RESULT_STATE: ammeter_zero_non_conducting
+WHY: Pure distilled water consists of covalent H2O molecules with negligible auto-ionization; no free mobile ions exist to carry charge.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Dip the electrodes into aqueous sodium chloride (salt) solution.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: carbon_electrodes
+DROP_TARGET_ID: salt_water_beaker
+RESULT_COLOR: #3b82f6
+RESULT_STATE: ammeter_deflects_strongly
+WHY: Dissolved NaCl dissociates completely into free mobile Na⁺ and Cl⁻ ions that migrate under electric field, conducting electric current (Electrolyte).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Dip the electrodes into organic liquids: coconut oil, kerosene, and pure ethanol.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: carbon_electrodes
+DROP_TARGET_ID: organic_liquids_beaker
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: zero_current_non_electrolytes
+WHY: Covalent organic compounds lack ionic bonds and do not form ions in liquid state, acting as electrical insulators (Non-electrolytes).
+
+===STEP===
+ID: step-4
+INSTRUCTION: Which of the following tested liquids acts as an electrolyte that conducts electric current?
+ACTION_TYPE: select_observation
+OPTIONS: Acidified water and sodium chloride solution (containing mobile ions)|Coconut oil and kerosene|Pure distilled water and ethanol|All covalent molecular liquids
+CORRECT_OPTION: Acidified water and sodium chloride solution (containing mobile ions)
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: electrolyte_nature_verified
+HINT: Conduction of electricity in liquids requires the presence of freely moving, dissolved positive and negative ions.
+WHY: Only solutions containing free-moving ions (such as dissociated acids and aqueous salts) conduct electricity; non-ionizing covalent liquids are non-electrolytes.
+
+===OUTCOME===
+SUMMARY: Liquids that contain free mobile ions (such as salt solution and acidified water) conduct electricity and are called electrolytes, whereas molecular liquids without free ions are non-electrolytes.
+REFLECTION_QUESTIONS:
+- Why does solid dry sodium chloride not conduct electricity, while aqueous or molten NaCl conducts readily?
+- What distinguishes a strong electrolyte from a weak electrolyte?

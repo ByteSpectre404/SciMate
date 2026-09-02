@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Liquid Fill Animation */
+  @keyframes fillLiquid {
+    0% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+  }
+
+  /* Gas Effervescence / Bubbling */
+  @keyframes floatBubble {
+    0% {
+      transform: translateY(10px) scale(0.6);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(-24px) scale(1.1);
+      opacity: 0;
+    }
+  }
+
+  /* Color Transition */
+  @keyframes gradualColorShift {
+    0% {
+      filter: saturate(0.5) hue-rotate(0deg);
+    }
+    100% {
+      filter: saturate(1.2) hue-rotate(180deg);
+    }
+  }
+
+  /* Meter Needle Sweep */
+  @keyframes needleSweep {
+    0% {
+      transform: rotate(-60deg);
+    }
+    100% {
+      transform: rotate(var(--target-deg, 0deg));
+    }
+  }
+
+  .animate-fill-liquid {
+    animation: fillLiquid 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-float-bubble {
+    animation: floatBubble 1.8s ease-in-out infinite;
+  }
+
+  .animate-needle-sweep {
+    transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+/* Accessibility: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

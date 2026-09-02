@@ -1,0 +1,75 @@
+TITLE: Thermal Expansion of Solids (Ball and Ring)
+SUBJECT: physics
+GRADE: 11
+UNIT: Heat (Unit 9)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate the thermal expansion and contraction of solids using Gravesande's metal ring and ball apparatus.
+
+MATERIALS:
+- Gravesande's ball and ring apparatus
+- Bunsen burner
+- Cold water bath / beaker
+- Insulated handle & tongs
+
+LEARNING_OUTCOMES:
+- Demonstrate that solid metals expand upon heating and contract upon cooling
+- Explain thermal expansion in terms of increased particle vibration amplitudes around fixed lattice positions
+- Discuss everyday applications and hazards of solid expansion (railway expansion gaps, bimetallic strips, riveting)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Test the cold iron ball by passing it through the brass ring at room temperature.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cold_iron_ball
+DROP_TARGET_ID: brass_ring
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: passes_freely_through_ring
+WHY: At room temperature, the diameter of the ball is slightly smaller than the internal diameter of the ring.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Heat the metal ball strongly in the Bunsen burner flame for 3 minutes.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bunsen_burner
+DROP_TARGET_ID: cold_iron_ball
+RESULT_COLOR: #f97316
+RESULT_STATE: hot_expanded_metal_ball
+WHY: Heat energy increases the vibrational kinetic energy of metal lattice atoms, increasing interatomic separation and expanding the ball's volume.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Attempt to pass the hot metal ball through the brass ring.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: hot_expanded_metal_ball
+DROP_TARGET_ID: brass_ring
+RESULT_COLOR: #ef4444
+RESULT_STATE: ball_blocked_too_large_to_pass
+WHY: Thermal expansion has enlarged the ball's diameter beyond the ring's aperture, preventing it from passing through.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Cool the ball by immersing it in a beaker of cold water and re-test through the ring.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: hot_expanded_metal_ball
+DROP_TARGET_ID: cold_water_bath
+RESULT_COLOR: #64748b
+RESULT_STATE: cooled_ball_passes_freely_again
+WHY: Cooling removes kinetic energy; atoms return to their original resting spacing, contracting the ball so it slips through easily.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What general principle does the Gravesande's ball and ring experiment prove?
+ACTION_TYPE: select_observation
+OPTIONS: Solids expand when heated and contract when cooled|Solids change into liquids whenever their diameter increases|The ring shrinks while the ball remains constant|Metals become heavier when heated in air
+CORRECT_OPTION: Solids expand when heated and contract when cooled
+RESULT_COLOR: #334155
+RESULT_STATE: thermal_expansion_rule_proven
+HINT: Heating increases particle vibrations, causing the dimensions of the solid object to expand in all directions.
+WHY: Thermal expansion occurs because atoms vibrate with greater amplitudes about mean positions as temperature rises, increasing the bulk volume of solids.
+
+===OUTCOME===
+SUMMARY: Solid metals expand upon heating (preventing the ball from passing through the ring) and contract upon cooling (allowing it to pass through freely again).
+REFLECTION_QUESTIONS:
+- Why are small expansion gaps left between steel railway tracks?
+- How does a bimetallic strip made of brass and iron bend when heated in a fire alarm or thermostat?

@@ -1,0 +1,68 @@
+TITLE: Identification of Acids and Bases using Indicators
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Acids, Bases and Salts
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Test household and lab solutions (lime juice, HCl, NaOH, soap) using blue/red litmus, methyl orange, and phenolphthalein.
+
+MATERIALS:
+- Dilute hydrochloric acid (HCl)
+- Dilute sodium hydroxide (NaOH)
+- Lime juice
+- Soap solution
+- Blue litmus paper
+- Red litmus paper
+- Phenolphthalein indicator
+
+LEARNING_OUTCOMES:
+- Classify solutions as acidic or basic using litmus and chemical indicators
+- Observe phenolphthalein color response in basic solutions (pink) vs acidic solutions (colorless)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Dip blue litmus paper into dilute hydrochloric acid (HCl).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: blue_litmus_paper
+DROP_TARGET_ID: hcl_solution
+RESULT_COLOR: #ef4444
+RESULT_STATE: litmus_red
+WHY: Litmus is a plant dye indicator sensitive to hydrogen ion (H+) concentration.
+
+===STEP===
+ID: step-2
+INSTRUCTION: What color change occurs on blue litmus paper in dilute HCl?
+ACTION_TYPE: select_observation
+OPTIONS: Turns red|Stays blue|Turns bright yellow|Turns purple
+CORRECT_OPTION: Turns red
+RESULT_COLOR: #ef4444
+RESULT_STATE: litmus_red
+HINT: Acids turn blue litmus red.
+WHY: Acids donate H+ ions which convert blue litmus dye structure to red form.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Add 2 drops of phenolphthalein indicator to dilute sodium hydroxide (NaOH).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: phenolphthalein_indicator
+DROP_TARGET_ID: naoh_solution
+RESULT_COLOR: #ec4899
+RESULT_STATE: phenolphthalein_pink
+WHY: Phenolphthalein is a sensitive indicator for alkaline/basic hydroxide (OH-) solutions.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What color does phenolphthalein turn in basic sodium hydroxide (NaOH)?
+ACTION_TYPE: select_observation
+OPTIONS: Pink / Magenta|Colorless|Dark Blue|Yellow
+CORRECT_OPTION: Pink / Magenta
+RESULT_COLOR: #ec4899
+RESULT_STATE: phenolphthalein_pink
+HINT: Phenolphthalein turns pink in basic solutions (pH > 8.2).
+WHY: In alkaline solutions containing excess OH- ions, phenolphthalein molecules become ionized and turn deep pink.
+
+===OUTCOME===
+SUMMARY: Acids (HCl, lime juice) turn blue litmus red and leave phenolphthalein colorless; bases (NaOH, soap) turn red litmus blue and phenolphthalein pink.
+REFLECTION_QUESTIONS:
+- What color would phenolphthalein turn if added to lime juice?
+- What is formed when an acid reacts with a base in neutralisation?

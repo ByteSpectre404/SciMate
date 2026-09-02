@@ -1,0 +1,67 @@
+TITLE: Fast Food Colourings, Flavourings and Health Effects
+SUBJECT: biology
+GRADE: 11
+UNIT: Biosphere (Unit 15)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate the artificial colourings, synthetic flavourings, trans fats, and excess sodium/sugar present in commercial fast foods and analyze their potential physiological and health impacts.
+
+MATERIALS:
+- Nutritional breakdown sheets and ingredient panels for fast food categories:
+  * Deep-fried chicken / French fries (High trans fats, sodium, flavour enhancers)
+  * Burgers & processed sausages (Nitrites E250, phosphates, high saturated fat)
+  * Bright iced confectionery / sodas (Azo dyes E102, E129, high-fructose corn syrup)
+- Health impact risk assessment matrix
+- Color matching scale
+
+LEARNING_OUTCOMES:
+- Analyze additive formulations and nutritional densities of processed fast foods vs fresh whole foods
+- Correlate specific additives (e.g. Sodium Nitrite E250, Tartrazine E102, Monosodium Glutamate E621) with health risks (hypertension, metabolic syndrome, allergies)
+- Formulate healthy dietary lifestyle recommendations aligned with the Sri Lankan dietary guidelines
+
+===STEP===
+ID: step-1
+INSTRUCTION: Examine the ingredient dossier for processed burger patties and sausages (Sodium Nitrite E250 curing agent).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: processed_meat_dossier
+DROP_TARGET_ID: health_matrix
+RESULT_COLOR: #fed7aa
+RESULT_STATE: processed_meat_profile_loaded
+WHY: Nitrites (E250) preserve pink color and prevent botulism in processed meats, but can form carcinogenic nitrosamines during high-temperature frying.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Examine the ingredient dossier for colored confectionery and carbonated syrups (Synthetic Azo Dyes E102, E110, E129).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: confectionery_dossier
+DROP_TARGET_ID: health_matrix
+RESULT_COLOR: #fca5a5
+RESULT_STATE: artificial_colorings_profile_loaded
+WHY: Synthetic coal-tar azo dyes have been clinically linked to childhood hyperactivity (ADHD), skin hives, and allergic reactions.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Examine deep-fried items containing re-heated industrial palm oil, high sodium, and MSG (E621).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: fried_food_dossier
+DROP_TARGET_ID: health_matrix
+RESULT_COLOR: #f87171
+RESULT_STATE: complete_risk_assessment_ready
+WHY: Repeatedly heated cooking oils generate toxic trans-fatty acids and lipid peroxides, contributing to atherosclerosis and cardiovascular disease.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What long-term health risk is strongly associated with high habitual consumption of ultra-processed fast foods loaded with synthetic additives, trans fats, and high sodium?
+ACTION_TYPE: select_observation
+OPTIONS: Increased risk of non-communicable diseases (NCDs) such as hypertension, obesity, diabetes, and cardiovascular diseases|Improves lung capacity and athletic stamina|Cures metabolic disorders naturally|Provides complete dietary nutrition with zero health risks
+CORRECT_OPTION: Increased risk of non-communicable diseases (NCDs) such as hypertension, obesity, diabetes, and cardiovascular diseases
+RESULT_COLOR: #dc2626
+RESULT_STATE: health_impacts_verified
+HINT: Diets dominated by ultra-processed foods, high sodium, and refined fats are primary risk factors for modern lifestyle diseases (NCDs).
+WHY: Excessive consumption of fast foods high in synthetic additives, saturated/trans fats, sodium, and refined sugars directly elevates risks of chronic non-communicable diseases (NCDs).
+
+===OUTCOME===
+SUMMARY: Ultra-processed fast foods often contain artificial colourings, chemical preservatives, high sodium, and trans fats that can trigger allergic sensitivities and increase long-term risks of non-communicable diseases (NCDs).
+REFLECTION_QUESTIONS:
+- Why are fresh, locally grown fruits, vegetables, and unrefined grains healthier than processed fast foods?
+- What are the major Non-Communicable Diseases (NCDs) prevalent today and how does balanced nutrition prevent them?

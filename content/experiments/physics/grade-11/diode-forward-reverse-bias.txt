@@ -1,0 +1,55 @@
+TITLE: Forward and Reverse Biasing of a P-N Junction Diode
+SUBJECT: physics
+GRADE: 11
+UNIT: Electronics (Unit 11)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate the unidirectional electrical conductivity of a semiconductor p-n junction diode under forward-bias and reverse-bias connections with a torch bulb.
+
+MATERIALS:
+- 1N4001 Silicon semiconductor diode
+- 2.5 V torch bulb with holder
+- Two 1.5 V dry cells in holder (3.0 V)
+- Knife switch & connecting wires
+
+LEARNING_OUTCOMES:
+- Identify the anode (p-type, positive) and cathode (n-type, negative silver band) of a semiconductor diode
+- Understand forward bias (depletion layer narrows, low resistance, current flows)
+- Understand reverse bias (depletion layer widens, extremely high resistance, blocks current)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the diode in forward bias (anode/p-type to battery positive, cathode/silver band to bulb/negative) and close the switch.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: diode_forward
+DROP_TARGET_ID: circuit_board
+RESULT_COLOR: #fef08a
+RESULT_STATE: forward_bias_bulb_lights_brightly
+WHY: Forward bias overcomes the internal barrier potential (~0.7 V for silicon), reducing junction resistance so current flows freely to light the bulb.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Reverse the diode terminals in the circuit (cathode to battery positive, anode to bulb/negative) and close the switch.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: diode_reverse
+DROP_TARGET_ID: circuit_board
+RESULT_COLOR: #94a3b8
+RESULT_STATE: reverse_bias_bulb_dark
+WHY: Reverse bias widens the depletion layer, increasing junction resistance to megaohms and completely blocking current flow.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Under which condition does an ideal semiconductor p-n junction diode allow electric current to pass through?
+ACTION_TYPE: select_observation
+OPTIONS: Only when forward biased (Anode positive relative to Cathode)|Only when reverse biased|Equally in both forward and reverse directions|Never allows current under any DC voltage
+CORRECT_OPTION: Only when forward biased (Anode positive relative to Cathode)
+RESULT_COLOR: #ca8a04
+RESULT_STATE: diode_rectification_nature_verified
+HINT: Look at the silver stripe marking the cathode: forward bias occurs when current enters the triangle anode and exits the cathode bar.
+WHY: A p-n junction diode exhibits unidirectional conductivity: very low resistance in forward bias and extremely high resistance in reverse bias.
+
+===OUTCOME===
+SUMMARY: A p-n junction diode conducts electric current in one direction only (forward bias) and blocks current in the reverse direction, making it suitable for rectification.
+REFLECTION_QUESTIONS:
+- What is the typical knee (threshold) voltage required to forward-bias a silicon diode (~0.7 V) vs a germanium diode (~0.3 V)?
+- How does this one-way valve property make diodes useful in AC to DC power adapters?

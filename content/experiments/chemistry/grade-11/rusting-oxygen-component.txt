@@ -1,0 +1,66 @@
+TITLE: Component of Air Essential for Rusting (Oxygen Fraction)
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Determine which fractional component of air is consumed during rusting by inverting a test tube containing moist iron wool over a water basin and measuring the 1/5th volume rise.
+
+MATERIALS:
+- Moist steel iron wool lump
+- Two identical boiling tubes (Tube 1: experimental with iron wool, Tube 2: empty control tube)
+- Water basin / trough containing water
+- Retort stand with dual clamps
+- Metric ruler
+
+LEARNING_OUTCOMES:
+- Demonstrate that iron rusting specifically consumes the oxygen fraction of atmospheric air
+- Measure the approximately 20% (1/5th) liquid column rise corresponding to atmospheric O2 percentage
+- Understand that remaining atmospheric nitrogen (~78%) does not support or participate in rusting
+
+===STEP===
+ID: step-1
+INSTRUCTION: Push a moist lump of steel iron wool into the bottom of Tube 1 and invert it in the water basin.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: moist_iron_wool_tube
+DROP_TARGET_ID: water_basin
+RESULT_COLOR: #bae6fd
+RESULT_STATE: inverted_iron_wool_tube_primed
+WHY: The moist iron wool exposes high surface area of iron and moisture to the trapped column of atmospheric air.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Invert an empty boiling tube (Tube 2) beside it in the same water basin as an experimental control.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: empty_control_tube
+DROP_TARGET_ID: water_basin
+RESULT_COLOR: #bae6fd
+RESULT_STATE: control_tube_primed
+WHY: The control tube verifies that water level changes are not caused merely by room temperature or atmospheric pressure fluctuations.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Leave the apparatus undisturbed for 3 days and measure the water level rise inside both tubes.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metric_ruler
+DROP_TARGET_ID: water_basin
+RESULT_COLOR: #991b1b
+RESULT_STATE: water_level_rises_by_one_fifth
+WHY: As iron reacts with oxygen to form rust, O2 is removed from the gas volume, creating a partial vacuum that draws water up by exactly ~1/5th (20%) of the tube volume.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why does the water level inside the tube containing iron wool rise by approximately one-fifth (20%) of the total air volume?
+ACTION_TYPE: select_observation
+OPTIONS: Oxygen gas (which constitutes about 21% of atmospheric air) is completely consumed during rusting|Water evaporates into nitrogen gas|Iron wool sucks water by capillary suction|The glass tube expands by 20%
+CORRECT_OPTION: Oxygen gas (which constitutes about 21% of atmospheric air) is completely consumed during rusting
+RESULT_COLOR: #7f1d1d
+RESULT_STATE: oxygen_fraction_verified
+HINT: Air contains ~78% Nitrogen, ~21% Oxygen, and ~1% Argon. Only oxygen reacts with iron during corrosion.
+WHY: Rusting selectively consumes oxygen from the enclosed air. Because oxygen accounts for ~1/5th (21%) of air by volume, atmospheric pressure forces water up to replace the consumed gas.
+
+===OUTCOME===
+SUMMARY: Iron rusting selectively uses up the oxygen component of atmospheric air (~20% of air volume), proving that oxygen is the specific gaseous reactant consumed during corrosion.
+REFLECTION_QUESTIONS:
+- What gas remains inside the test tube after the water level stops rising?
+- If pure oxygen were used in the tube instead of air, what would happen to the water level?

@@ -1,0 +1,67 @@
+TITLE: Preparing and Testing Carbon Dioxide Gas
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Gases
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Generate carbon dioxide gas from marble chips and dilute hydrochloric acid, then confirm its identity using limewater.
+
+MATERIALS:
+- Marble chips (calcium carbonate)
+- Dilute hydrochloric acid
+- Conical flask
+- Delivery tube
+- Test tube
+- Limewater
+
+LEARNING_OUTCOMES:
+- Write the word and chemical equation for the reaction of calcium carbonate with hydrochloric acid
+- Describe the standard test for carbon dioxide gas
+- Explain the observation when CO2 is passed through limewater
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place the marble chips into the conical flask.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: marble_chips
+DROP_TARGET_ID: conical_flask
+RESULT_COLOR: #f8fafc
+RESULT_STATE: white_solid_chips
+WHY: Marble chips are calcium carbonate (CaCO3), the solid reactant in this preparation.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add dilute hydrochloric acid to the conical flask.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: hydrochloric_acid
+DROP_TARGET_ID: conical_flask
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: effervescent
+WHY: CaCO3 + 2HCl -> CaCl2 + H2O + CO2. The acid reacts with the marble chips to release carbon dioxide gas.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Connect the delivery tube from the conical flask into the test tube of limewater.
+ACTION_TYPE: drag_connect
+DRAG_ITEM_ID: delivery_tube
+DROP_TARGET_ID: test_tube_limewater
+RESULT_COLOR: #f8fafc
+RESULT_STATE: turns_cloudy
+WHY: The delivery tube carries the CO2 gas produced into the limewater so we can test for it.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Observe the limewater as the gas passes through it. What happens?
+ACTION_TYPE: select_observation
+OPTIONS: Stays colourless|Turns milky white|Turns blue|Bubbles but no colour change
+CORRECT_OPTION: Turns milky white
+RESULT_COLOR: #f8fafc
+RESULT_STATE: turns_cloudy
+HINT: This is the standard confirmatory test for carbon dioxide.
+WHY: CO2 reacts with the calcium hydroxide in limewater to form insoluble calcium carbonate, which is what makes the limewater turn milky/cloudy — this is the standard test for CO2.
+
+===OUTCOME===
+SUMMARY: You've prepared carbon dioxide gas by reacting calcium carbonate with dilute hydrochloric acid, and confirmed its identity using the limewater test, where the solution turned milky white due to the formation of insoluble calcium carbonate.
+REFLECTION_QUESTIONS:
+- Why does limewater turn milky rather than staying clear when CO2 is passed through it?
+- What would you expect to observe if you passed the gas through limewater for a very long time, in excess?

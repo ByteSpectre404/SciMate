@@ -1,0 +1,77 @@
+TITLE: Activity of Amylase on Starch
+SUBJECT: biology
+GRADE: 10
+UNIT: Biomolecules & Enzymes
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Observe the enzymatic digestion of starch into simpler sugars using amylase from germinating green gram seedlings and test with iodine.
+
+MATERIALS:
+- Starch (flour) solution
+- Amylase solution (green gram extract)
+- Test tube
+- White porcelain tile
+- Iodine solution
+- Stopwatch
+
+LEARNING_OUTCOMES:
+- Demonstrate how the enzyme amylase breaks down starch over time
+- Understand the function of iodine as a specific indicator for starch
+- Explain the role of enzymes as biological catalysts
+
+===STEP===
+ID: step-1
+INSTRUCTION: Pour 2 mL of starch solution into a clean test tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: starch_solution
+DROP_TARGET_ID: test_tube
+RESULT_COLOR: #fef08a
+RESULT_STATE: translucent_starch_solution
+WHY: Starch serves as the substrate for the enzyme amylase.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add 2 mL of amylase solution into the test tube with starch and mix well.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: amylase_solution
+DROP_TARGET_ID: test_tube
+RESULT_COLOR: #fef3c7
+RESULT_STATE: starch_amylase_mixture
+WHY: Amylase begins breaking down the complex starch molecules into simpler maltose sugars upon mixing.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Place one drop of the reaction mixture onto the white porcelain tile.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: test_tube
+DROP_TARGET_ID: porcelain_tile
+RESULT_COLOR: #fef3c7
+RESULT_STATE: sample_drop_on_tile
+WHY: Sampling onto a tile allows clear observation of the color reaction with iodine indicator.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Add one drop of iodine solution to the sample drop on the tile at 0 minutes.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iodine_solution
+DROP_TARGET_ID: porcelain_tile
+RESULT_COLOR: #1e1b4b
+RESULT_STATE: blue_black_complex
+WHY: At time zero, unreacted starch is present, turning the iodine dark blue-black.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What happens to the iodine color after 20 minutes of amylase action?
+ACTION_TYPE: select_observation
+OPTIONS: Turns dark blue-black|Stays pale yellow/no color change|Turns bright pink|Turns milky white
+CORRECT_OPTION: Stays pale yellow/no color change
+RESULT_COLOR: #b45309
+RESULT_STATE: iodine_yellow_brown
+HINT: As time passes, amylase breaks down all the starch so no blue-black reaction occurs.
+WHY: All the starch has been digested into simple sugars by amylase, so iodine no longer changes to blue-black.
+
+===OUTCOME===
+SUMMARY: Amylase digests starch into simpler sugars. As starch is broken down over time, it no longer reacts with iodine, confirming enzyme activity.
+REFLECTION_QUESTIONS:
+- Why does iodine turn blue-black initially but stay yellow/brown after 20 minutes?
+- How would boiling the amylase solution beforehand affect this experiment?

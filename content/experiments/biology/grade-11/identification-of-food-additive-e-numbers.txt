@@ -1,0 +1,69 @@
+TITLE: Identification of Food Additives and E-Numbers
+SUBJECT: biology
+GRADE: 11
+UNIT: Biosphere (Unit 15)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Audit packaged food ingredient labels to identify E-number food additives, classifying them into colourings, preservatives, antioxidants, emulsifiers, and flavour enhancers.
+
+MATERIALS:
+- Packaged food ingredient labels (soft drink cans, fruit cordials, instant noodles, biscuits, confectionery)
+- International E-number Codex classification index:
+  * 100 series: Food Colours (e.g. E102 Tartrazine, E110 Sunset Yellow)
+  * 200 series: Preservatives (e.g. E211 Sodium benzoate, E220 Sulfur dioxide)
+  * 300 series: Antioxidants & Acidity regulators (e.g. E300 Ascorbic acid, E330 Citric acid)
+  * 400 series: Emulsifiers, Stabilizers & Thickeners (e.g. E412 Guar gum)
+  * 600 series: Flavour Enhancers (e.g. E621 Monosodium glutamate / MSG)
+- Food audit worksheet & magnifying glass
+
+LEARNING_OUTCOMES:
+- Decipher international E-number codes on commercial food packaging
+- Understand the technical functions of food additives (preservation, color stability, shelf-life extension)
+- Recognize potential adverse health effects (hyperactivity, allergies, asthma triggers) associated with synthetic additives
+
+===STEP===
+ID: step-1
+INSTRUCTION: Examine the ingredient label of a brightly colored carbonated soft drink bottle with a magnifying glass.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: soft_drink_label
+DROP_TARGET_ID: audit_worksheet
+RESULT_COLOR: #fef08a
+RESULT_STATE: soft_drink_additives_detected
+WHY: Soft drink labels frequently list E102 (Tartrazine yellow), E211 (Sodium benzoate preservative), and E330 (Citric acid acidity regulator).
+
+===STEP===
+ID: step-2
+INSTRUCTION: Examine the ingredient label of a packet of instant savory noodles.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: noodle_seasoning_label
+DROP_TARGET_ID: audit_worksheet
+RESULT_COLOR: #fed7aa
+RESULT_STATE: noodle_additives_detected
+WHY: Savory snack foods frequently list E621 (Monosodium Glutamate - MSG flavor enhancer) and E412 (Guar gum thickener).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Match each detected E-number to its functional class using the International Codex numbering chart.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: codex_numbering_chart
+DROP_TARGET_ID: audit_worksheet
+RESULT_COLOR: #3b82f6
+RESULT_STATE: categorized_e_numbers_matrix
+WHY: The first digit defines the functional class: 1xx = Colours, 2xx = Preservatives, 3xx = Antioxidants, 4xx = Stabilizers/Emulsifiers, 6xx = Flavour enhancers.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What functional class of food additive does the E-number code series E200 to E299 (such as E211 Sodium Benzoate) represent?
+ACTION_TYPE: select_observation
+OPTIONS: Food Preservatives (inhibiting bacterial and fungal growth)|Artificial food colourings|Artificial sweetening agents|Vitamin supplements
+CORRECT_OPTION: Food Preservatives (inhibiting bacterial and fungal growth)
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: e_number_class_verified
+HINT: The 200 series additives prevent microbial spoilage, extending the edible shelf-life of commercial foods.
+WHY: In the international E-number scheme, the 200 series (E200 - E299) is designated specifically for antimicrobial food preservatives.
+
+===OUTCOME===
+SUMMARY: E-numbers are standardized international codes for authorized food additives (100s = Colours, 200s = Preservatives, 300s = Antioxidants, 400s = Emulsifiers, 600s = Flavour enhancers), allowing consumers to make informed dietary choices.
+REFLECTION_QUESTIONS:
+- Why are synthetic food colours like Tartrazine (E102) restricted or required to carry warning labels in many countries?
+- What natural alternatives can replace synthetic chemical preservatives and artificial food colourings?

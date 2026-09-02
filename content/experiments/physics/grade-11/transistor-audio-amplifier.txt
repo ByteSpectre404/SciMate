@@ -1,0 +1,66 @@
+TITLE: Transistor as an Audio Frequency Signal Amplifier
+SUBJECT: physics
+GRADE: 11
+UNIT: Electronics (Unit 11)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Construct a common-emitter single-stage audio amplifier using an NPN transistor, base bias resistor, coupling capacitor, and miniature 8 Ω speaker.
+
+MATERIALS:
+- 2SD400 NPN transistor
+- 22 kΩ base bias resistor & 0.1 μF coupling capacitor
+- 8 Ω miniature loudspeaker
+- Audio frequency (AF) tone signal generator
+- 3.0 V DC power supply & breadboard
+
+LEARNING_OUTCOMES:
+- Assemble a single-stage common-emitter AC voltage and power amplifier
+- Understand the function of a coupling capacitor in blocking DC while passing AC audio signals
+- Compare direct weak input signal volume with the amplified output sound from the speaker
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the AF signal generator directly to the 8 Ω speaker and listen to the tone volume.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: af_signal_generator
+DROP_TARGET_ID: mini_speaker
+RESULT_COLOR: #94a3b8
+RESULT_STATE: faint_barely_audible_tone
+WHY: The weak unamplified audio source cannot deliver sufficient electrical power directly to drive the speaker cone effectively.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Assemble the amplifier circuit: transistor, 22 kΩ base bias resistor, 0.1 μF capacitor, and speaker connected to the collector.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: amplifier_components_kit
+DROP_TARGET_ID: breadboard_circuit
+RESULT_COLOR: #3b82f6
+RESULT_STATE: biased_amplifier_circuit
+WHY: The 22 kΩ resistor sets the forward bias operating point on the base, while the capacitor isolates the DC bias from the AC signal source.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Feed the faint AF signal across the input terminals (points A and B) and listen to the speaker output.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: af_signal_generator
+DROP_TARGET_ID: amplifier_input_terminals
+RESULT_COLOR: #22c55e
+RESULT_STATE: loud_amplified_sound_output
+WHY: The fluctuating AC voltage at the base causes large proportional fluctuations in collector current, delivering powerful amplified audio power to the speaker.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What is the primary role of the 0.1 μF capacitor placed in series with the transistor base input?
+ACTION_TYPE: select_observation
+OPTIONS: It blocks DC bias voltage while allowing AC audio signals to pass through freely|It converts sound waves into light|It recharges the battery constantly|It reduces the loudness of the amplifier
+CORRECT_OPTION: It blocks DC bias voltage while allowing AC audio signals to pass through freely
+RESULT_COLOR: #16a34a
+RESULT_STATE: coupling_capacitor_function_verified
+HINT: Capacitors present infinite impedance to steady DC voltage but low impedance to alternating AC frequencies.
+WHY: The input coupling capacitor prevents the DC base bias voltage from being shorted to ground or disturbed by the signal source, while coupling the AC audio signal.
+
+===OUTCOME===
+SUMMARY: An NPN transistor amplifies weak audio frequency alternating signals into a much stronger AC output power capable of driving acoustic transducers like loudspeakers.
+REFLECTION_QUESTIONS:
+- Why does a transistor require a DC base bias resistor (such as 22 kΩ) to operate as an linear amplifier?
+- In what everyday consumer devices are transistor amplifiers found?

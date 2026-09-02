@@ -1,0 +1,66 @@
+TITLE: Identifying Monocot and Dicot Plants
+SUBJECT: biology
+GRADE: 10
+UNIT: The World of Life (Unit 13)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare root systems, leaf venation, and stem branching patterns between monocotyledonous (e.g. Grass/Paddy) and dicotyledonous (e.g. Kuppameniya) angiosperms.
+
+MATERIALS:
+- Uprooted Grass / Paddy plant (Monocot)
+- Uprooted Kuppameniya (Acalypha) plant (Dicot)
+- Water basin / wash trough
+- Hand lens / magnifying glass
+- White observation sheet
+
+LEARNING_OUTCOMES:
+- Contrast fibrous root systems with tap root systems
+- Differentiate parallel leaf venation from reticulate (net) venation
+- Classify flowering plants (Angiosperms) into Monocots and Dicots based on morphological traits
+
+===STEP===
+ID: step-1
+INSTRUCTION: Wash the root systems of both plants carefully in a water basin to remove clinging soil particles.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: grass_plant
+DROP_TARGET_ID: water_basin
+RESULT_COLOR: #f0fdf4
+RESULT_STATE: clean_root_specimens
+WHY: Washing reveals the branching root architecture clearly without damaging delicate rootlets.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Place the Grass / Paddy specimen on the white sheet and examine its root architecture and leaf venation.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: grass_plant
+DROP_TARGET_ID: observation_sheet
+RESULT_COLOR: #dcfce7
+RESULT_STATE: monocot_fibrous_roots_parallel_veins
+WHY: Monocots possess adventitious fibrous root systems originating from the base of the stem and parallel leaf venation.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Place the Kuppameniya specimen on the observation sheet and inspect its primary root and leaves.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: kuppameniya_plant
+DROP_TARGET_ID: observation_sheet
+RESULT_COLOR: #bbf7d0
+RESULT_STATE: dicot_tap_root_reticulate_veins
+WHY: Dicots exhibit a prominent primary taproot with lateral roots and a branched reticulate network of veins on broad leaves.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Which combination of morphological features accurately identifies a Monocotyledonous plant like Grass?
+ACTION_TYPE: select_observation
+OPTIONS: Fibrous roots and parallel leaf venation|Tap root system and reticulate venation|Branched woody stem and net veins|Two seed leaves and branched tap root
+CORRECT_OPTION: Fibrous roots and parallel leaf venation
+RESULT_COLOR: #16a34a
+RESULT_STATE: monocot_traits_confirmed
+HINT: Look at the root cluster arising from one point and the straight, parallel veins extending along the blade.
+WHY: Monocots are characterized by a single cotyledon, fibrous root system, unbranched hollow/jointed stems, and parallel venation.
+
+===OUTCOME===
+SUMMARY: Monocots (such as Paddy and Grass) feature fibrous root systems and parallel leaf venation, whereas Dicots (such as Kuppameniya) feature taproot systems and reticulate (net-like) venation.
+REFLECTION_QUESTIONS:
+- How does the vascular bundle arrangement in monocot stems differ from that in dicot stems?
+- What are the floral part multiples (petals/sepals) typical of monocots vs. dicots?

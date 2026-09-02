@@ -1,0 +1,66 @@
+TITLE: Simple Electrochemical Voltaic Cell
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Construct a simple primary electrochemical cell (Voltaic cell) using zinc and copper electrodes in dilute sulfuric acid to generate an electric current through an external circuit.
+
+MATERIALS:
+- Clean zinc strip (Anode / negative electrode)
+- Clean copper strip (Cathode / positive electrode)
+- Glass beaker with dilute sulfuric acid (H2SO4, 1.0 M)
+- Sensitive DC ammeter / galvanometer (-30 to +30 mA)
+- Connecting wires with alligator clips
+
+LEARNING_OUTCOMES:
+- Assemble a simple voltaic cell converting chemical energy directly into electrical energy
+- Identify the negative electrode/anode (Zinc oxidation: Zn → Zn²⁺ + 2e⁻) and positive electrode/cathode (Copper reduction: 2H⁺ + 2e⁻ → H2)
+- Trace external electron flow from zinc (anode) through the ammeter to copper (cathode)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the zinc strip and copper strip to the terminals of the DC ammeter with insulated wires.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: electrode_wires_assembly
+DROP_TARGET_ID: ammeter
+RESULT_COLOR: #3b82f6
+RESULT_STATE: external_circuit_wired
+WHY: The external conducting wire provides a path for electrons to travel from the oxidation site to the reduction site.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Immerse both metal strips simultaneously into the beaker of dilute sulfuric acid without touching each other.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: electrode_wires_assembly
+DROP_TARGET_ID: acid_beaker
+RESULT_COLOR: #22c55e
+RESULT_STATE: ammeter_deflects_bubbles_on_copper
+WHY: Zinc oxidizes (Zn → Zn²⁺ + 2e⁻); electrons flow through the ammeter to copper, where H⁺ ions reduce to H2 gas bubbles on the copper strip.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Disconnect the wire from the ammeter while keeping electrodes submerged.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: ammeter_wire
+DROP_TARGET_ID: disconnect_terminal
+RESULT_COLOR: #94a3b8
+RESULT_STATE: ammeter_drops_to_zero
+WHY: Breaking the external circuit prevents electron transit, stopping the continuous galvanic current.
+
+===STEP===
+ID: step-4
+INSTRUCTION: At which electrode do hydrogen gas bubbles predominantly evolve when the circuit is connected through the ammeter?
+ACTION_TYPE: select_observation
+OPTIONS: At the copper cathode (positive electrode)|At the zinc anode only|Equally inside the glass walls|No gas evolves in an electrochemical cell
+CORRECT_OPTION: At the copper cathode (positive electrode)
+RESULT_COLOR: #16a34a
+RESULT_STATE: galvanic_mechanism_verified
+HINT: Electrons released by zinc oxidation travel through the external wire to the copper strip, where H⁺ ions accept them.
+WHY: Electrons stream through the external circuit to the copper electrode, where aqueous H⁺ ions gain electrons (2H⁺ + 2e⁻ → H2↑), forming bubbles on the copper surface.
+
+===OUTCOME===
+SUMMARY: In a simple electrochemical cell, zinc is oxidized at the anode and hydrogen ions are reduced at the copper cathode, establishing a continuous flow of electrons through the external circuit.
+REFLECTION_QUESTIONS:
+- Why does the zinc strip gradually lose mass while the copper strip remains intact?
+- What causes polarization in a simple voltaic cell (accumulation of hydrogen bubbles on copper)?

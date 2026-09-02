@@ -1,0 +1,76 @@
+TITLE: Oxygen Production in Photosynthesis
+SUBJECT: biology
+GRADE: 11
+UNIT: Photosynthesis
+DIFFICULTY: hard
+DURATION_MINUTES: 20
+DESCRIPTION: Collect gas released by aquatic Hydrilla plants under sunlight and test it with a glowing splinter to identify oxygen gas.
+
+MATERIALS:
+- Water trough
+- Glass funnel
+- Boiling test tube
+- Aquatic plant (Hydrilla)
+- Water
+- Wooden glowing splinter
+
+LEARNING_OUTCOMES:
+- Collect oxygen gas produced by aquatic plants by water displacement
+- Use a glowing splinter test to confirm oxygen gas
+
+===STEP===
+ID: step-1
+INSTRUCTION: Place Hydrilla plants inside an inverted glass funnel in a water trough.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: hydrilla_plant
+DROP_TARGET_ID: glass_funnel
+RESULT_COLOR: #16a34a
+RESULT_STATE: submerged_plant
+WHY: Hydrilla is an aquatic submerged plant that releases oxygen bubbles directly into water when photosynthesizing.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Invert a water-filled boiling test tube over the funnel stem.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: boiling_tube
+DROP_TARGET_ID: glass_funnel_stem
+RESULT_COLOR: #38bdf8
+RESULT_STATE: inverted_water_filled_tube
+WHY: Inverting a tube filled with water allows gas bubbles to rise and displace water at the top.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Place the set-up in bright sunlight and observe gas collecting at the top of the tube.
+ACTION_TYPE: toggle_switch
+DRAG_ITEM_ID: sunlight_source
+DROP_TARGET_ID: setup
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: effervescent
+WHY: Photolysis of water in illuminated chlorophyll releases oxygen gas bubbles that rise up the funnel.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Insert a glowing wooden splinter into the collected gas at the top of the test tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glowing_splinter
+DROP_TARGET_ID: boiling_tube
+RESULT_COLOR: #f59e0b
+RESULT_STATE: reignited_flame
+WHY: Oxygen supports combustion, causing a glowing ember to re-ignite into a bright flame.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What happens to the glowing splinter when inserted into the gas?
+ACTION_TYPE: select_observation
+OPTIONS: Re-ignites into a bright flame|Extinguishes with a pop sound|Turns green without flame|No reaction
+CORRECT_OPTION: Re-ignites into a bright flame
+RESULT_COLOR: #f59e0b
+RESULT_STATE: reignited_flame
+HINT: Oxygen rekindles a glowing ember.
+WHY: Oxygen gas supports rapid combustion, reigniting the glowing splinter and proving O2 is produced during photosynthesis.
+
+===OUTCOME===
+SUMMARY: Gas bubbles collected from illuminated Hydrilla reignited a glowing splinter, confirming oxygen is evolved as a byproduct of photosynthesis.
+REFLECTION_QUESTIONS:
+- Why is Hydrilla suitable for demonstrating oxygen release compared to terrestrial plants?
+- What chemical reaction in photosynthesis splits water molecules to release oxygen?

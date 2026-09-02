@@ -1,0 +1,76 @@
+TITLE: Electrolysis of Acidulated Water (Decomposition of Water)
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Decompose acidulated water by electrolysis using inert carbon electrodes, collecting hydrogen and oxygen in inverted tubes to verify the 2:1 volume ratio (2H2O → 2H2 + O2).
+
+MATERIALS:
+- Plastic voltameter cup / cell fitted with two sealed carbon electrodes
+- Distilled water with a few drops of dilute sulfuric acid (acidulated water)
+- Two identical graduated test tubes filled with water and inverted over electrodes
+- 9.0 V DC power supply & connecting wires
+- Wooden splint & matches
+
+LEARNING_OUTCOMES:
+- Assemble an electrolysis apparatus for quantitative gas collection
+- Write half-equations: Cathode (4H⁺ + 4e⁻ → 2H2) and Anode (4OH⁻ → 2H2O + O2 + 4e⁻)
+- Demonstrate that water consists of hydrogen and oxygen in a 2:1 ratio by volume
+
+===STEP===
+ID: step-1
+INSTRUCTION: Invert two water-filled graduated test tubes over the cathode and anode in the acidulated water cell.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: inverted_graduated_tubes
+DROP_TARGET_ID: voltameter_cell
+RESULT_COLOR: #bae6fd
+RESULT_STATE: inverted_tubes_primed
+WHY: Inverted water-filled tubes collect evolved gases by downward displacement of water for precise volume comparison.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Connect the 9 V DC battery to power the electrolysis and run for 10 minutes.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: dc_power_supply
+DROP_TARGET_ID: voltameter_cell
+RESULT_COLOR: #3b82f6
+RESULT_STATE: steady_gas_collection
+WHY: Electric current decomposes water: H⁺ ions migrate to the negative cathode (H2 gas) and OH⁻ ions migrate to the positive anode (O2 gas).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Measure the volume of gas collected above the cathode and anode.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: metric_scale
+DROP_TARGET_ID: voltameter_cell
+RESULT_COLOR: #22c55e
+RESULT_STATE: volume_ratio_2_to_1
+WHY: The cathode collects 20 mL of hydrogen gas while the anode collects 10 mL of oxygen gas (exact 2:1 volume ratio).
+
+===STEP===
+ID: step-4
+INSTRUCTION: Test the gas collected at the cathode (pop test) and at the anode (glowing splint test).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: wooden_splint
+DROP_TARGET_ID: inverted_graduated_tubes
+RESULT_COLOR: #f59e0b
+RESULT_STATE: cathode_pops_anode_relights
+WHY: Hydrogen at the cathode burns with a squeaky pop; oxygen at the anode relights the glowing splint.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What is the ratio of the volume of hydrogen gas collected at the cathode to the volume of oxygen gas at the anode?
+ACTION_TYPE: select_observation
+OPTIONS: 2 : 1 (two volumes of hydrogen to one volume of oxygen)|1 : 1 (equal volumes)|1 : 2 (two volumes of oxygen to one volume of hydrogen)|4 : 1
+CORRECT_OPTION: 2 : 1 (two volumes of hydrogen to one volume of oxygen)
+RESULT_COLOR: #16a34a
+RESULT_STATE: stoichiometry_verified
+HINT: The chemical formula for water is H2O: 2H2O(l) → 2H2(g) + O2(g).
+WHY: The stoichiometry of water decomposition (2H2O → 2H2 + O2) yields 2 moles of H2 gas for every 1 mole of O2 gas, producing a 2:1 gas volume ratio at equal temperature and pressure.
+
+===OUTCOME===
+SUMMARY: Electrolysis of acidulated water produces hydrogen gas at the cathode and oxygen gas at the anode in an exact 2:1 volume ratio, confirming the chemical formula H2O.
+REFLECTION_QUESTIONS:
+- Why is a small amount of dilute sulfuric acid added to pure distilled water before electrolysis?
+- What are the environmental advantages of using hydrogen gas produced by water electrolysis as a fuel?

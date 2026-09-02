@@ -1,0 +1,76 @@
+TITLE: Preparation, Collection and Testing of Hydrogen Gas
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Prepare hydrogen gas in the laboratory by reacting active metals with dilute acid, collect the gas over water by downward displacement of water, and test with a lighted splint.
+
+MATERIALS:
+- Boiling tube with one-hole rubber stopper and delivery tube
+- Water trough & test tubes filled with water
+- Zinc granules / cleaned iron nails
+- Dilute hydrochloric acid (HCl)
+- Wooden splint (ekel) & matches
+
+LEARNING_OUTCOMES:
+- Assemble gas preparation and collection apparatus using downward displacement of water
+- Understand why hydrogen can be collected over water (low density, practically insoluble in water)
+- Perform the characteristic 'squeaky pop' flame test for hydrogen gas
+
+===STEP===
+ID: step-1
+INSTRUCTION: Invert a water-filled test tube over the beehive shelf in the water trough.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: test_tube_water
+DROP_TARGET_ID: water_trough
+RESULT_COLOR: #bae6fd
+RESULT_STATE: inverted_water_filled_tube
+WHY: Inverted water tubes allow gases insoluble in water to displace liquid downward under atmospheric pressure.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add zinc granules into the boiling tube containing dilute hydrochloric acid and insert the stopper.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: zinc_granules
+DROP_TARGET_ID: boiling_tube_acid
+RESULT_COLOR: #f8fafc
+RESULT_STATE: active_h2_generation
+WHY: The reaction Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) produces hydrogen gas that flows through the delivery tube.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Position the delivery tube end under the inverted test tube to collect hydrogen by downward displacement of water.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: delivery_tube
+DROP_TARGET_ID: inverted_water_filled_tube
+RESULT_COLOR: #e0f2fe
+RESULT_STATE: gas_collected_tube_full
+WHY: Hydrogen is less dense than water and insoluble in it, collecting at the top and displacing water downwards.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Remove the gas-filled tube, keep its mouth covered, and introduce a lighted wooden splint.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: lighted_splint
+DROP_TARGET_ID: gas_collected_tube_full
+RESULT_COLOR: #f59e0b
+RESULT_STATE: squeaky_pop_sound_flame
+WHY: Hydrogen burns rapidly with atmospheric oxygen (2H2 + O2 → 2H2O), producing a characteristic squeaky 'pop' explosion.
+
+===STEP===
+ID: step-5
+INSTRUCTION: Which diagnostic test uniquely confirms the presence of hydrogen gas?
+ACTION_TYPE: select_observation
+OPTIONS: Burns with a characteristic squeaky 'pop' sound|Relights a glowing splint|Turns lime water milky|Bleaches moist litmus paper white
+CORRECT_OPTION: Burns with a characteristic squeaky 'pop' sound
+RESULT_COLOR: #ea580c
+RESULT_STATE: hydrogen_identity_confirmed
+HINT: Hydrogen is combustible and reacts explosively in small amounts with oxygen when ignited.
+WHY: The squeaky 'pop' sound produced upon ignition with a lighted splint is the standard diagnostic test for hydrogen gas.
+
+===OUTCOME===
+SUMMARY: Hydrogen gas generated from zinc and dilute acid is collected by downward displacement of water and confirmed by its characteristic squeaky 'pop' upon ignition.
+REFLECTION_QUESTIONS:
+- Why is hydrogen gas collected by downward displacement of water rather than downward displacement of air?
+- What chemical compound is formed when hydrogen burns in air?

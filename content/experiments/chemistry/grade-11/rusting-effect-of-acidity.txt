@@ -1,0 +1,65 @@
+TITLE: Effect of Acidity on the Rate of Rusting
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare the corrosion rates of iron nails placed in plain water, acidic lime juice solution, and dilute hydrochloric acid to evaluate how acidity accelerates rusting.
+
+MATERIALS:
+- Three cleaned iron nails
+- Three boiling tubes labeled: 1 (Plain Water), 2 (Water + Lime juice), 3 (Water + dilute HCl)
+- Dilute hydrochloric acid & fresh lime juice
+- Test tube rack
+
+LEARNING_OUTCOMES:
+- Observe that acidic environments drastically accelerate the corrosion rate of iron
+- Explain how high H⁺ ion concentrations provide alternative reduction pathways and dissolve protective oxide films
+- Discuss environmental consequences of acid rain (SO2, NOx) on iron structures, bridges, and vehicles
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add plain water to Tube 1, water with lime juice (citric acid) to Tube 2, and water with dilute HCl to Tube 3.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: solutions_trio
+DROP_TARGET_ID: boiling_tubes_trio
+RESULT_COLOR: #fef08a
+RESULT_STATE: acidity_gradient_prepared
+WHY: Preparing neutral (pH ~7), mildly acidic (pH ~3), and strongly acidic (pH ~1) environments sets up a controlled comparison of acidity.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Place one cleaned iron nail into each of the three tubes simultaneously.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_nails_trio
+DROP_TARGET_ID: boiling_tubes_trio
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: nails_immersed
+WHY: Uniform surface conditions ensure that the corrosion rate depends strictly on the solution's acidity.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Leave for 24 hours and compare the extent of corrosion and rust flaking in each tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: observation_timer
+DROP_TARGET_ID: test_tube_rack
+RESULT_COLOR: #7f1d1d
+RESULT_STATE: severe_rust_in_acid_tubes
+WHY: Tubes 2 (lime juice) and 3 (HCl) show heavy rust debris and rapid corrosion far exceeding the mild initial rusting seen in plain water.
+
+===STEP===
+ID: step-4
+INSTRUCTION: How does an acidic environment affect the rate of rusting of iron?
+ACTION_TYPE: select_observation
+OPTIONS: Acidity greatly accelerates the rate of rusting|Acidity completely prevents all rusting|Acidity turns iron into gold|Acidity has no effect on corrosion
+CORRECT_OPTION: Acidity greatly accelerates the rate of rusting
+RESULT_COLOR: #450a0a
+RESULT_STATE: acidity_acceleration_proven
+HINT: High concentrations of H⁺ ions accelerate cathodic reduction and dissolve protective basic oxide coatings.
+WHY: Acids provide a high concentration of H⁺ ions, speeding up electron acceptance and accelerating the oxidation of iron into Fe²⁺ and rust.
+
+===OUTCOME===
+SUMMARY: Acidic solutions (such as lime juice and dilute hydrochloric acid) significantly accelerate the corrosion and rusting rate of iron compared to neutral water.
+REFLECTION_QUESTIONS:
+- Why do vehicle bodies and metal bridges deteriorate much faster in industrial areas with heavy acid rain?
+- How does the presence of carbonic acid (from dissolved CO2) in natural rainwater influence iron corrosion?

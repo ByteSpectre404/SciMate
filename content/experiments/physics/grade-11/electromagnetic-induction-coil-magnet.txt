@@ -1,0 +1,75 @@
+TITLE: Electromagnetic Induction with a Coil and Bar Magnet
+SUBJECT: physics
+GRADE: 11
+UNIT: Electromagnetism & Electromagnetic Induction (Unit 13)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Demonstrate Faraday's Law of Electromagnetic Induction: a changing magnetic flux linkage through a multi-turn solenoid induces an electromotive force (EMF) and current.
+
+MATERIALS:
+- Multi-turn insulated copper solenoid coil (100 turns on hollow bobbin)
+- Strong permanent bar magnet (Alnico / Neodymium)
+- Sensitive centre-zero galvanometer (-30 to +30 μA)
+- Connecting leads
+
+LEARNING_OUTCOMES:
+- Observe that relative motion between a magnet and a coil induces an electric current
+- State Faraday's Law of Electromagnetic Induction: induced EMF is proportional to rate of change of magnetic flux
+- Apply Lenz's Law: the direction of induced current opposes the motion that produced it
+
+===STEP===
+ID: step-1
+INSTRUCTION: Connect the ends of the wire coil to the centre-zero galvanometer with both coil and magnet stationary.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: wire_leads
+DROP_TARGET_ID: galvanometer
+RESULT_COLOR: #94a3b8
+RESULT_STATE: galvanometer_at_zero_no_motion
+WHY: With zero relative motion (dΦ/dt = 0), magnetic flux linkage remains constant and zero EMF is induced.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Push the North pole of the bar magnet rapidly into the core of the coil.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bar_magnet_north
+DROP_TARGET_ID: solenoid_coil
+RESULT_COLOR: #3b82f6
+RESULT_STATE: needle_deflects_right
+WHY: Increasing magnetic flux through the coil induces a momentary current that deflects the galvanometer needle to the right.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Hold the magnet completely stationary inside the coil.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bar_magnet_north
+DROP_TARGET_ID: solenoid_coil
+RESULT_COLOR: #94a3b8
+RESULT_STATE: needle_returns_to_zero
+WHY: Even though the magnetic field inside is strong, because flux is not changing (rate of change = 0), the induced current drops instantly to zero.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Pull the North pole of the bar magnet rapidly out of the coil.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bar_magnet_north
+DROP_TARGET_ID: bench_stand
+RESULT_COLOR: #ef4444
+RESULT_STATE: needle_deflects_left
+WHY: Decreasing magnetic flux induces an EMF in the opposite direction (Lenz's Law), deflecting the needle to the left.
+
+===STEP===
+ID: step-5
+INSTRUCTION: What factor determines the magnitude of the induced electromotive force (EMF) in the coil?
+ACTION_TYPE: select_observation
+OPTIONS: The rate of change of magnetic flux linked with the coil (faster motion produces larger deflection)|The atmospheric temperature in the room|The color of the wire insulation|The length of the connecting wires to the table
+CORRECT_OPTION: The rate of change of magnetic flux linked with the coil (faster motion produces larger deflection)
+RESULT_COLOR: #1d4ed8
+RESULT_STATE: faradays_law_verified
+HINT: Faraday's Law states E = -N · (dΦ/dt). Moving the magnet faster or using more coil turns increases the induced voltage.
+WHY: The induced EMF is directly proportional to the rate at which magnetic field lines cut across the coil turns (Faraday's Law).
+
+===OUTCOME===
+SUMMARY: An electromotive force and electric current are induced in a closed circuit whenever there is relative motion (changing magnetic flux linkage) between a magnet and a coil (Faraday's Law).
+REFLECTION_QUESTIONS:
+- How does an electric generator (dynamo) use electromagnetic induction to generate electrical power?
+- According to Lenz's law, why does pushing a magnet into a coil encounter an opposing repulsive magnetic force?

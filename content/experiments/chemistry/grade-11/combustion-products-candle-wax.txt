@@ -1,0 +1,66 @@
+TITLE: Confirmation of Carbon and Hydrogen in Candle Wax
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Hydrocarbons and Their Derivatives (Unit 14)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Confirm the elemental composition of candle wax (a hydrocarbon) by drawing combustion fumes through anhydrous copper(II) sulphate (testing water/hydrogen) and lime water (testing CO2/carbon).
+
+MATERIALS:
+- Burning paraffin wax candle with glass funnel hood
+- U-tube containing white anhydrous copper(II) sulphate powder (CuSO4)
+- Test tube containing clear calcium hydroxide solution (lime water)
+- Water aspirator / suction pump & rubber connecting tubes
+
+LEARNING_OUTCOMES:
+- Identify water vapor (H2O) and carbon dioxide (CO2) as complete combustion products of hydrocarbons
+- Use anhydrous copper sulphate (white to blue) to test for water
+- Use lime water (turns milky due to CaCO3 precipitate) to test for carbon dioxide
+- Deduce that paraffin wax consists of carbon and hydrogen atoms (CxHy + O2 → CO2 + H2O)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Position the inverted glass funnel directly above the burning candle flame and connect to the U-tube and lime water tube.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: burning_candle
+DROP_TARGET_ID: funnel_suction_rig
+RESULT_COLOR: #fef08a
+RESULT_STATE: combustion_gases_entering_tube
+WHY: The suction hood captures all gaseous combustion products (CO2 and H2O vapor) rising from the hydrocarbon flame.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Turn on the water aspirator to draw combustion fumes through the U-tube containing white anhydrous CuSO4 powder.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: suction_aspirator
+DROP_TARGET_ID: u_tube_cuso4
+RESULT_COLOR: #38bdf8
+RESULT_STATE: cuso4_turns_bright_blue
+WHY: Water vapor produced by the combustion of hydrogen in wax hydrates the copper sulphate: CuSO4(s, white) + 5H2O(g) → CuSO4·5H2O(s, blue).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Allow the remaining drawn gases to bubble through the test tube of clear lime water.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: gas_delivery_stem
+DROP_TARGET_ID: lime_water_tube
+RESULT_COLOR: #f8fafc
+RESULT_STATE: lime_water_turns_milky_cloudy
+WHY: Carbon dioxide from the combustion of carbon in wax reacts with calcium hydroxide: Ca(OH)2(aq) + CO2(g) → CaCO3(s)↓ + H2O(l) (Milky precipitate).
+
+===STEP===
+ID: step-4
+INSTRUCTION: What elemental composition of candle wax is proven by the formation of water vapor (turning CuSO4 blue) and carbon dioxide (turning lime water milky)?
+ACTION_TYPE: select_observation
+OPTIONS: Candle wax contains both carbon and hydrogen (it is a hydrocarbon)|Candle wax contains only nitrogen and oxygen|Candle wax contains pure metallic copper|Candle wax is made of pure calcium
+CORRECT_OPTION: Candle wax contains both carbon and hydrogen (it is a hydrocarbon)
+RESULT_COLOR: #0284c7
+RESULT_STATE: hydrocarbon_nature_proven
+HINT: Water (H2O) proves hydrogen was present in the fuel; carbon dioxide (CO2) proves carbon was present in the fuel.
+WHY: Because combustion in oxygen produces H2O (containing H) and CO2 (containing C), the wax must be a hydrocarbon compound composed of carbon and hydrogen atoms.
+
+===OUTCOME===
+SUMMARY: Burning candle wax yields water vapor (which turns white anhydrous copper sulphate blue) and carbon dioxide (which turns lime water milky), confirming that candle wax is a hydrocarbon composed of carbon and hydrogen.
+REFLECTION_QUESTIONS:
+- What is the difference between complete combustion (producing CO2 and H2O) and incomplete combustion (producing CO and soot)?
+- What is the general molecular formula for the alkane hydrocarbons present in paraffin wax?

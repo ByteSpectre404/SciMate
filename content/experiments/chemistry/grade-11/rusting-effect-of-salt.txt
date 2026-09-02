@@ -1,0 +1,65 @@
+TITLE: Effect of Salt (Sodium Chloride) on Rusting
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Compare the rusting rate of iron nails in ordinary tap water versus sodium chloride (salt) solution to explain why coastal marine environments accelerate metal corrosion.
+
+MATERIALS:
+- Two cleaned iron nails
+- Two boiling tubes (Tube A: ordinary water, Tube B: 5% NaCl salt solution)
+- Solid sodium chloride & distilled water
+- Test tube rack
+
+LEARNING_OUTCOMES:
+- Observe that dissolved electrolytes (NaCl) accelerate the electrochemical rusting process
+- Explain how Cl⁻ and Na⁺ ions increase electrical conductivity and breakdown passive iron oxide barriers
+- Discuss corrosion challenges faced in coastal towns, marine ports, and seaside infrastructure
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add ordinary water to Tube A and 5% sodium chloride solution to Tube B.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: nacl_salt_solution
+DROP_TARGET_ID: tube_b_salt
+RESULT_COLOR: #bae6fd
+RESULT_STATE: salt_vs_fresh_water_ready
+WHY: Salt water provides a high concentration of mobile Na⁺ and Cl⁻ ions, drastically increasing electrical conductivity.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Place a cleaned iron nail into each tube and leave undisturbed for 24 hours.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_nails_pair
+DROP_TARGET_ID: boiling_tubes_pair
+RESULT_COLOR: #cbd5e1
+RESULT_STATE: nails_immersed_in_media
+WHY: The electrolyte allows microscopic galvanic cells across the iron surface to circulate ionic current.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Compare the extent of reddish-brown rust deposits formed in both tubes after 24 hours.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: observation_timer
+DROP_TARGET_ID: test_tube_rack
+RESULT_COLOR: #991b1b
+RESULT_STATE: salt_tube_heavily_encrusted_rust
+WHY: The nail in the salt solution exhibits intense pitting corrosion and thick rust sedimentation compared to the mild rusting in fresh water.
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why do iron structures and vehicles in coastal and marine environments rust much faster than inland?
+ACTION_TYPE: select_observation
+OPTIONS: Airborne sea salt spray increases electrolyte conductivity, accelerating electrochemical corrosion|Seaside air has twice as much oxygen|The sun is hotter near beaches|Sea breeze blows away the protective iron coating
+CORRECT_OPTION: Airborne sea salt spray increases electrolyte conductivity, accelerating electrochemical corrosion
+RESULT_COLOR: #7f1d1d
+RESULT_STATE: marine_corrosion_effect_proven
+HINT: Salt (NaCl) ions enhance the electrical conductivity of water films on the metal surface, speeding up charge transfer between anodic and cathodic micro-regions.
+WHY: Dissolved salts increase the electrical conductivity of moisture droplets on metal, accelerating electron transfer and ion mobility, thereby speeding up the corrosion rate.
+
+===OUTCOME===
+SUMMARY: Dissolved sodium chloride (salt) significantly accelerates the rate of iron rusting due to enhanced electrolyte conductivity, explaining why coastal environments suffer severe metal corrosion.
+REFLECTION_QUESTIONS:
+- Why are road-deicing salts corrosive to car undercarriages in temperate countries?
+- What anti-corrosion treatments (galvanizing, marine epoxy paints) are used on seaside bridges and ships?

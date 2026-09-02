@@ -1,0 +1,65 @@
+TITLE: Reaction Between Zinc and Dilute Sulfuric Acid
+SUBJECT: chemistry
+GRADE: 11
+UNIT: Electrochemistry (Unit 12)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Observe direct redox electron transfer between solid zinc metal and aqueous hydronium ions in dilute sulfuric acid, liberating hydrogen gas bubbles.
+
+MATERIALS:
+- Clean zinc metal strip
+- Dilute sulfuric acid (H2SO4, 1.0 M)
+- Small glass beaker (100 mL)
+- Wooden splint & matches
+
+LEARNING_OUTCOMES:
+- Define oxidation (loss of electrons: Zn → Zn²⁺ + 2e⁻) and reduction (gain of electrons: 2H⁺ + 2e⁻ → H2)
+- Formulate the net ionic equation: Zn(s) + 2H⁺(aq) → Zn²⁺(aq) + H2(g)
+- Observe direct electron transfer at the metal-solution interface without an external circuit
+
+===STEP===
+ID: step-1
+INSTRUCTION: Pour 40 mL of dilute sulfuric acid into a clean 100 mL beaker.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: sulfuric_acid_bottle
+DROP_TARGET_ID: reaction_beaker
+RESULT_COLOR: #f0fdf4
+RESULT_STATE: clear_acid_solution
+WHY: Dilute sulfuric acid completely dissociates into H⁺ and SO4²⁻ ions in aqueous solution.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Immerse the cleaned zinc strip partially into the dilute sulfuric acid in the beaker.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: zinc_strip
+DROP_TARGET_ID: reaction_beaker
+RESULT_COLOR: #e2e8f0
+RESULT_STATE: active_gas_bubbles_on_zinc
+WHY: Direct electron transfer occurs: zinc atoms donate electrons to hydrogen ions, evolving hydrogen gas bubbles directly on the zinc surface.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Test the collected gas bubbles with a lighted wooden splint.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: lighted_splint
+DROP_TARGET_ID: reaction_beaker
+RESULT_COLOR: #f59e0b
+RESULT_STATE: squeaky_pop_flame
+WHY: Hydrogen gas burns rapidly with atmospheric oxygen, making a characteristic squeaky 'pop'.
+
+===STEP===
+ID: step-4
+INSTRUCTION: In the reaction Zn(s) + H2SO4(aq) → ZnSO4(aq) + H2(g), which chemical species undergoes oxidation?
+ACTION_TYPE: select_observation
+OPTIONS: Zinc atoms (Zn loses 2 electrons to become Zn²⁺ ions)|Hydrogen ions (H⁺ loses electrons)|Sulfate ions (SO4²⁻ loses oxygen)|Water molecules
+CORRECT_OPTION: Zinc atoms (Zn loses 2 electrons to become Zn²⁺ ions)
+RESULT_COLOR: #0284c7
+RESULT_STATE: oxidation_half_reaction_verified
+HINT: Oxidation is the loss of electrons (OIL RIG: Oxidation Is Loss, Reduction Is Gain).
+WHY: Neutral zinc metal atoms lose two valence electrons each (Zn → Zn²⁺ + 2e⁻) to hydronium ions, meaning zinc is oxidized.
+
+===OUTCOME===
+SUMMARY: Zinc metal reduces aqueous hydrogen ions to hydrogen gas while being oxidized to zinc ions (Zn + H2SO4 → ZnSO4 + H2), demonstrating direct redox electron transfer.
+REFLECTION_QUESTIONS:
+- Why does the zinc strip gradually lose mass and dissolve?
+- How can we harness this electron transfer through an external wire to produce electricity?

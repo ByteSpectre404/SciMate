@@ -1,0 +1,65 @@
+TITLE: Metal Displacement Reactions in Aqueous Salts
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Changes in Matter (Unit 16)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Observe single displacement when more reactive zinc metal is placed into blue copper(II) sulphate solution, forming metallic copper and zinc sulphate.
+
+MATERIALS:
+- Copper(II) sulphate aqueous solution (CuSO4, 0.5 M)
+- Clean zinc granules / zinc strip
+- Glass beaker (100 mL)
+- Glass stirring rod & thermometer
+
+LEARNING_OUTCOMES:
+- Demonstrate that a more reactive metal displaces a less reactive metal from its salt solution
+- Track the disappearance of blue Cu2+(aq) ions and the deposition of reddish-brown Cu(s)
+- Formulate the ionic equation: Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s)
+
+===STEP===
+ID: step-1
+INSTRUCTION: Pour 50 mL of bright blue copper sulphate solution into the beaker.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: cuso4_solution
+DROP_TARGET_ID: reaction_beaker
+RESULT_COLOR: #0284c7
+RESULT_STATE: blue_cuso4_solution
+WHY: Hydrated copper(II) ions [Cu(H2O)6]2+ impart a characteristic bright blue color to the solution.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Add clean zinc granules into the blue copper sulphate solution and stir gently.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: zinc_granules
+DROP_TARGET_ID: reaction_beaker
+RESULT_COLOR: #0d9488
+RESULT_STATE: single_displacement_active
+WHY: Zinc atoms lose electrons more readily than copper (higher standard oxidation potential), reducing Cu2+ ions to elemental copper: Zn + CuSO4 → ZnSO4 + Cu.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Allow the mixture to stand for 10 minutes and observe the precipitate and solution color.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: glass_stirring_rod
+DROP_TARGET_ID: reaction_beaker
+RESULT_COLOR: #b45309
+RESULT_STATE: faded_solution_brown_copper_powder
+WHY: As Cu2+ ions are consumed to form brown copper powder, the blue color fades to colorless aqueous zinc sulphate (ZnSO4).
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens when a copper wire is placed in a zinc sulphate solution?
+ACTION_TYPE: select_observation
+OPTIONS: No reaction occurs because copper is less reactive than zinc|Zinc metal deposits on the copper wire|The solution turns bright blue immediately|Hydrogen gas bubbles evolve vigorously
+CORRECT_OPTION: No reaction occurs because copper is less reactive than zinc
+RESULT_COLOR: #78350f
+RESULT_STATE: displacement_directionality_proven
+HINT: Only a more reactive metal can displace a less reactive metal from its salt solution.
+WHY: Copper has a lower oxidation tendency than zinc, so it cannot displace Zn2+ ions from aqueous zinc sulphate.
+
+===OUTCOME===
+SUMMARY: Zinc displaces copper from copper(II) sulphate solution because zinc is more reactive than copper (Zn + CuSO4 → ZnSO4 + Cu). Copper cannot displace zinc from zinc sulphate.
+REFLECTION_QUESTIONS:
+- What type of chemical reaction is this (redox / single displacement)?
+- How could you recover the metallic copper produced in this reaction?

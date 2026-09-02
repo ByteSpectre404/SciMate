@@ -1,0 +1,66 @@
+TITLE: Effect of Temperature on Rate of Reaction
+SUBJECT: chemistry
+GRADE: 10
+UNIT: Rate of Reactions (Unit 17)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Investigate the effect of temperature on the rate of redox reaction between acidified potassium permanganate (KMnO4) solution and clean iron nails.
+
+MATERIALS:
+- Very dilute potassium permanganate solution (KMnO4)
+- Dilute sulfuric acid (H2SO4)
+- Cleaned iron nails of identical size
+- Two boiling tubes & Bunsen burner
+- Thermometer & stopwatch
+
+LEARNING_OUTCOMES:
+- Understand how thermal energy increases the kinetic energy and speed of reacting particles
+- Explain activation energy and the fraction of collisions exceeding activation threshold
+- Measure the time required for purple KMnO4 to decolorize at room temperature versus elevated temperature
+
+===STEP===
+ID: step-1
+INSTRUCTION: Add 10 mL dilute KMnO4 and 2 mL dilute H2SO4 to Tube 1 (Cold / Room Temp, 25°C) and Tube 2 (Hot, 60°C).
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: acidified_kmno4_solution
+DROP_TARGET_ID: boiling_tubes_pair
+RESULT_COLOR: #7e22ce
+RESULT_STATE: purple_acidified_solutions
+WHY: Acid provides H+ ions necessary for permanganate reduction: MnO4- + 8H+ + 5e- → Mn2+ + 4H2O.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Heat Tube 2 gently over the Bunsen burner until the solution reaches 60°C.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bunsen_burner
+DROP_TARGET_ID: tube_2_hot
+RESULT_COLOR: #9333ea
+RESULT_STATE: heated_tube_60c
+WHY: Heating increases the average kinetic energy and velocity of ions in the solution.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Drop an identical cleaned iron nail into each tube simultaneously and start the stopwatch.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: iron_nails_pair
+DROP_TARGET_ID: boiling_tubes_pair
+RESULT_COLOR: #f8fafc
+RESULT_STATE: decolorizing_reaction_comparison
+WHY: In Tube 2 (Hot), the purple solution decolorizes to very pale pink/colorless much faster than in Tube 1 (Cold).
+
+===STEP===
+ID: step-4
+INSTRUCTION: Why does the reaction occur faster at a higher temperature?
+ACTION_TYPE: select_observation
+OPTIONS: Higher temperature increases kinetic energy, collision frequency, and the fraction of collisions with activation energy|Heat destroys the reactants|Cold slows down the stopwatch|Heat reduces the mass of the iron nail
+CORRECT_OPTION: Higher temperature increases kinetic energy, collision frequency, and the fraction of collisions with activation energy
+RESULT_COLOR: #a855f7
+RESULT_STATE: temperature_rate_effect_proven
+HINT: Molecules move faster and collide harder at higher temperatures, so a larger fraction of collisions successfully react.
+WHY: Rising temperature increases particle kinetic energy, leading to more frequent collisions and a significantly higher proportion of collisions having energy ≥ activation energy (Ea).
+
+===OUTCOME===
+SUMMARY: Increasing temperature increases the rate of chemical reactions by increasing molecular kinetic energy and the proportion of effective collisions per unit time.
+REFLECTION_QUESTIONS:
+- Why are perishable foods stored in refrigerators and freezers?
+- As a rule of thumb, how does a 10°C rise in temperature typically affect reaction rates?

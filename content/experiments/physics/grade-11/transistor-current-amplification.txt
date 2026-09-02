@@ -1,0 +1,66 @@
+TITLE: Current Amplification by a Transistor
+SUBJECT: physics
+GRADE: 11
+UNIT: Electronics (Unit 11)
+DIFFICULTY: medium
+DURATION_MINUTES: 20
+DESCRIPTION: Demonstrate that a tiny current flowing through the base of an NPN transistor controls and amplifies a much larger collector current (Current Amplification: Ic = β × Ib).
+
+MATERIALS:
+- 2SD400 (or similar NPN) silicon transistor
+- Two 2.5 V torch bulbs (L1 input base bulb, L2 output collector bulb)
+- 10 kΩ variable potentiometer (volume controller)
+- Dual DC battery packs (3.0 V input, 4.5 V output)
+- Switches S1 and S2 & breadboard
+
+LEARNING_OUTCOMES:
+- Identify the three terminals of an NPN bipolar junction transistor (Emitter, Base, Collector)
+- Understand base current (Ib) and collector current (Ic) relationships
+- Demonstrate that a small base current controls a significantly larger collector current
+
+===STEP===
+ID: step-1
+INSTRUCTION: Assemble the input base circuit (S1, potentiometer, bulb L1) and output collector circuit (S2, bulb L2) via the NPN transistor.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: npn_transistor
+DROP_TARGET_ID: breadboard_circuit
+RESULT_COLOR: #3b82f6
+RESULT_STATE: dual_circuit_assembled
+WHY: The base-emitter junction acts as the input control path, while the collector-emitter path carries the main power current.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Turn on switch S2 (collector output) while keeping switch S1 (base input) OFF.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: switch_s2
+DROP_TARGET_ID: breadboard_circuit
+RESULT_COLOR: #94a3b8
+RESULT_STATE: bulb_l2_off_zero_collector_current
+WHY: With zero base current (Ib = 0), the transistor is in the cutoff state and blocks collector current (L2 remains dark).
+
+===STEP===
+ID: step-3
+INSTRUCTION: Turn on switch S1 and adjust the potentiometer so a faint tiny current flows through input bulb L1.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: switch_s1
+DROP_TARGET_ID: breadboard_circuit
+RESULT_COLOR: #fef08a
+RESULT_STATE: bulb_l1_dim_bulb_l2_bright
+WHY: A tiny base current (Ib ~ a few mA) injects charge carriers into the base, enabling a much larger collector current (Ic ~ hundreds of mA) to illuminate output bulb L2 brilliantly.
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens to the large output collector current (Ic) when the small base current (Ib) is interrupted?
+ACTION_TYPE: select_observation
+OPTIONS: Collector current (Ic) drops immediately to zero, extinguishing the output bulb|Collector current becomes twice as bright|The battery short circuits|The transistor changes into a diode
+CORRECT_OPTION: Collector current (Ic) drops immediately to zero, extinguishing the output bulb
+RESULT_COLOR: #ca8a04
+RESULT_STATE: current_amplification_verified
+HINT: The base current acts as the 'valve' that opens or closes the main collector current conduit.
+WHY: Collector current is proportional to base current (Ic = β · Ib, where β is current gain). When Ib = 0, Ic drops to zero immediately.
+
+===OUTCOME===
+SUMMARY: An NPN transistor acts as a current amplifier: a small input current at the base terminal controls and drives a substantially larger output current through the collector-emitter circuit.
+REFLECTION_QUESTIONS:
+- What is meant by the DC current gain (hfe or β) of a transistor?
+- How is this current amplification property used in public address microphone systems?

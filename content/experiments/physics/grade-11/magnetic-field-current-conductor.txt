@@ -1,0 +1,65 @@
+TITLE: Magnetic Field Around a Current-Carrying Conductor
+SUBJECT: physics
+GRADE: 11
+UNIT: Electromagnetism & Electromagnetic Induction (Unit 13)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate Oersted's discovery: an electric current flowing through a straight wire creates a concentric circular magnetic field that deflects a nearby compass needle.
+
+MATERIALS:
+- Straight copper conducting wire (aligned North-South)
+- Magnetic plotting compass
+- DC power supply / two 1.5 V dry cells (3.0 V)
+- Knife switch and reversing switch
+
+LEARNING_OUTCOMES:
+- Observe Oersted's effect: electric currents generate magnetic fields
+- Apply the Right-Hand Grip Rule to determine concentric circular field line direction
+- Deduce the effects of current reversal and placing the compass above versus below the wire
+
+===STEP===
+ID: step-1
+INSTRUCTION: Align the straight copper wire directly over the compass along the magnetic North-South axis with switch open.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: straight_copper_wire
+DROP_TARGET_ID: compass_needle
+RESULT_COLOR: #94a3b8
+RESULT_STATE: parallel_wire_no_current
+WHY: With zero current (I = 0), only the Earth's natural magnetic field acts on the compass needle.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Close the switch to send electric current northward through the wire directly above the compass.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: knife_switch
+DROP_TARGET_ID: dc_power_circuit
+RESULT_COLOR: #3b82f6
+RESULT_STATE: compass_deflects_west
+WHY: Current creates concentric circular magnetic field lines around the wire; under the wire, the field points West, deflecting the North tip of the needle to the West.
+
+===STEP===
+ID: step-3
+INSTRUCTION: Reverse the direction of current flow (send current southward) and observe the compass.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: polarity_reversing_switch
+DROP_TARGET_ID: dc_power_circuit
+RESULT_COLOR: #22c55e
+RESULT_STATE: compass_deflects_east
+WHY: Reversing current direction reverses the circular magnetic flux direction (Right-Hand Grip Rule), deflecting the needle in the opposite direction (East).
+
+===STEP===
+ID: step-4
+INSTRUCTION: What happens to the compass needle when the current flowing through the wire is switched OFF?
+ACTION_TYPE: select_observation
+OPTIONS: The needle immediately swings back to align along Earth's North-South meridian|The needle remains permanently frozen in the deflected position|The needle spins continuously like a motor|The compass loses all magnetism
+CORRECT_OPTION: The needle immediately swings back to align along Earth's North-South meridian
+RESULT_COLOR: #16a34a
+RESULT_STATE: oersted_principle_verified
+HINT: The magnetic field exists only while electric charges are actively in motion through the conductor.
+WHY: The magnetic field around a conductor is generated exclusively by the motion of electric charges. When current ceases, the field collapses instantly.
+
+===OUTCOME===
+SUMMARY: An electric current flowing through a conductor creates a magnetic field around it whose orientation depends on current direction (Right-Hand Grip Rule), proving the fundamental link between electricity and magnetism.
+REFLECTION_QUESTIONS:
+- How does the strength of the magnetic field change as distance from the wire increases?
+- How does winding the wire into a multi-turn solenoid intensify the central magnetic field?

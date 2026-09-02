@@ -1,0 +1,55 @@
+TITLE: Gravitational Potential Energy and Mass
+SUBJECT: physics
+GRADE: 10
+UNIT: Work, Energy and Power (Unit 18)
+DIFFICULTY: easy
+DURATION_MINUTES: 15
+DESCRIPTION: Demonstrate that gravitational potential energy stored in an object increases in direct proportion to its mass when released from a constant vertical height.
+
+MATERIALS:
+- Smooth modeling clay bed (3 cm thick)
+- Plastic bottle (empty / 1/4 sand / 1/2 sand / fully filled with sand)
+- Sand reservoir
+- Meter ruler
+
+LEARNING_OUTCOMES:
+- Understand the relationship Ep = mgh where mass (m) is varied
+- Observe how changing mass influences the kinetic energy at impact
+- Deduce that Ep is directly proportional to mass for a fixed height
+
+===STEP===
+ID: step-1
+INSTRUCTION: Fill 1/4 of the plastic bottle with sand and release it onto the flat clay from a height of 1.0 m.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bottle_quarter_sand
+DROP_TARGET_ID: clay_bed
+RESULT_COLOR: #eab308
+RESULT_STATE: shallow_indent_low_mass
+WHY: A small mass possesses relatively low potential energy Ep = mgh, creating a small shallow depression.
+
+===STEP===
+ID: step-2
+INSTRUCTION: Fill the plastic bottle completely with sand and release it from the same 1.0 m height onto fresh clay.
+ACTION_TYPE: drag_place
+DRAG_ITEM_ID: bottle_full_sand
+DROP_TARGET_ID: clay_bed
+RESULT_COLOR: #ca8a04
+RESULT_STATE: deep_indent_high_mass
+WHY: A greater mass possesses significantly more potential energy at the same height, delivering greater impact energy into the clay.
+
+===STEP===
+ID: step-3
+INSTRUCTION: How does the depth of the depression on the clay change as the mass of the bottle increases?
+ACTION_TYPE: select_observation
+OPTIONS: Depth of depression increases as mass increases|Depth of depression decreases as mass increases|Depth remains identical for all masses|No depression forms because height was held constant
+CORRECT_OPTION: Depth of depression increases as mass increases
+RESULT_COLOR: #854d0e
+RESULT_STATE: ep_proportional_to_mass_verified
+HINT: Ep = mgh. With constant g and constant h, potential energy is directly proportional to mass m.
+WHY: Gravitational potential energy increases linearly with mass (Ep ∝ m). A heavier falling object does more work upon impact.
+
+===OUTCOME===
+SUMMARY: For a fixed vertical height, the depth of depression in clay increases with the mass of the falling object, confirming that Ep = mgh.
+REFLECTION_QUESTIONS:
+- Why was it necessary to keep the release height constant in this experiment?
+- What would happen to the depression depth if both mass and height were doubled simultaneously?
