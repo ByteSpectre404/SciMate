@@ -1256,6 +1256,91 @@ export const LabApparatusVisual: React.FC<LabApparatusVisualProps> = ({
       }
     }
 
+    // 32. LEAF SPECIMENS & BOTANICAL SAMPLES
+    if (
+      normId.includes("leaf") ||
+      normId.includes("epidermis") ||
+      normId.includes("petri_dish") ||
+      normId.includes("mucor") ||
+      normId.includes("bread_slice")
+    ) {
+      if (normId.includes("epidermis")) {
+        return (
+          <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-xl">
+            {/* Leaf epidermis peel */}
+            <path d="M 20 30 Q 25 10 50 20 Q 75 10 80 30 Q 85 40 75 50 Q 50 70 25 50 Q 15 40 20 30 Z" fill="#dcfce7" stroke="#16a34a" strokeWidth="1.5" />
+            {/* Stomata */}
+            <circle cx="35" cy="35" r="1.5" fill="#16a34a" />
+            <circle cx="45" cy="30" r="1.5" fill="#16a34a" />
+            <circle cx="55" cy="35" r="1.5" fill="#16a34a" />
+            <circle cx="65" cy="30" r="1.5" fill="#16a34a" />
+            <text x="50" y="80" textAnchor="middle" fill="#16a34a" fontSize="7" fontWeight="bold" fontFamily="monospace">EPIDERMIS</text>
+          </svg>
+        );
+      }
+      else if (normId.includes("petri_dish")) {
+        // Reuse the existing petri dish visual from the biologicals section
+        return (
+          <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-xl">
+            <circle cx="50" cy="50" r="40" fill="rgba(240, 249, 255, 0.85)" stroke="#0284c7" strokeWidth="2.5" />
+            <circle cx="50" cy="50" r="35" fill="none" stroke="#cbd5e1" strokeWidth="1" />
+            <rect x="32" y="32" width="36" height="36" rx="4" fill="#fde68a" stroke="#d97706" strokeWidth="1.5" />
+            <path d="M 38 48 Q 44 40 52 46 Q 60 42 64 50" fill="none" stroke="#f8fafc" strokeWidth="2.5" />
+            <circle cx="42" cy="42" r="2.5" fill="#0f172a" />
+            <circle cx="50" cy="38" r="3" fill="#0f172a" />
+            <circle cx="58" cy="44" r="2.5" fill="#0f172a" />
+            <circle cx="46" cy="54" r="2.5" fill="#0f172a" />
+            <text x="50" y="84" textAnchor="middle" fill="#0369a1" fontSize="7" fontWeight="bold" fontFamily="monospace">MUCOR COLONY</text>
+          </svg>
+        );
+      }
+      else if (normId.includes("mucor") || normId.includes("bread_slice")) {
+        // Show mold/bread specimen
+        const isMucor = normId.includes("mucor");
+        return (
+          <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-xl">
+            {isMucor ? (
+              <>
+                {/* Bread slice */}
+                <path d="M 15 60 L 15 80 Q 15 85 20 85 L 80 85 Q 85 85 85 80 L 85 60" fill="#e2e8f0" stroke="#64748b" strokeWidth="2" />
+                {/* Mold spots */}
+                <circle cx="30" cy="65" r="3" fill="#8b5cf6" />
+                <circle cx="50" cy="70" r="4" fill="#7c3aed" />
+                <circle cx="70" cy="60" r="2.5" fill="#6d28d9" />
+                <text x="50" y="90" textAnchor="middle" fill="#7c3aed" fontSize="7" fontWeight="bold" fontFamily="monospace">MOLD SPECIMEN</text>
+              </>
+            ) : (
+              <>
+                {/* Bread slice */}
+                <path d="M 15 60 L 15 80 Q 15 85 20 85 L 80 85 Q 85 85 85 80 L 85 60" fill="#e2e8f0" stroke="#64748b" strokeWidth="2" />
+                {/* Toasted spots */}
+                <path d="M 30 65 Q 35 60 40 65" fill="#d97706" />
+                <path d="M 50 70 Q 55 65 60 70" fill="#d97706" opacity="0.7" />
+                <text x="50" y="90" textAnchor="middle" fill="#d97706" fontSize="7" fontWeight="bold" fontFamily="monospace">BREAD SLICE</text>
+              </>
+            )}
+          </svg>
+        );
+      }
+      else {
+        // Generic leaf representation
+        return (
+          <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-xl">
+            {/* Leaf outline */}
+            <path d="M 30 10 Q 20 20 20 35 Q 25 45 30 50 Q 35 45 40 35 Q 40 20 30 10 Z" fill="#bbf7d0" stroke="#16a34a" strokeWidth="1.5" />
+            {/* Leaf veins */}
+            <path d="M 30 10 Q 30 25 30 40 Q 30 55 30 70" stroke="#16a34a" strokeWidth="1" fill="none" />
+            <path d="M 30 20 Q 35 18 40 20" stroke="#16a34a" strokeWidth="0.8" fill="none" />
+            <path d="M 30 30 Q 35 25 40 30" stroke="#16a34a" strokeWidth="0.8" fill="none" />
+            <path d="M 30 40 Q 35 35 40 40" stroke="#16a34a" strokeWidth="0.8" fill="none" />
+            <path d="M 30 50 Q 35 48 40 50" stroke="#16a34a" strokeWidth="0.8" fill="none" />
+            <path d="M 30 60 Q 35 55 40 60" stroke="#16a34a" strokeWidth="0.8" fill="none" />
+            <text x="50" y="85" textAnchor="middle" fill="#16a34a" fontSize="7" fontWeight="bold" fontFamily="monospace">LEAF</text>
+          </svg>
+        );
+      }
+    }
+
     // 33. CHEMICAL REAGENTS, DROPPER BOTTLES & BIOLOGICALS (DEFAULT CLEAN RENDERER)
     const info = getSubstanceInfo(normId);
     return (
